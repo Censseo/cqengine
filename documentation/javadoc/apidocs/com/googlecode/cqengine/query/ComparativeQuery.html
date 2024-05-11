@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.query</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.query</a></div>
 <h2 title="Interface ComparativeQuery" class="title">Interface ComparativeQuery&lt;O,&#8203;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -131,29 +131,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</code></dd>
+<dd><code><a href="Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="comparative/LongestPrefix.html" title="class in com.googlecode.cqengine.query.comparative">LongestPrefix</a></code>, <code><a href="comparative/Max.html" title="class in com.googlecode.cqengine.query.comparative">Max</a></code>, <code><a href="comparative/Min.html" title="class in com.googlecode.cqengine.query.comparative">Min</a></code>, <code><a href="comparative/SimpleComparativeQuery.html" title="class in com.googlecode.cqengine.query.comparative">SimpleComparativeQuery</a></code></dd>
+<dd><code><a href="comparative/LongestPrefix.html" title="class in network.rhizome.cqengine.query.comparative">LongestPrefix</a></code>, <code><a href="comparative/Max.html" title="class in network.rhizome.cqengine.query.comparative">Max</a></code>, <code><a href="comparative/Min.html" title="class in network.rhizome.cqengine.query.comparative">Min</a></code>, <code><a href="comparative/SimpleComparativeQuery.html" title="class in network.rhizome.cqengine.query.comparative">SimpleComparativeQuery</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">ComparativeQuery&lt;O,&#8203;A&gt;</span>
-extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</pre>
+extends <a href="Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</pre>
 <div class="block">A special type of query which can only be evaluated by comparing objects stored in the collection with each other.
  <p>
  It is not possible to determine if a certain object matches a comparative query in isolation; for example by calling
- <a href="#matches(O,com.googlecode.cqengine.query.option.QueryOptions)"><code>matches(Object, QueryOptions)</code></a>. Therefore if that method is called on queries of this type, it will throw
- an exception. Comparative queries are instead evaluated via the method <a href="#getMatches(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)"><code>getMatches(ObjectSet, QueryOptions)</code></a>.
+ <a href="#matches(O,network.rhizome.cqengine.query.option.QueryOptions)"><code>matches(Object, QueryOptions)</code></a>. Therefore if that method is called on queries of this type, it will throw
+ an exception. Comparative queries are instead evaluated via the method <a href="#getMatches(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)"><code>getMatches(ObjectSet, QueryOptions)</code></a>.
  <p>
- Examples of comparative queries include <a href="QueryFactory.html#min(com.googlecode.cqengine.attribute.Attribute)"><code>QueryFactory.min(Attribute)</code></a>, <a href="QueryFactory.html#max(com.googlecode.cqengine.attribute.Attribute)"><code>QueryFactory.max(Attribute)</code></a>.
+ Examples of comparative queries include <a href="QueryFactory.html#min(network.rhizome.cqengine.attribute.Attribute)"><code>QueryFactory.min(Attribute)</code></a>, <a href="QueryFactory.html#max(network.rhizome.cqengine.attribute.Attribute)"><code>QueryFactory.max(Attribute)</code></a>.
  It is only possible to determine the object(s) which have the minimum or maximum values of an attribute by examining
  all such attribute values throughout the collection (this may however be accelerated by an index). In this case,
  the objects are compared via the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Comparable</code></a> interface. The object(s) whose attribute values in the collection
  sort lower or higher (respectively) are the results of those queries.
  <p>
  Note that comparative queries are not always implemented via the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Comparable</code></a> interface. For example, the
- <a href="comparative/LongestPrefix.html" title="class in com.googlecode.cqengine.query.comparative"><code>LongestPrefix</code></a> query examines the lengths of matched prefixes, rather
+ <a href="comparative/LongestPrefix.html" title="class in network.rhizome.cqengine.query.comparative"><code>LongestPrefix</code></a> query examines the lengths of matched prefixes, rather
  than the relative ordering of objects in the collection as determined by <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Comparable</code></a>. Therefore, this
  interface does not require that the generic type A extend Comparable per-se.</div>
 </li>
@@ -177,7 +177,7 @@ extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>,&#8203;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>,&#8203;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttribute()">getAttribute</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the attribute to which the query relates.</div>
@@ -185,16 +185,16 @@ extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMatches(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">getMatches</a></span>&#8203;(<a href="../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;objectsInCollection,
-          <a href="option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMatches(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">getMatches</a></span>&#8203;(<a href="../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;objectsInCollection,
+          <a href="option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Evaluates the comparative query, returning the objects in the collection which match the query.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></span>&#8203;(<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&nbsp;object,
-       <a href="option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></span>&#8203;(<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&nbsp;object,
+       <a href="option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Tests an object to see if it matches the assertion represented by the query.</div>
 </td>
@@ -216,20 +216,20 @@ extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="matches(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="matches(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="matches(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="matches(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>matches</h4>
 <pre class="methodSignature">default&nbsp;boolean&nbsp;matches&#8203;(<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&nbsp;object,
-                        <a href="option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                        <a href="option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Tests an object to see if it matches the assertion represented by the query.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Query.html#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></code>&nbsp;in interface&nbsp;<code><a href="Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;</code></dd>
+<dd><code><a href="Query.html#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></code>&nbsp;in interface&nbsp;<code><a href="Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>object</code> - The object to test</dd>
 <dd><code>queryOptions</code> - Optional parameters supplied by the application along with the operation which is causing
@@ -241,14 +241,14 @@ extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">
 </dl>
 </li>
 </ul>
-<a id="getMatches(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getMatches(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMatches</h4>
-<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;getMatches&#8203;(<a href="../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;objectsInCollection,
-                       <a href="option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;getMatches&#8203;(<a href="../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>&gt;&nbsp;objectsInCollection,
+                       <a href="option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Evaluates the comparative query, returning the objects in the collection which match the query.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -265,7 +265,7 @@ extends <a href="Query.html" title="interface in com.googlecode.cqengine.query">
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAttribute</h4>
-<pre class="methodSignature"><a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>,&#8203;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">A</a>&gt;&nbsp;getAttribute()</pre>
+<pre class="methodSignature"><a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">O</a>,&#8203;<a href="ComparativeQuery.html" title="type parameter in ComparativeQuery">A</a>&gt;&nbsp;getAttribute()</pre>
 <div class="block">Returns the attribute to which the query relates.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

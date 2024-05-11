@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine</a></div>
 <h2 title="Class ObjectLockingIndexedCollection" class="title">Class ObjectLockingIndexedCollection&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">com.googlecode.cqengine.ConcurrentIndexedCollection</a>&lt;O&gt;</li>
+<li><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">network.rhizome.cqengine.ConcurrentIndexedCollection</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.ObjectLockingIndexedCollection&lt;O&gt;</li>
+<li>network.rhizome.cqengine.ObjectLockingIndexedCollection&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,17 +139,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;O&gt;</code>, <code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;O&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;O&gt;</code>, <code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ObjectLockingIndexedCollection&lt;O&gt;</span>
-extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;O&gt;</pre>
-<div class="block">Extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> with some specialized locking for applications in
+extends <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;O&gt;</pre>
+<div class="block">Extends <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> with some specialized locking for applications in
  which multiple threads might try to add or remove the <b>same object</b> to/from an indexed collection
  <i>concurrently</i>. In this context the <i>same object</i> refers to either the same object instance, OR two object
  instances having the same hash code and being equal according to their <a href="ConcurrentIndexedCollection.html#equals(java.lang.Object)"><code>ConcurrentIndexedCollection.equals(Object)</code></a> methods.
  <p/>
- The <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> superclass is thread-safe in cases where the application will add/remove
+ The <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> superclass is thread-safe in cases where the application will add/remove
  <i>different</i> objects concurrently. This implementation adds safeguards around adding/removing the <i>same</i>
  object concurrently, with some additional overhead.
  <p/>
@@ -186,10 +186,10 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.googlecode.cqengine.ConcurrentIndexedCollection">
+<li class="blockList"><a id="fields.inherited.from.class.network.rhizome.cqengine.ConcurrentIndexedCollection">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.googlecode.cqengine.<a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a></h3>
+<h3>Fields inherited from class&nbsp;network.rhizome.cqengine.<a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a></h3>
 <code><a href="ConcurrentIndexedCollection.html#indexEngine">indexEngine</a>, <a href="ConcurrentIndexedCollection.html#metadataEngine">metadataEngine</a>, <a href="ConcurrentIndexedCollection.html#objectStore">objectStore</a>, <a href="ConcurrentIndexedCollection.html#persistence">persistence</a></code></li>
 </ul>
 </li>
@@ -211,29 +211,29 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">ObjectLockingIndexedCollection</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>
  and a default concurrency level 64.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int)">ObjectLockingIndexedCollection</a></span>&#8203;(int&nbsp;concurrencyLevel)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a> and the given concurrency
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a> and the given concurrency
  level.</div>
 </td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.persistence.Persistence)">ObjectLockingIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.persistence.Persistence)">ObjectLockingIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> which will use the given persistence to create the backing
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> which will use the given persistence to create the backing
  set, and a default concurrency level 64.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.persistence.Persistence,int)">ObjectLockingIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.persistence.Persistence,int)">ObjectLockingIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence,
                               int&nbsp;concurrencyLevel)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a>, which will use the given persistence to create the backing
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a>, which will use the given persistence to create the backing
  set, and the given concurrency level.</div>
 </td>
 </tr>
@@ -268,7 +268,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear()">clear</a></span>()</code></th>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 </tr>
 <tr id="i4" class="altColor">
@@ -285,11 +285,11 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.ConcurrentIndexedCollection">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.ConcurrentIndexedCollection">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.<a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a></h3>
-<code><a href="ConcurrentIndexedCollection.html#addIndex(com.googlecode.cqengine.index.Index)">addIndex</a>, <a href="ConcurrentIndexedCollection.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">addIndex</a>, <a href="ConcurrentIndexedCollection.html#closeRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResourcesIfNecessary</a>, <a href="ConcurrentIndexedCollection.html#contains(java.lang.Object)">contains</a>, <a href="ConcurrentIndexedCollection.html#containsAll(java.util.Collection)">containsAll</a>, <a href="ConcurrentIndexedCollection.html#equals(java.lang.Object)">equals</a>, <a href="ConcurrentIndexedCollection.html#flagAsReadRequest(com.googlecode.cqengine.query.option.QueryOptions)">flagAsReadRequest</a>, <a href="ConcurrentIndexedCollection.html#getIndexes()">getIndexes</a>, <a href="ConcurrentIndexedCollection.html#getMetadataEngine()">getMetadataEngine</a>, <a href="ConcurrentIndexedCollection.html#getObjectStoreAsSet(com.googlecode.cqengine.query.option.QueryOptions)">getObjectStoreAsSet</a>, <a href="ConcurrentIndexedCollection.html#getPersistence()">getPersistence</a>, <a href="ConcurrentIndexedCollection.html#hashCode()">hashCode</a>, <a href="ConcurrentIndexedCollection.html#isEmpty()">isEmpty</a>, <a href="ConcurrentIndexedCollection.html#openRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResourcesIfNecessary</a>, <a href="ConcurrentIndexedCollection.html#removeIndex(com.googlecode.cqengine.index.Index)">removeIndex</a>, <a href="ConcurrentIndexedCollection.html#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">removeIndex</a>, <a href="ConcurrentIndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query)">retrieve</a>, <a href="ConcurrentIndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a>, <a href="ConcurrentIndexedCollection.html#size()">size</a>, <a href="ConcurrentIndexedCollection.html#toArray()">toArray</a>, <a href="ConcurrentIndexedCollection.html#toArray(T%5B%5D)">toArray</a>, <a href="ConcurrentIndexedCollection.html#toString()">toString</a>, <a href="ConcurrentIndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable)">update</a>, <a href="ConcurrentIndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable,com.googlecode.cqengine.query.option.QueryOptions)">update</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.<a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a></h3>
+<code><a href="ConcurrentIndexedCollection.html#addIndex(network.rhizome.cqengine.index.Index)">addIndex</a>, <a href="ConcurrentIndexedCollection.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">addIndex</a>, <a href="ConcurrentIndexedCollection.html#closeRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResourcesIfNecessary</a>, <a href="ConcurrentIndexedCollection.html#contains(java.lang.Object)">contains</a>, <a href="ConcurrentIndexedCollection.html#containsAll(java.util.Collection)">containsAll</a>, <a href="ConcurrentIndexedCollection.html#equals(java.lang.Object)">equals</a>, <a href="ConcurrentIndexedCollection.html#flagAsReadRequest(network.rhizome.cqengine.query.option.QueryOptions)">flagAsReadRequest</a>, <a href="ConcurrentIndexedCollection.html#getIndexes()">getIndexes</a>, <a href="ConcurrentIndexedCollection.html#getMetadataEngine()">getMetadataEngine</a>, <a href="ConcurrentIndexedCollection.html#getObjectStoreAsSet(network.rhizome.cqengine.query.option.QueryOptions)">getObjectStoreAsSet</a>, <a href="ConcurrentIndexedCollection.html#getPersistence()">getPersistence</a>, <a href="ConcurrentIndexedCollection.html#hashCode()">hashCode</a>, <a href="ConcurrentIndexedCollection.html#isEmpty()">isEmpty</a>, <a href="ConcurrentIndexedCollection.html#openRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResourcesIfNecessary</a>, <a href="ConcurrentIndexedCollection.html#removeIndex(network.rhizome.cqengine.index.Index)">removeIndex</a>, <a href="ConcurrentIndexedCollection.html#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">removeIndex</a>, <a href="ConcurrentIndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query)">retrieve</a>, <a href="ConcurrentIndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a>, <a href="ConcurrentIndexedCollection.html#size()">size</a>, <a href="ConcurrentIndexedCollection.html#toArray()">toArray</a>, <a href="ConcurrentIndexedCollection.html#toArray(T%5B%5D)">toArray</a>, <a href="ConcurrentIndexedCollection.html#toString()">toString</a>, <a href="ConcurrentIndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable)">update</a>, <a href="ConcurrentIndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable,network.rhizome.cqengine.query.option.QueryOptions)">update</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -342,22 +342,22 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <li class="blockList">
 <h4>ObjectLockingIndexedCollection</h4>
 <pre>public&nbsp;ObjectLockingIndexedCollection()</pre>
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>
  and a default concurrency level 64.</div>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.googlecode.cqengine.persistence.Persistence)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.persistence.Persistence)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ObjectLockingIndexedCollection</h4>
-<pre>public&nbsp;ObjectLockingIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence)</pre>
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> which will use the given persistence to create the backing
+<pre>public&nbsp;ObjectLockingIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence)</pre>
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> which will use the given persistence to create the backing
  set, and a default concurrency level 64.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
+<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
                     in which objects added to the indexed collection will be stored, and which will provide
                     access to the underlying storage of indexes.</dd>
 </dl>
@@ -370,7 +370,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <li class="blockList">
 <h4>ObjectLockingIndexedCollection</h4>
 <pre>public&nbsp;ObjectLockingIndexedCollection&#8203;(int&nbsp;concurrencyLevel)</pre>
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a> and the given concurrency
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a> and the given concurrency
  level.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -378,19 +378,19 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 </dl>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.googlecode.cqengine.persistence.Persistence,int)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.persistence.Persistence,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ObjectLockingIndexedCollection</h4>
-<pre>public&nbsp;ObjectLockingIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence,
+<pre>public&nbsp;ObjectLockingIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>,&#8203;A&gt;&nbsp;persistence,
                                       int&nbsp;concurrencyLevel)</pre>
-<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a>, which will use the given persistence to create the backing
+<div class="block">Creates a new <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a>, which will use the given persistence to create the backing
  set, and the given concurrency level.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
+<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
                     in which objects added to the indexed collection will be stored, and which will provide
                     access to the underlying storage of indexes.</dd>
 <dd><code>concurrencyLevel</code> - The estimated number of concurrently updating threads</dd>
@@ -413,7 +413,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
-<pre class="methodSignature">public&nbsp;<a href="index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;&nbsp;iterator()</pre>
+<pre class="methodSignature">public&nbsp;<a href="index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#iterator()" title="class or interface in java.util" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
@@ -422,7 +422,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#iterator()" title="class or interface in java.util" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -441,7 +441,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#add(E)" title="class or interface in java.util" class="externalLink">add</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#add(O)">add</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#add(O)">add</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -458,7 +458,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util" class="externalLink">remove</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#remove(java.lang.Object)">remove</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#remove(java.lang.Object)">remove</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -475,7 +475,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#addAll(java.util.Collection)" title="class or interface in java.util" class="externalLink">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#addAll(java.util.Collection)">addAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#addAll(java.util.Collection)">addAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -492,7 +492,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#removeAll(java.util.Collection)" title="class or interface in java.util" class="externalLink">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#removeAll(java.util.Collection)">removeAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#removeAll(java.util.Collection)">removeAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -509,7 +509,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#retainAll(java.util.Collection)" title="class or interface in java.util" class="externalLink">retainAll</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#retainAll(java.util.Collection)">retainAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#retainAll(java.util.Collection)">retainAll</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -526,7 +526,7 @@ extends <a href="ConcurrentIndexedCollection.html" title="class in com.googlecod
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true#clear()" title="class or interface in java.util" class="externalLink">clear</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ConcurrentIndexedCollection.html#clear()">clear</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="ConcurrentIndexedCollection.html#clear()">clear</a></code>&nbsp;in class&nbsp;<code><a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a>&lt;<a href="ObjectLockingIndexedCollection.html" title="type parameter in ObjectLockingIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.attribute</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.attribute</a></div>
 <h2 title="Class OrderControlAttribute" class="title">Class OrderControlAttribute&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,13 +125,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="support/AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">com.googlecode.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
+<li><a href="support/AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">network.rhizome.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">com.googlecode.cqengine.attribute.SimpleAttribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</li>
+<li><a href="SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">network.rhizome.cqengine.attribute.SimpleAttribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.attribute.OrderControlAttribute&lt;O&gt;</li>
+<li>network.rhizome.cqengine.attribute.OrderControlAttribute&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -144,30 +144,30 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</code></dd>
+<dd><code><a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="OrderMissingFirstAttribute.html" title="class in com.googlecode.cqengine.attribute">OrderMissingFirstAttribute</a></code>, <code><a href="OrderMissingLastAttribute.html" title="class in com.googlecode.cqengine.attribute">OrderMissingLastAttribute</a></code></dd>
+<dd><code><a href="OrderMissingFirstAttribute.html" title="class in network.rhizome.cqengine.attribute">OrderMissingFirstAttribute</a></code>, <code><a href="OrderMissingLastAttribute.html" title="class in network.rhizome.cqengine.attribute">OrderMissingLastAttribute</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">OrderControlAttribute&lt;O&gt;</span>
-extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</pre>
-<div class="block">An attribute which wraps another delegate attribute, and can be used in a <a href="../query/QueryFactory.html#orderBy(com.googlecode.cqengine.query.option.AttributeOrder)"><code>QueryFactory.orderBy(AttributeOrder)</code></a>
+extends <a href="SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</pre>
+<div class="block">An attribute which wraps another delegate attribute, and can be used in a <a href="../query/QueryFactory.html#orderBy(network.rhizome.cqengine.query.option.AttributeOrder)"><code>QueryFactory.orderBy(AttributeOrder)</code></a>
  clause to control the placement in results of objects which have and do not have values for the delegate attribute.
  <p/>
- Essentially this attribute allows results to be sorted based on whether a <a href="../query/simple/Has.html" title="class in com.googlecode.cqengine.query.simple"><code>Has</code></a> query on the delegate attribute
+ Essentially this attribute allows results to be sorted based on whether a <a href="../query/simple/Has.html" title="class in network.rhizome.cqengine.query.simple"><code>Has</code></a> query on the delegate attribute
  returns true or false.
  <p/>
  The default behaviour of CQEngine is as follows:
  <ul>
      <li>
-         When the sort order requested for a given query is <a href="../query/QueryFactory.html#ascending(com.googlecode.cqengine.attribute.Attribute)"><code>QueryFactory.ascending(Attribute)</code></a>, objects without
+         When the sort order requested for a given query is <a href="../query/QueryFactory.html#ascending(network.rhizome.cqengine.attribute.Attribute)"><code>QueryFactory.ascending(Attribute)</code></a>, objects without
          values for the attribute will be returned first, followed by objects which have values for the attribute,
          sorted ascending by their values.
      </li>
      <li>
-         When the sort order requested is <a href="../query/QueryFactory.html#descending(com.googlecode.cqengine.attribute.Attribute)"><code>QueryFactory.descending(Attribute)</code></a>, objects with
+         When the sort order requested is <a href="../query/QueryFactory.html#descending(network.rhizome.cqengine.attribute.Attribute)"><code>QueryFactory.descending(Attribute)</code></a>, objects with
          values for the attribute will be returned first sorted descending by their values, followed by objects
          without values for the attribute.
      </li>
@@ -199,7 +199,7 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#delegateAttribute">delegateAttribute</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -223,7 +223,7 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.attribute.Attribute,java.lang.String)">OrderControlAttribute</a></span>&#8203;(<a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;delegateAttribute,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.attribute.Attribute,java.lang.String)">OrderControlAttribute</a></span>&#8203;(<a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;delegateAttribute,
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;delegateAttributeName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -246,23 +246,23 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;?&gt;</code></td>
+<td class="colFirst"><code><a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDelegateAttribute()">getDelegateAttribute</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.attribute.SimpleAttribute">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.attribute.SimpleAttribute">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.attribute.<a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a></h3>
-<code><a href="SimpleAttribute.html#canEqual(java.lang.Object)">canEqual</a>, <a href="SimpleAttribute.html#getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">getValue</a>, <a href="SimpleAttribute.html#getValues(O,com.googlecode.cqengine.query.option.QueryOptions)">getValues</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.attribute.<a href="SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a></h3>
+<code><a href="SimpleAttribute.html#canEqual(java.lang.Object)">canEqual</a>, <a href="SimpleAttribute.html#getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">getValue</a>, <a href="SimpleAttribute.html#getValues(O,network.rhizome.cqengine.query.option.QueryOptions)">getValues</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.attribute.support.AbstractAttribute">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.attribute.support.AbstractAttribute">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.attribute.support.<a href="support/AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">AbstractAttribute</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.attribute.support.<a href="support/AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">AbstractAttribute</a></h3>
 <code><a href="support/AbstractAttribute.html#calcHashCode()">calcHashCode</a>, <a href="support/AbstractAttribute.html#equals(java.lang.Object)">equals</a>, <a href="support/AbstractAttribute.html#getAttributeName()">getAttributeName</a>, <a href="support/AbstractAttribute.html#getAttributeType()">getAttributeType</a>, <a href="support/AbstractAttribute.html#getObjectType()">getObjectType</a>, <a href="support/AbstractAttribute.html#hashCode()">hashCode</a>, <a href="support/AbstractAttribute.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
@@ -294,7 +294,7 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 <ul class="blockListLast">
 <li class="blockList">
 <h4>delegateAttribute</h4>
-<pre>protected final&nbsp;<a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt; delegateAttribute</pre>
+<pre>protected final&nbsp;<a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt; delegateAttribute</pre>
 </li>
 </ul>
 </li>
@@ -307,13 +307,13 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.attribute.Attribute,java.lang.String)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.attribute.Attribute,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>OrderControlAttribute</h4>
-<pre>protected&nbsp;OrderControlAttribute&#8203;(<a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;delegateAttribute,
+<pre>protected&nbsp;OrderControlAttribute&#8203;(<a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;delegateAttribute,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;delegateAttributeName)</pre>
 </li>
 </ul>
@@ -333,7 +333,7 @@ extends <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.a
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getDelegateAttribute</h4>
-<pre class="methodSignature">public&nbsp;<a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;?&gt;&nbsp;getDelegateAttribute()</pre>
+<pre class="methodSignature">public&nbsp;<a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="OrderControlAttribute.html" title="type parameter in OrderControlAttribute">O</a>,&#8203;?&gt;&nbsp;getDelegateAttribute()</pre>
 </li>
 </ul>
 </li>

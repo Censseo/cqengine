@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.codegen</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.codegen</a></div>
 <h2 title="Class AttributeBytecodeGenerator" class="title">Class AttributeBytecodeGenerator</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.codegen.AttributeBytecodeGenerator</li>
+<li>network.rhizome.cqengine.codegen.AttributeBytecodeGenerator</li>
 </ul>
 </li>
 </ul>
@@ -140,7 +140,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p/>
  Generated attributes are loaded into the ClassLoader of the given POJO classes.
  <p/>
- See <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen"><code>MemberFilter</code></a> and <a href="MemberFilters.html" title="class in com.googlecode.cqengine.codegen"><code>MemberFilters</code></a> for some common filters which can be used with this class
+ See <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen"><code>MemberFilter</code></a> and <a href="MemberFilters.html" title="class in network.rhizome.cqengine.codegen"><code>MemberFilters</code></a> for some common filters which can be used with this class
  to determine the subset of fields or methods in a POJO for which attributes should be generated.</div>
 </li>
 </ul>
@@ -184,25 +184,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAttributes(java.lang.Class)">createAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</code></th>
 <td class="colLast">
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the fields in the given POJO class.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter)">createAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter)">createAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+                <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
 <td class="colLast">
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the members (fields or methods)
  in the given POJO class.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter,java.util.function.Function)">createAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter,
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter,java.util.function.Function)">createAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+                <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Member.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Member</a>,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;attributeNameProducer)</code></th>
 <td class="colLast">
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the members (fields or methods)
@@ -210,61 +210,61 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueAttributeForField(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateMultiValueAttributeForField</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given field in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given field in a POJO.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueAttributeForGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateMultiValueAttributeForGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given getter method in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given getter method in a POJO.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueAttributeForParameterizedGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String,java.lang.String)">generateMultiValueAttributeForParameterizedGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given <i>parameterized</i> getter
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given <i>parameterized</i> getter
  method in a POJO.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueNullableAttributeForField(java.lang.Class,java.lang.Class,java.lang.String,boolean,java.lang.String)">generateMultiValueNullableAttributeForField</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                            boolean&nbsp;componentValuesNullable,
                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given field in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given field in a POJO.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueNullableAttributeForGetter(java.lang.Class,java.lang.Class,java.lang.String,boolean,java.lang.String)">generateMultiValueNullableAttributeForGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                             boolean&nbsp;componentValuesNullable,
                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given getter method in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given getter method in a POJO.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateMultiValueNullableAttributeForParameterizedGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String,boolean,java.lang.String)">generateMultiValueNullableAttributeForParameterizedGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
@@ -272,72 +272,72 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
                                                          boolean&nbsp;componentValuesNullable,
                                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given <i>parameterized</i>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given <i>parameterized</i>
  getter method in a POJO.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleAttributeForField(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateSimpleAttributeForField</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given field in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given field in a POJO.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleAttributeForGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateSimpleAttributeForGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given getter method in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given getter method in a POJO.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleAttributeForParameterizedGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String,java.lang.String)">generateSimpleAttributeForParameterizedGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given <i>parameterized</i> getter
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given <i>parameterized</i> getter
  method in a POJO.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleNullableAttributeForField(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateSimpleNullableAttributeForField</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given field in a POJO.</div>
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given field in a POJO.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleNullableAttributeForGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String)">generateSimpleNullableAttributeForGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given getter method in a
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given getter method in a
  POJO.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
+<td class="colFirst"><code>static &lt;O,&#8203;A&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSimpleNullableAttributeForParameterizedGetter(java.lang.Class,java.lang.Class,java.lang.String,java.lang.String,java.lang.String)">generateSimpleNullableAttributeForParameterizedGetter</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</code></th>
 <td class="colLast">
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given <i>parameterized</i>
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given <i>parameterized</i>
  getter method in a POJO.</div>
 </td>
 </tr>
@@ -390,10 +390,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>createAttributes</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</pre>
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the fields in the given POJO class.
  <p>
- This is equivalent to calling <a href="#createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter)"><code>createAttributes(Class, MemberFilter)</code></a> with
+ This is equivalent to calling <a href="#createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter)"><code>createAttributes(Class, MemberFilter)</code></a> with
  <a href="MemberFilters.html#FIELDS_ONLY"><code>MemberFilters.FIELDS_ONLY</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -404,18 +404,18 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter)">
+<a id="createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createAttributes</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                                                                                    <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+                                                                                    <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the members (fields or methods)
  in the given POJO class.
  <p>
- This is equivalent to calling <a href="#createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter,java.util.function.Function)"><code>createAttributes(Class, MemberFilter, Function)</code></a> with
+ This is equivalent to calling <a href="#createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter,java.util.function.Function)"><code>createAttributes(Class, MemberFilter, Function)</code></a> with
  <a href="MemberFilters.html#FIELDS_ONLY"><code>MemberFilters.FIELDS_ONLY</code></a> and <a href="AttributeNameProducers.html#USE_MEMBER_NAMES_VERBATIM"><code>AttributeNameProducers.USE_MEMBER_NAMES_VERBATIM</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -428,14 +428,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="createAttributes(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter,java.util.function.Function)">
+<a id="createAttributes(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter,java.util.function.Function)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createAttributes</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                                                                                    <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter,
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;createAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+                                                                                    <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter,
                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Function</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Member.html?is-external=true" title="class or interface in java.lang.reflect" class="externalLink">Member</a>,&#8203;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;attributeNameProducer)</pre>
 <div class="block">Auto-generates and instantiates a set of attributes which read values from the members (fields or methods)
  in the given POJO class.
@@ -465,11 +465,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleAttributeForField</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given field in a POJO.
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given field in a POJO.
  <p>
  The type of value returned by the attribute should match the type of the field. However reading primitive values
  is also supported. In that case, the attribute will box the primitive value to its wrapper type automatically,
@@ -494,11 +494,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleAttributeForGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given getter method in a POJO.
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given getter method in a POJO.
  The getter method should not take any arguments.
  <p>
  The type of value returned by the attribute should match the return type of the getter. However reading from
@@ -524,12 +524,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleAttributeForParameterizedGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given <i>parameterized</i> getter
+<div class="block">Generates a <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which reads a non-null value from the given <i>parameterized</i> getter
  method in a POJO. The getter method should take a single string argument.
  <p>
  The type of value returned by the attribute should match the return type of the getter. However reading from
@@ -556,11 +556,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleNullableAttributeForField</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                                                                                                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given field in a POJO.
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given field in a POJO.
  <p>
  The type of value returned by the attribute should match the type of the field. However reading primitive values
  is also supported. In that case, the attribute will box the primitive value to its wrapper type automatically,
@@ -585,11 +585,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleNullableAttributeForGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given getter method in a
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given getter method in a
  POJO. The getter method should not take any arguments.
  <p>
  The type of value returned by the attribute should match the return type of the getter. However reading from
@@ -615,12 +615,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateSimpleNullableAttributeForParameterizedGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateSimpleNullableAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                                                                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given <i>parameterized</i>
+<div class="block">Generates a <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a> which reads a possibly-null value from the given <i>parameterized</i>
  getter method in a POJO. The getter method should take a single string argument.
  <p>
  The type of value returned by the attribute should match the return type of the getter. However reading from
@@ -647,11 +647,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateMultiValueAttributeForField</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given field in a POJO.
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given field in a POJO.
  <p>
  The type of values returned by the attribute should match the type of values stored in the field. The field may
  be a List or an array, of objects of the same type as the attribute. However reading from primitive arrays is
@@ -677,11 +677,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateMultiValueAttributeForGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given getter method in a POJO.
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given getter method in a POJO.
  The getter method should not take any arguments.
  <p>
  The type of values returned by the attribute should match the type of values returned by the getter. The getter
@@ -708,12 +708,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateMultiValueAttributeForParameterizedGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given <i>parameterized</i> getter
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads non-null values from the given <i>parameterized</i> getter
  method in a POJO. The getter method should take a single string argument.
  <p>
  The type of values returned by the attribute should match the type of values returned by the getter. The getter
@@ -741,12 +741,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateMultiValueNullableAttributeForField</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForField&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fieldName,
                                                                                                                               boolean&nbsp;componentValuesNullable,
                                                                                                                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given field in a POJO.
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given field in a POJO.
  <p>
  The type of values returned by the attribute should match the type of values stored in the field. The field may
  be a List or an array, of objects of the same type as the attribute. However reading from primitive arrays is
@@ -772,12 +772,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>generateMultiValueNullableAttributeForGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                                boolean&nbsp;componentValuesNullable,
                                                                                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given getter method in a POJO.
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given getter method in a POJO.
  The getter method should not take any arguments.
  <p>
  The type of values returned by the attribute should match the type of values returned by the getter. The getter
@@ -804,13 +804,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>generateMultiValueNullableAttributeForParameterizedGetter</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute">MultiValueNullableAttribute</a>&lt;O,&#8203;A&gt;&gt;&nbsp;generateMultiValueNullableAttributeForParameterizedGetter&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
                                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;A&gt;&nbsp;attributeValueType,
                                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterMethodName,
                                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getterParameter,
                                                                                                                                             boolean&nbsp;componentValuesNullable,
                                                                                                                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName)</pre>
-<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given <i>parameterized</i>
+<div class="block">Generates a <a href="../attribute/MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a> which reads possibly-null values from the given <i>parameterized</i>
  getter method in a POJO. The getter method should take a single string argument.
  <p>
  The type of values returned by the attribute should match the type of values returned by the getter. The getter

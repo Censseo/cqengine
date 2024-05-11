@@ -117,18 +117,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.support</a></div>
-<h2 title="Class AbstractMapBasedAttributeIndex" class="title">Class AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;A,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;O&gt;&gt;&gt;</h2>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.support</a></div>
+<h2 title="Class AbstractMapBasedAttributeIndex" class="title">Class AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;A,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;O&gt;&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqengine.index.support">com.googlecode.cqengine.index.support.AbstractAttributeIndex</a>&lt;A,&#8203;O&gt;</li>
+<li><a href="AbstractAttributeIndex.html" title="class in network.rhizome.cqengine.index.support">network.rhizome.cqengine.index.support.AbstractAttributeIndex</a>&lt;A,&#8203;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.support.AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType&gt;</li>
+<li>network.rhizome.cqengine.index.support.AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,15 +139,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../compound/CompoundIndex.html" title="class in com.googlecode.cqengine.index.compound">CompoundIndex</a></code>, <code><a href="../hash/HashIndex.html" title="class in com.googlecode.cqengine.index.hash">HashIndex</a></code>, <code><a href="../navigable/NavigableIndex.html" title="class in com.googlecode.cqengine.index.navigable">NavigableIndex</a></code></dd>
+<dd><code><a href="../compound/CompoundIndex.html" title="class in network.rhizome.cqengine.index.compound">CompoundIndex</a></code>, <code><a href="../hash/HashIndex.html" title="class in network.rhizome.cqengine.index.hash">HashIndex</a></code>, <code><a href="../navigable/NavigableIndex.html" title="class in network.rhizome.cqengine.index.navigable">NavigableIndex</a></code></dd>
 </dl>
 <hr>
-<pre>public abstract class <span class="typeNameLabel">AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;A,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;O&gt;&gt;&gt;</span>
-extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqengine.index.support">AbstractAttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
+<pre>public abstract class <span class="typeNameLabel">AbstractMapBasedAttributeIndex&lt;A,&#8203;O,&#8203;MapType extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;A,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;O&gt;&gt;&gt;</span>
+extends <a href="AbstractAttributeIndex.html" title="class in network.rhizome.cqengine.index.support">AbstractAttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
 <div class="block">An abstract implementation of an index backed by a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink"><code>ConcurrentMap</code></a>, where the exact map
  implementation is provided by a factory supplied to the constructor.
  <p/>
@@ -186,21 +186,21 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indexMapFactory">indexMapFactory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>protected <a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueSetFactory">valueSetFactory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.googlecode.cqengine.index.support.AbstractAttributeIndex">
+<li class="blockList"><a id="fields.inherited.from.class.network.rhizome.cqengine.index.support.AbstractAttributeIndex">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.googlecode.cqengine.index.support.<a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqengine.index.support">AbstractAttributeIndex</a></h3>
+<h3>Fields inherited from class&nbsp;network.rhizome.cqengine.index.support.<a href="AbstractAttributeIndex.html" title="class in network.rhizome.cqengine.index.support">AbstractAttributeIndex</a></h3>
 <code><a href="AbstractAttributeIndex.html#attribute">attribute</a>, <a href="AbstractAttributeIndex.html#supportedQueries">supportedQueries</a></code></li>
 </ul>
 </li>
@@ -222,10 +222,10 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.index.support.Factory,com.googlecode.cqengine.index.support.Factory,com.googlecode.cqengine.attribute.Attribute,java.util.Set)">AbstractMapBasedAttributeIndex</a></span>&#8203;(<a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;&nbsp;indexMapFactory,
-                              <a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;valueSetFactory,
-                              <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;attribute,
-                              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&gt;&gt;&nbsp;supportedQueries)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.index.support.Factory,network.rhizome.cqengine.index.support.Factory,network.rhizome.cqengine.attribute.Attribute,java.util.Set)">AbstractMapBasedAttributeIndex</a></span>&#8203;(<a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;&nbsp;indexMapFactory,
+                              <a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;valueSetFactory,
+                              <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;attribute,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&gt;&gt;&nbsp;supportedQueries)</code></th>
 <td class="colLast">
 <div class="block">Protected constructor, called by subclasses.</div>
 </td>
@@ -250,8 +250,8 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
@@ -259,7 +259,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
@@ -267,7 +267,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">This is a no-op for this type of index.</div>
 </td>
@@ -279,16 +279,16 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected <a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeys()">getDistinctKeys</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>protected <a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>protected <a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues()">getKeysAndValues</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -297,18 +297,18 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQuantizedValue(A)">getQuantizedValue</a></span>&#8203;(<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&nbsp;attributeValue)</code></th>
 <td class="colLast">
 <div class="block">A no-op method which may be overridden by subclasses which use a
- <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+ <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectStore,
-    <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectStore,
+    <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 </td>
@@ -317,30 +317,30 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isQuantized()">isQuantized</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>protected static &lt;T&gt;&nbsp;<a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>protected static &lt;T&gt;&nbsp;<a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;T&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapNonCloseable(java.lang.Iterable)">wrapNonCloseable</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;&nbsp;iterable)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.index.support.AbstractAttributeIndex">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.index.support.AbstractAttributeIndex">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.index.support.<a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqengine.index.support">AbstractAttributeIndex</a></h3>
-<code><a href="AbstractAttributeIndex.html#equals(java.lang.Object)">equals</a>, <a href="AbstractAttributeIndex.html#getAttribute()">getAttribute</a>, <a href="AbstractAttributeIndex.html#hashCode()">hashCode</a>, <a href="AbstractAttributeIndex.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.index.support.<a href="AbstractAttributeIndex.html" title="class in network.rhizome.cqengine.index.support">AbstractAttributeIndex</a></h3>
+<code><a href="AbstractAttributeIndex.html#equals(java.lang.Object)">equals</a>, <a href="AbstractAttributeIndex.html#getAttribute()">getAttribute</a>, <a href="AbstractAttributeIndex.html#hashCode()">hashCode</a>, <a href="AbstractAttributeIndex.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -350,11 +350,11 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.index.Index">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.index.Index">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.index.<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a></h3>
-<code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a>, <a href="../Index.html#isMutable()">isMutable</a>, <a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code></li>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.index.<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a></h3>
+<code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a>, <a href="../Index.html#isMutable()">isMutable</a>, <a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code></li>
 </ul>
 </li>
 </ul>
@@ -378,7 +378,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockList">
 <li class="blockList">
 <h4>indexMapFactory</h4>
-<pre>protected final&nbsp;<a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&gt; indexMapFactory</pre>
+<pre>protected final&nbsp;<a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&gt; indexMapFactory</pre>
 </li>
 </ul>
 <a id="valueSetFactory">
@@ -387,7 +387,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockList">
 <li class="blockList">
 <h4>valueSetFactory</h4>
-<pre>protected final&nbsp;<a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt; valueSetFactory</pre>
+<pre>protected final&nbsp;<a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt; valueSetFactory</pre>
 </li>
 </ul>
 <a id="indexMap">
@@ -396,7 +396,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockListLast">
 <li class="blockList">
 <h4>indexMap</h4>
-<pre>protected final&nbsp;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt; indexMap</pre>
+<pre>protected final&nbsp;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent" class="externalLink">ConcurrentMap</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt; indexMap</pre>
 </li>
 </ul>
 </li>
@@ -409,23 +409,23 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.index.support.Factory,com.googlecode.cqengine.index.support.Factory,com.googlecode.cqengine.attribute.Attribute,java.util.Set)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.index.support.Factory,network.rhizome.cqengine.index.support.Factory,network.rhizome.cqengine.attribute.Attribute,java.util.Set)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractMapBasedAttributeIndex</h4>
-<pre>protected&nbsp;AbstractMapBasedAttributeIndex&#8203;(<a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;&nbsp;indexMapFactory,
-                                         <a href="Factory.html" title="interface in com.googlecode.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;valueSetFactory,
-                                         <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;attribute,
-                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&gt;&gt;&nbsp;supportedQueries)</pre>
+<pre>protected&nbsp;AbstractMapBasedAttributeIndex&#8203;(<a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">MapType</a>&gt;&nbsp;indexMapFactory,
+                                         <a href="Factory.html" title="interface in network.rhizome.cqengine.index.support">Factory</a>&lt;<a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;valueSetFactory,
+                                         <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;attribute,
+                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&gt;&gt;&nbsp;supportedQueries)</pre>
 <div class="block">Protected constructor, called by subclasses.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>indexMapFactory</code> - A factory used to create the main map-based data structure used by the index</dd>
 <dd><code>valueSetFactory</code> - A factory used to create sets to store values in the index</dd>
 <dd><code>attribute</code> - The attribute on which the index will be built</dd>
-<dd><code>supportedQueries</code> - The set of <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query"><code>Query</code></a> types which the subclass implementation supports</dd>
+<dd><code>supportedQueries</code> - The set of <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query"><code>Query</code></a> types which the subclass implementation supports</dd>
 </dl>
 </li>
 </ul>
@@ -439,14 +439,14 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
@@ -456,14 +456,14 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </dl>
 </li>
 </ul>
-<a id="removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectSet,
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
@@ -473,14 +473,14 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </dl>
 </li>
 </ul>
-<a id="init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectStore,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&nbsp;objectStore,
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -489,13 +489,13 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </dl>
 </li>
 </ul>
-<a id="destroy(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="destroy(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>destroy</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">This is a no-op for this type of index.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -503,13 +503,13 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 </dl>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
@@ -524,7 +524,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistinctKeys</h4>
-<pre class="methodSignature">protected&nbsp;<a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;getDistinctKeys()</pre>
+<pre class="methodSignature">protected&nbsp;<a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&nbsp;getDistinctKeys()</pre>
 </li>
 </ul>
 <a id="getKeysAndValues()">
@@ -533,7 +533,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">protected&nbsp;<a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
+<pre class="methodSignature">protected&nbsp;<a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>,&#8203;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
 </li>
 </ul>
 <a id="wrapNonCloseable(java.lang.Iterable)">
@@ -542,7 +542,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <ul class="blockList">
 <li class="blockList">
 <h4>wrapNonCloseable</h4>
-<pre class="methodSignature">protected static&nbsp;&lt;T&gt;&nbsp;<a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;wrapNonCloseable&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;&nbsp;iterable)</pre>
+<pre class="methodSignature">protected static&nbsp;&lt;T&gt;&nbsp;<a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;wrapNonCloseable&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;T&gt;&nbsp;iterable)</pre>
 </li>
 </ul>
 <a id="getCountForKey(java.lang.Object)">
@@ -556,22 +556,22 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountForKey&#8203;(<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&nbsp;key)</pre>
 </li>
 </ul>
-<a id="getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCountOfDistinctKeys</h4>
-<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountOfDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountOfDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getStatisticsForDistinctKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;<a href="CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 <a id="isQuantized()">
@@ -581,9 +581,9 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <li class="blockList">
 <h4>isQuantized</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isQuantized()</pre>
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.
  A method which should be overridden to return true, by subclasses which use a
- <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>. This implementation returns false by default.</div>
+ <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>. This implementation returns false by default.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the index is quantized, false if not.</dd>
@@ -600,7 +600,7 @@ extends <a href="AbstractAttributeIndex.html" title="class in com.googlecode.cqe
 <h4>getQuantizedValue</h4>
 <pre class="methodSignature">protected&nbsp;<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&nbsp;getQuantizedValue&#8203;(<a href="AbstractMapBasedAttributeIndex.html" title="type parameter in AbstractMapBasedAttributeIndex">A</a>&nbsp;attributeValue)</pre>
 <div class="block">A no-op method which may be overridden by subclasses which use a
- <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.
+ <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.
  <p/>
  <b>This default implementation simply returns the given attribute value unmodified.</b></div>
 <dl>

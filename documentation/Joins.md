@@ -9,12 +9,12 @@ Given a collection of Cars, and a collections of Garages, find cars which are co
 Source code of this example [here](../code/src/test/java/com/googlecode/cqengine/examples/join/SqlExists.java).
 
 ```java
-package com.googlecode.cqengine.examples.join;
-import com.googlecode.cqengine.ConcurrentIndexedCollection;
-import com.googlecode.cqengine.IndexedCollection;
-import com.googlecode.cqengine.examples.introduction.Car;
-import com.googlecode.cqengine.query.Query;
-import static com.googlecode.cqengine.query.QueryFactory.*;
+package network.rhizome.cqengine.examples.join;
+import network.rhizome.cqengine.ConcurrentIndexedCollection;
+import network.rhizome.cqengine.IndexedCollection;
+import network.rhizome.cqengine.examples.introduction.Car;
+import network.rhizome.cqengine.query.Query;
+import static network.rhizome.cqengine.query.QueryFactory.*;
 import static java.util.Arrays.asList;
 
 public class SqlExists {
@@ -62,12 +62,12 @@ Given a collection of Cars, and a collections of Garages, find cars which are co
 Source code of this example [here](../code/src/test/java/com/googlecode/cqengine/examples/join/SqlExistsBasedJoin.java).
 
 ```java
-package com.googlecode.cqengine.examples.join;
-import com.googlecode.cqengine.ConcurrentIndexedCollection;
-import com.googlecode.cqengine.IndexedCollection;
-import com.googlecode.cqengine.examples.introduction.Car;
-import com.googlecode.cqengine.query.Query;
-import static com.googlecode.cqengine.query.QueryFactory.*;
+package network.rhizome.cqengine.examples.join;
+import network.rhizome.cqengine.ConcurrentIndexedCollection;
+import network.rhizome.cqengine.IndexedCollection;
+import network.rhizome.cqengine.examples.introduction.Car;
+import network.rhizome.cqengine.query.Query;
+import static network.rhizome.cqengine.query.QueryFactory.*;
 import static java.util.Arrays.asList;
 
 public class SqlExistsBasedJoin {

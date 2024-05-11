@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset</a></div>
 <h2 title="Class ResultSet" class="title">Class ResultSet&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.ResultSet&lt;O&gt;</li>
+<li>network.rhizome.cqengine.resultset.ResultSet&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -138,7 +138,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="closeable/CloseableResultSet.html" title="class in com.googlecode.cqengine.resultset.closeable">CloseableResultSet</a></code>, <code><a href="filter/DeduplicatingResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">DeduplicatingResultSet</a></code>, <code><a href="filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a></code>, <code><a href="../persistence/support/ObjectStoreResultSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectStoreResultSet</a></code>, <code><a href="connective/ResultSetDifference.html" title="class in com.googlecode.cqengine.resultset.connective">ResultSetDifference</a></code>, <code><a href="connective/ResultSetIntersection.html" title="class in com.googlecode.cqengine.resultset.connective">ResultSetIntersection</a></code>, <code><a href="connective/ResultSetUnion.html" title="class in com.googlecode.cqengine.resultset.connective">ResultSetUnion</a></code>, <code><a href="connective/ResultSetUnionAll.html" title="class in com.googlecode.cqengine.resultset.connective">ResultSetUnionAll</a></code>, <code><a href="stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredResultSet</a></code>, <code><a href="common/WrappedResultSet.html" title="class in com.googlecode.cqengine.resultset.common">WrappedResultSet</a></code></dd>
+<dd><code><a href="closeable/CloseableResultSet.html" title="class in network.rhizome.cqengine.resultset.closeable">CloseableResultSet</a></code>, <code><a href="filter/DeduplicatingResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">DeduplicatingResultSet</a></code>, <code><a href="filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a></code>, <code><a href="../persistence/support/ObjectStoreResultSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectStoreResultSet</a></code>, <code><a href="connective/ResultSetDifference.html" title="class in network.rhizome.cqengine.resultset.connective">ResultSetDifference</a></code>, <code><a href="connective/ResultSetIntersection.html" title="class in network.rhizome.cqengine.resultset.connective">ResultSetIntersection</a></code>, <code><a href="connective/ResultSetUnion.html" title="class in network.rhizome.cqengine.resultset.connective">ResultSetUnion</a></code>, <code><a href="connective/ResultSetUnionAll.html" title="class in network.rhizome.cqengine.resultset.connective">ResultSetUnionAll</a></code>, <code><a href="stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredResultSet</a></code>, <code><a href="common/WrappedResultSet.html" title="class in network.rhizome.cqengine.resultset.common">WrappedResultSet</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">ResultSet&lt;O&gt;</span>
@@ -200,7 +200,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <td class="colFirst"><code>abstract boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(O)">contains</a></span>&#8203;(<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&nbsp;object)</code></th>
 <td class="colLast">
-<div class="block">Returns true if this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.</div>
+<div class="block">Returns true if this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -211,14 +211,14 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>abstract <a href="../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></td>
+<td class="colFirst"><code>abstract <a href="../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQuery()">getQuery</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the query for which this ResultSet provides results.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>abstract <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a></code></td>
+<td class="colFirst"><code>abstract <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQueryOptions()">getQueryOptions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the query options associated with the query.</div>
@@ -250,7 +250,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -272,21 +272,21 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Spliterator</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spliterator()">spliterator</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Creates a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stream()">stream</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="ResultSet.html" title="type parameter in ResultSet">O</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uniqueResult()">uniqueResult</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the first object returned by the iterator of this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
+<div class="block">Returns the first object returned by the iterator of this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
  the iterator does not provide exactly one object.</div>
 </td>
 </tr>
@@ -347,12 +347,12 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <li class="blockList">
 <h4>iterator</h4>
 <pre class="methodSignature">public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;&nbsp;iterator()</pre>
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator()" title="class or interface in java.lang" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
+<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
 </dl>
 </li>
 </ul>
@@ -365,7 +365,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <li class="blockList">
 <h4>contains</h4>
 <pre class="methodSignature">public abstract&nbsp;boolean&nbsp;contains&#8203;(<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&nbsp;object)</pre>
-<div class="block">Returns true if this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.
+<div class="block">Returns true if this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.
  <p/>
  Note that the cost of calling this method will most likely be cheaper than iterating all results to check if an
  object is contained. If indexes are available to support the query, this method will query indexes to check if
@@ -375,9 +375,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
  than this method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - The object to check for containment in this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd><code>object</code> - The object to check for containment in this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not</dd>
+<dd>True if this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not</dd>
 </dl>
 </li>
 </ul>
@@ -403,9 +403,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
  than querying attributes, which is usually the case.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - The object to check for logical containment in this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd><code>object</code> - The object to check for logical containment in this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> logically contains the given object, false if it does not</dd>
+<dd>True if this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> logically contains the given object, false if it does not</dd>
 </dl>
 </li>
 </ul>
@@ -415,7 +415,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <ul class="blockList">
 <li class="blockList">
 <h4>getQuery</h4>
-<pre class="methodSignature">public abstract&nbsp;<a href="../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;&nbsp;getQuery()</pre>
+<pre class="methodSignature">public abstract&nbsp;<a href="../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;&nbsp;getQuery()</pre>
 <div class="block">Returns the query for which this ResultSet provides results.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -429,7 +429,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <ul class="blockList">
 <li class="blockList">
 <h4>getQueryOptions</h4>
-<pre class="methodSignature">public abstract&nbsp;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;getQueryOptions()</pre>
+<pre class="methodSignature">public abstract&nbsp;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;getQueryOptions()</pre>
 <div class="block">Returns the query options associated with the query.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -444,14 +444,14 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <li class="blockList">
 <h4>uniqueResult</h4>
 <pre class="methodSignature">public&nbsp;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&nbsp;uniqueResult()</pre>
-<div class="block">Returns the first object returned by the iterator of this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
+<div class="block">Returns the first object returned by the iterator of this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
  the iterator does not provide exactly one object.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The first object returned by the iterator of this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd>The first object returned by the iterator of this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="common/NoSuchObjectException.html" title="class in com.googlecode.cqengine.resultset.common">NoSuchObjectException</a></code> - If the iterator indicates no object is available</dd>
-<dd><code><a href="common/NonUniqueObjectException.html" title="class in com.googlecode.cqengine.resultset.common">NonUniqueObjectException</a></code> - If the iterator indicates more than one object is available</dd>
+<dd><code><a href="common/NoSuchObjectException.html" title="class in network.rhizome.cqengine.resultset.common">NoSuchObjectException</a></code> - If the iterator indicates no object is available</dd>
+<dd><code><a href="common/NonUniqueObjectException.html" title="class in network.rhizome.cqengine.resultset.common">NonUniqueObjectException</a></code> - If the iterator indicates more than one object is available</dd>
 </dl>
 </li>
 </ul>
@@ -522,7 +522,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
  Note that the cost of calling this method depends on the query for which it was constructed.
  <p/>
  For simple queries where a single query is supplied and a matching index exists, or where several such simple
- queries are supplied and are connected using a simple <a href="../query/logical/Or.html" title="class in com.googlecode.cqengine.query.logical"><code>Or</code></a>
+ queries are supplied and are connected using a simple <a href="../query/logical/Or.html" title="class in network.rhizome.cqengine.query.logical"><code>Or</code></a>
  query, calculating the size via this method will be cheaper than iterating through the ResultSet and counting
  the number of objects individually.
  <p/>
@@ -599,12 +599,12 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <li class="blockList">
 <h4>spliterator</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Spliterator</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;&nbsp;spliterator()</pre>
-<div class="block">Creates a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Creates a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#spliterator()" title="class or interface in java.lang" class="externalLink">spliterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Spliterator</code></a> over objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
 </dl>
 </li>
 </ul>
@@ -615,14 +615,14 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.
 <li class="blockList">
 <h4>stream</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="ResultSet.html" title="type parameter in ResultSet">O</a>&gt;&nbsp;stream()</pre>
-<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.
  <p>
  The stream is configured such that if <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html?is-external=true#close()" title="class or interface in java.util.stream" class="externalLink"><code>BaseStream.close()</code></a> is called, <a href="#close()"><code>close()</code></a> will also be
- called automatically to close the <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>.
+ called automatically to close the <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>.
  </p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink"><code>Stream</code></a> of objects matching the query for which this <a href="ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
 </dl>
 </li>
 </ul>

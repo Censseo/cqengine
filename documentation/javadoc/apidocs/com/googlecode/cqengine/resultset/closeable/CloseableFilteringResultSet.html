@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset.closeable</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset.closeable</a></div>
 <h2 title="Class CloseableFilteringResultSet" class="title">Class CloseableFilteringResultSet&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,13 +125,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">com.googlecode.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
+<li><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">network.rhizome.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">com.googlecode.cqengine.resultset.filter.FilteringResultSet</a>&lt;O&gt;</li>
+<li><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">network.rhizome.cqengine.resultset.filter.FilteringResultSet</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.closeable.CloseableFilteringResultSet&lt;O&gt;</li>
+<li>network.rhizome.cqengine.resultset.closeable.CloseableFilteringResultSet&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -148,7 +148,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">CloseableFilteringResultSet&lt;O&gt;</span>
-extends <a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;O&gt;
+extends <a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;O&gt;
 implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
 <div class="block">A FilteringResultSet which throws exceptions if an attempt to use it is made after its <a href="#close()"><code>close()</code></a> method has
  been called.</div>
@@ -172,9 +172,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.resultset.ResultSet,com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">CloseableFilteringResultSet</a></span>&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;wrappedResultSet,
-                           <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;query,
-                           <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.resultset.ResultSet,network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">CloseableFilteringResultSet</a></span>&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;wrappedResultSet,
+                           <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;query,
+                           <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -235,7 +235,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -249,23 +249,23 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <td class="colFirst"><code><a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uniqueResult()">uniqueResult</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the first object returned by the iterator of this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
+<div class="block">Returns the first object returned by the iterator of this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
  the iterator does not provide exactly one object.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.resultset.filter.FilteringResultSet">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.resultset.filter.FilteringResultSet">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.resultset.filter.<a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a></h3>
-<code><a href="../filter/FilteringResultSet.html#contains(O)">contains</a>, <a href="../filter/FilteringResultSet.html#getQuery()">getQuery</a>, <a href="../filter/FilteringResultSet.html#getQueryOptions()">getQueryOptions</a>, <a href="../filter/FilteringResultSet.html#isValid(O,com.googlecode.cqengine.query.option.QueryOptions)">isValid</a>, <a href="../filter/FilteringResultSet.html#matches(O)">matches</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.resultset.filter.<a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a></h3>
+<code><a href="../filter/FilteringResultSet.html#contains(O)">contains</a>, <a href="../filter/FilteringResultSet.html#getQuery()">getQuery</a>, <a href="../filter/FilteringResultSet.html#getQueryOptions()">getQueryOptions</a>, <a href="../filter/FilteringResultSet.html#isValid(O,network.rhizome.cqengine.query.option.QueryOptions)">isValid</a>, <a href="../filter/FilteringResultSet.html#matches(O)">matches</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.resultset.ResultSet">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.resultset.ResultSet">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.resultset.<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.resultset.<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a></h3>
 <code><a href="../ResultSet.html#spliterator()">spliterator</a>, <a href="../ResultSet.html#stream()">stream</a></code></li>
 </ul>
 <ul class="blockList">
@@ -298,15 +298,15 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.resultset.ResultSet,com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.resultset.ResultSet,network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CloseableFilteringResultSet</h4>
-<pre>public&nbsp;CloseableFilteringResultSet&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;wrappedResultSet,
-                                   <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;query,
-                                   <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre>public&nbsp;CloseableFilteringResultSet&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;wrappedResultSet,
+                                   <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;query,
+                                   <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>
@@ -327,14 +327,14 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <h4>iterator</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;&nbsp;iterator()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#iterator()">ResultSet</a></code></span></div>
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator()" title="class or interface in java.lang" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../filter/FilteringResultSet.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../filter/FilteringResultSet.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
+<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
 </dl>
 </li>
 </ul>
@@ -351,7 +351,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  Note that the cost of calling this method depends on the query for which it was constructed.
  <p/>
  For simple queries where a single query is supplied and a matching index exists, or where several such simple
- queries are supplied and are connected using a simple <a href="../../query/logical/Or.html" title="class in com.googlecode.cqengine.query.logical"><code>Or</code></a>
+ queries are supplied and are connected using a simple <a href="../../query/logical/Or.html" title="class in network.rhizome.cqengine.query.logical"><code>Or</code></a>
  query, calculating the size via this method will be cheaper than iterating through the ResultSet and counting
  the number of objects individually.
  <p/>
@@ -360,7 +360,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  counting the number of objects individually.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../filter/FilteringResultSet.html#size()">size</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../filter/FilteringResultSet.html#size()">size</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The number of objects which would be returned by this <code>ResultSet</code> if iterated</dd>
 </dl>
@@ -386,7 +386,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  both indexes, retrieval cost allows the query engine to <i>prefer</i> the hash index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../filter/FilteringResultSet.html#getRetrievalCost()">getRetrievalCost</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../filter/FilteringResultSet.html#getRetrievalCost()">getRetrievalCost</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An estimate of the cost of looking up a particular query in the index</dd>
 </dl>
@@ -421,7 +421,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  versus filtering strategies.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../filter/FilteringResultSet.html#getMergeCost()">getMergeCost</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../filter/FilteringResultSet.html#getMergeCost()">getMergeCost</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An estimate of the cost of merging (or otherwise processing) objects matching a query</dd>
 </dl>
@@ -435,13 +435,13 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <h4>uniqueResult</h4>
 <pre class="methodSignature">public&nbsp;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&nbsp;uniqueResult()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#uniqueResult()">ResultSet</a></code></span></div>
-<div class="block">Returns the first object returned by the iterator of this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
+<div class="block">Returns the first object returned by the iterator of this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>, and throws an exception if
  the iterator does not provide exactly one object.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../ResultSet.html#uniqueResult()">uniqueResult</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#uniqueResult()">uniqueResult</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The first object returned by the iterator of this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd>The first object returned by the iterator of this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -460,7 +460,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../ResultSet.html#isEmpty()">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#isEmpty()">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if this <code>ResultSet</code> if iterated would not return any objects; false if the <code>ResultSet</code>
  would return objects</dd>
@@ -482,7 +482,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
  returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../ResultSet.html#isNotEmpty()">isNotEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#isNotEmpty()">isNotEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if this <code>ResultSet</code> if iterated would return some objects; false if the <code>ResultSet</code>
  would not return any objects</dd>
@@ -507,7 +507,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.h
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true#close()" title="class or interface in java.io" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../filter/FilteringResultSet.html#close()">close</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in com.googlecode.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../filter/FilteringResultSet.html#close()">close</a></code>&nbsp;in class&nbsp;<code><a href="../filter/FilteringResultSet.html" title="class in network.rhizome.cqengine.resultset.filter">FilteringResultSet</a>&lt;<a href="CloseableFilteringResultSet.html" title="type parameter in CloseableFilteringResultSet">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

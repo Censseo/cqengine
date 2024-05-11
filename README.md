@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/npgall/cqengine.svg?branch=master)](https://travis-ci.org/npgall/cqengine)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.googlecode.cqengine/cqengine/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.googlecode.cqengine%22%20AND%20a%3Acqengine)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/network.rhizome.cqengine/cqengine/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22network.rhizome.cqengine%22%20AND%20a%3Acqengine)
 
 
 
@@ -71,8 +71,8 @@ For more details see [TransactionIsolation](documentation/TransactionIsolation.m
 
 In CQEngine applications mostly interact with [IndexedCollection](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/IndexedCollection.html), which is an implementation of [java.util.Set](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html), and it provides two additional methods:
 
-  * [addIndex(SomeIndex)](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/engine/QueryEngine.html#addIndex(com.googlecode.cqengine.index.Index)) allows indexes to be added to the collection
-  * [retrieve(Query)](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/engine/QueryEngine.html#retrieve(com.googlecode.cqengine.query.Query)) accepts a [Query](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/query/Query.html) and returns a [ResultSet](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/resultset/ResultSet.html) providing objects matching that query. `ResultSet` implements [java.lang.Iterable](http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html), so accessing results is achieved by iterating the result set, or accessing it as a Java 8+ Stream
+  * [addIndex(SomeIndex)](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/engine/QueryEngine.html#addIndex(network.rhizome.cqengine.index.Index)) allows indexes to be added to the collection
+  * [retrieve(Query)](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/engine/QueryEngine.html#retrieve(network.rhizome.cqengine.query.Query)) accepts a [Query](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/query/Query.html) and returns a [ResultSet](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/resultset/ResultSet.html) providing objects matching that query. `ResultSet` implements [java.lang.Iterable](http://docs.oracle.com/javase/6/docs/api/java/lang/Iterable.html), so accessing results is achieved by iterating the result set, or accessing it as a Java 8+ Stream
 
 Here is a **complete example** of how to build a collection, add indexes and perform queries. It does not discuss _attributes_, which are discussed below.
 
@@ -102,7 +102,7 @@ cars.add(new Car(3, "honda civic", "has a flat tyre and high mileage", Arrays.as
 
 **STEP 4: Run some queries**
 
-Note: add import statement to your class: _`import static com.googlecode.cqengine.query.QueryFactory.*`_
+Note: add import statement to your class: _`import static network.rhizome.cqengine.query.QueryFactory.*`_
 
 * *Example 1: Find cars whose name ends with 'vic' or whose id is less than 2*
 
@@ -229,7 +229,7 @@ Note: CQEngine also supports complex queries via **`and`**, **`or`**, **`not`**,
 | [<sub>PartialOffHeap</sub>](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/index/offheap/PartialOffHeapIndex.html) | ✓      | ✓      | ✓      | ✓      | ✓      | ✓      |        |        |        |        |        | ✓      |        |        |
 | [<sub>Disk</sub>](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/index/disk/DiskIndex.html) | ✓      | ✓      | ✓      | ✓      | ✓      | ✓      |        |        |        |        |        | ✓<sup>[1]</sup>      |        |        |
 | [<sub>PartialDisk</sub>](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/index/disk/PartialDiskIndex.html) | ✓      | ✓      | ✓      | ✓      | ✓      | ✓      |        |        |        |        |        | ✓      |        |        |
-<sup>[1]</sup> See: [forStandingQuery()](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/query/QueryFactory.html#forStandingQuery-com.googlecode.cqengine.query.Query-)
+<sup>[1]</sup> See: [forStandingQuery()](http://htmlpreview.github.io/?http://raw.githubusercontent.com/npgall/cqengine/master/documentation/javadoc/apidocs/com/googlecode/cqengine/query/QueryFactory.html#forStandingQuery-network.rhizome.cqengine.query.Query-)
 
 The [Benchmark](documentation/Benchmark.md) page contains examples of how to add these indexes to a collection, and measures their impact on latency.
 
@@ -579,14 +579,14 @@ Simply put, CQEngine can build indexes on, and query, any type of Java collectio
 CQEngine is in Maven Central, and can be added to a Maven project as follows:
 ```
 <dependency>
-    <groupId>com.googlecode.cqengine</groupId>
+    <groupId>network.rhizome.cqengine</groupId>
     <artifactId>cqengine</artifactId>
     <version>x.x.x</version>
 </dependency>
 ```
 See [ReleaseNotes](documentation/ReleaseNotes.md) for the latest version number.
 
-For non-Maven projects, a version built with [maven-shade-plugin](http://maven.apache.org/plugins/maven-shade-plugin/) is also provided, which contains CQEngine and all of its own dependencies packaged in a single jar file (ending "-all"). It can be downloaded from Maven central as "-all.jar" [here](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.googlecode.cqengine%22%20AND%20a%3A%22cqengine%22).
+For non-Maven projects, a version built with [maven-shade-plugin](http://maven.apache.org/plugins/maven-shade-plugin/) is also provided, which contains CQEngine and all of its own dependencies packaged in a single jar file (ending "-all"). It can be downloaded from Maven central as "-all.jar" [here](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22network.rhizome.cqengine%22%20AND%20a%3A%22cqengine%22).
 
 ---
 

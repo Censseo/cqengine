@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset.stored</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset.stored</a></div>
 <h2 title="Class StoredResultSet" class="title">Class StoredResultSet&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">com.googlecode.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
+<li><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">network.rhizome.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.stored.StoredResultSet&lt;O&gt;</li>
+<li>network.rhizome.cqengine.resultset.stored.StoredResultSet&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -143,14 +143,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="StoredSetBasedResultSet.html" title="class in com.googlecode.cqengine.resultset.stored">StoredSetBasedResultSet</a></code></dd>
+<dd><code><a href="StoredSetBasedResultSet.html" title="class in network.rhizome.cqengine.resultset.stored">StoredSetBasedResultSet</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">StoredResultSet&lt;O&gt;</span>
-extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;</pre>
+extends <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;</pre>
 <div class="block">An abstract ResultSet implemented by subclass ResultSets which are stored directly in indexes.
  <p/>
- Extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>, adding additional methods to add and remove objects.
+ Extends <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>, adding additional methods to add and remove objects.
  <p/>
  This implementation is abstract.</div>
 <dl>
@@ -229,10 +229,10 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.resultset.ResultSet">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.resultset.ResultSet">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.resultset.<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.resultset.<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a></h3>
 <code><a href="../ResultSet.html#close()">close</a>, <a href="../ResultSet.html#contains(O)">contains</a>, <a href="../ResultSet.html#getMergeCost()">getMergeCost</a>, <a href="../ResultSet.html#getQuery()">getQuery</a>, <a href="../ResultSet.html#getQueryOptions()">getQueryOptions</a>, <a href="../ResultSet.html#getRetrievalCost()">getRetrievalCost</a>, <a href="../ResultSet.html#iterator()">iterator</a>, <a href="../ResultSet.html#matches(O)">matches</a>, <a href="../ResultSet.html#size()">size</a>, <a href="../ResultSet.html#spliterator()">spliterator</a>, <a href="../ResultSet.html#stream()">stream</a>, <a href="../ResultSet.html#uniqueResult()">uniqueResult</a></code></li>
 </ul>
 <ul class="blockList">
@@ -330,7 +330,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../ResultSet.html#isEmpty()">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="StoredResultSet.html" title="type parameter in StoredResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#isEmpty()">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="StoredResultSet.html" title="type parameter in StoredResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if this <code>ResultSet</code> if iterated would not return any objects; false if the <code>ResultSet</code>
  would return objects</dd>
@@ -352,7 +352,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../ResultSet.html#isNotEmpty()">isNotEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="StoredResultSet.html" title="type parameter in StoredResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#isNotEmpty()">isNotEmpty</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="StoredResultSet.html" title="type parameter in StoredResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if this <code>ResultSet</code> if iterated would return some objects; false if the <code>ResultSet</code>
  would not return any objects</dd>

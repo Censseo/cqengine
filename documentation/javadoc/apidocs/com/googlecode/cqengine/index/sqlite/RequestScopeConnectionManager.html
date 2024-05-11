@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.sqlite</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.sqlite</a></div>
 <h2 title="Class RequestScopeConnectionManager" class="title">Class RequestScopeConnectionManager</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.sqlite.RequestScopeConnectionManager</li>
+<li>network.rhizome.cqengine.index.sqlite.RequestScopeConnectionManager</li>
 </ul>
 </li>
 </ul>
@@ -134,20 +134,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite">ConnectionManager</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
+<dd><code><a href="ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite">ConnectionManager</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">RequestScopeConnectionManager</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite">ConnectionManager</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
+implements <a href="ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite">ConnectionManager</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
 <div class="block">A ConnectionManager which create connections on-demand to the correct persistence for the indexes requesting the
  connection, and subsequently caches the connections, for re-use within the scope of the same request into CQEngine.
  <p/>
  Opens only one connection to each persistence, and returns the same already-open connection for subsequent requests.
  <p/>
- Connections are obtained from the <a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> object provided to the constructor.
- This can be a <a href="../../persistence/composite/CompositePersistence.html" title="class in com.googlecode.cqengine.persistence.composite"><code>CompositePersistence</code></a> which actually wraps more than one backing persistence.
- In that case, the <a href="../../persistence/composite/CompositePersistence.html#getPersistenceForIndex(com.googlecode.cqengine.index.Index)"><code>CompositePersistence.getPersistenceForIndex(Index)</code></a> method will be used to locate the
+ Connections are obtained from the <a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> object provided to the constructor.
+ This can be a <a href="../../persistence/composite/CompositePersistence.html" title="class in network.rhizome.cqengine.persistence.composite"><code>CompositePersistence</code></a> which actually wraps more than one backing persistence.
+ In that case, the <a href="../../persistence/composite/CompositePersistence.html#getPersistenceForIndex(network.rhizome.cqengine.index.Index)"><code>CompositePersistence.getPersistenceForIndex(Index)</code></a> method will be used to locate the
  correct persistence to use for the index requesting the connection.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -173,7 +173,7 @@ implements <a href="ConnectionManager.html" title="interface in com.googlecode.c
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.persistence.Persistence)">RequestScopeConnectionManager</a></span>&#8203;(<a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;?,&#8203;?&gt;&nbsp;persistence)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.persistence.Persistence)">RequestScopeConnectionManager</a></span>&#8203;(<a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;?,&#8203;?&gt;&nbsp;persistence)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -203,15 +203,15 @@ implements <a href="ConnectionManager.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isApplyUpdateForIndexEnabled(com.googlecode.cqengine.index.Index)">isApplyUpdateForIndexEnabled</a></span>&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isApplyUpdateForIndexEnabled(network.rhizome.cqengine.index.Index)">isApplyUpdateForIndexEnabled</a></span>&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Informs if index updates should be applied.</div>
 </td>
@@ -240,13 +240,13 @@ implements <a href="ConnectionManager.html" title="interface in com.googlecode.c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.persistence.Persistence)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.persistence.Persistence)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RequestScopeConnectionManager</h4>
-<pre>public&nbsp;RequestScopeConnectionManager&#8203;(<a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;?,&#8203;?&gt;&nbsp;persistence)</pre>
+<pre>public&nbsp;RequestScopeConnectionManager&#8203;(<a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;?,&#8203;?&gt;&nbsp;persistence)</pre>
 </li>
 </ul>
 </li>
@@ -259,21 +259,21 @@ implements <a href="ConnectionManager.html" title="interface in com.googlecode.c
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-                                <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ConnectionManager.html#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">ConnectionManager</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+                                <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ConnectionManager.html#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">ConnectionManager</a></code></span></div>
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ConnectionManager.html#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite">ConnectionManager</a></code></dd>
+<dd><code><a href="ConnectionManager.html#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite">ConnectionManager</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - The <a href="../Index.html" title="interface in com.googlecode.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
+<dd><code>index</code> - The <a href="../Index.html" title="interface in network.rhizome.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
 <dd><code>queryOptions</code> - The query options for the request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a></dd>
@@ -296,19 +296,19 @@ implements <a href="ConnectionManager.html" title="interface in com.googlecode.c
 </dl>
 </li>
 </ul>
-<a id="isApplyUpdateForIndexEnabled(com.googlecode.cqengine.index.Index)">
+<a id="isApplyUpdateForIndexEnabled(network.rhizome.cqengine.index.Index)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isApplyUpdateForIndexEnabled</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isApplyUpdateForIndexEnabled&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ConnectionManager.html#isApplyUpdateForIndexEnabled(com.googlecode.cqengine.index.Index)">ConnectionManager</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isApplyUpdateForIndexEnabled&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ConnectionManager.html#isApplyUpdateForIndexEnabled(network.rhizome.cqengine.index.Index)">ConnectionManager</a></code></span></div>
 <div class="block">Informs if index updates should be applied.
  This is for advanced use cases only, where the application supplies a custom ConnectionManager to CQEngine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ConnectionManager.html#isApplyUpdateForIndexEnabled(com.googlecode.cqengine.index.Index)">isApplyUpdateForIndexEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite">ConnectionManager</a></code></dd>
+<dd><code><a href="ConnectionManager.html#isApplyUpdateForIndexEnabled(network.rhizome.cqengine.index.Index)">isApplyUpdateForIndexEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite">ConnectionManager</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - The index.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

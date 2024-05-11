@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.sqlite</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.sqlite</a></div>
 <h2 title="Class SimplifiedSQLiteIndex" class="title">Class SimplifiedSQLiteIndex&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;,&#8203;O,&#8203;K extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;K&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.sqlite.SimplifiedSQLiteIndex&lt;A,&#8203;O,&#8203;K&gt;</li>
+<li>network.rhizome.cqengine.index.sqlite.SimplifiedSQLiteIndex&lt;A,&#8203;O,&#8203;K&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,17 +134,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</code>, <code><a href="../support/indextype/NonHeapTypeIndex.html" title="interface in com.googlecode.cqengine.index.support.indextype">NonHeapTypeIndex</a></code>, <code><a href="../support/KeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/SortedKeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;A,&#8203;O&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</code>, <code><a href="../support/indextype/NonHeapTypeIndex.html" title="interface in network.rhizome.cqengine.index.support.indextype">NonHeapTypeIndex</a></code>, <code><a href="../support/KeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/SortedKeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;A,&#8203;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../disk/DiskIndex.html" title="class in com.googlecode.cqengine.index.disk">DiskIndex</a></code>, <code><a href="../offheap/OffHeapIndex.html" title="class in com.googlecode.cqengine.index.offheap">OffHeapIndex</a></code></dd>
+<dd><code><a href="../disk/DiskIndex.html" title="class in network.rhizome.cqengine.index.disk">DiskIndex</a></code>, <code><a href="../offheap/OffHeapIndex.html" title="class in network.rhizome.cqengine.index.offheap">OffHeapIndex</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">SimplifiedSQLiteIndex&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;,&#8203;O,&#8203;K extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;K&gt;&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;, <a href="../support/indextype/NonHeapTypeIndex.html" title="interface in com.googlecode.cqengine.index.support.indextype">NonHeapTypeIndex</a></pre>
-<div class="block">An abstract class which wraps a <a href="SQLiteIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIndex</code></a>, and simplifies some of its configuration options to make it
+implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsAttributeIndex</a>&lt;A,&#8203;O&gt;, <a href="../support/indextype/NonHeapTypeIndex.html" title="interface in network.rhizome.cqengine.index.support.indextype">NonHeapTypeIndex</a></pre>
+<div class="block">An abstract class which wraps a <a href="SQLiteIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIndex</code></a>, and simplifies some of its configuration options to make it
  easier to use with IndexedCollections which themselves are persistent.
  <p/>
  The primary key to be used, and the database to connect to, is obtained from the IndexedCollection.</div>
@@ -174,8 +174,8 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,com.googlecode.cqengine.attribute.Attribute,java.lang.String)">SimplifiedSQLiteIndex</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;persistenceType,
-                     <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;attribute,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,network.rhizome.cqengine.attribute.Attribute,java.lang.String)">SimplifiedSQLiteIndex</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;persistenceType,
+                     <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;attribute,
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tableNameSuffix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -199,8 +199,8 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
@@ -208,7 +208,7 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
@@ -216,9 +216,9 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Calls <a href="SQLiteIndex.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)"><code>SQLiteIndex.destroy(QueryOptions)</code></a> on the wrapped index.</div>
+<div class="block">Calls <a href="SQLiteIndex.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)"><code>SQLiteIndex.destroy(QueryOptions)</code></a> on the wrapped index.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -227,7 +227,7 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttribute()">getAttribute</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the attribute indexed by this index.</div>
@@ -235,55 +235,55 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountForKey(A,com.googlecode.cqengine.query.option.QueryOptions)">getCountForKey</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;key,
-              <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountForKey(A,network.rhizome.cqengine.query.option.QueryOptions)">getCountForKey</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;key,
+              <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the count of distinct keys in the index.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeys(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeys</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeys(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeys</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                boolean&nbsp;lowerInclusive,
                <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                boolean&nbsp;upperInclusive,
-               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns distinct keys within an optional range from the index, in ascending order.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the distinct keys in the index, in ascending order.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeysDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeysDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                          boolean&nbsp;lowerInclusive,
                          <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                          boolean&nbsp;upperInclusive,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns distinct keys within an optional range from the index, in descending order.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the distinct keys in the index, in descending order.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEffectiveIndex()">getEffectiveIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
@@ -291,53 +291,53 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValues</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValues</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                 boolean&nbsp;lowerInclusive,
                 <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                 boolean&nbsp;upperInclusive,
-                <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+                <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the keys within an optional range and corresponding values for those keys in the index.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues(com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValues</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues(network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValues</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the keys and corresponding values for those keys in the index.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></span>&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                           boolean&nbsp;lowerInclusive,
                           <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                           boolean&nbsp;upperInclusive,
-                          <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+                          <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the keys within an optional range and corresponding values for those keys in the index.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending(com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending(network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the keys and corresponding values for those keys in the index.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</div>
+<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeysDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStatisticsForDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeysDescending</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</div>
+<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
@@ -347,8 +347,8 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectStore,
-    <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectStore,
+    <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 </td>
@@ -364,31 +364,31 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isQuantized()">isQuantized</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Indicates if the index can perform retrievals for the type of query supplied.</div>
 </td>
@@ -417,14 +417,14 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.Class,com.googlecode.cqengine.attribute.Attribute,java.lang.String)">
+<a id="&lt;init&gt;(java.lang.Class,network.rhizome.cqengine.attribute.Attribute,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimplifiedSQLiteIndex</h4>
-<pre>protected&nbsp;SimplifiedSQLiteIndex&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;persistenceType,
-                                <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;attribute,
+<pre>protected&nbsp;SimplifiedSQLiteIndex&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;persistenceType,
+                                <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;attribute,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tableNameSuffix)</pre>
 </li>
 </ul>
@@ -438,36 +438,36 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectStore,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectStore,
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectStore</code> - The ObjectStore which persists objects</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="destroy(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="destroy(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>destroy</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Calls <a href="SQLiteIndex.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)"><code>SQLiteIndex.destroy(QueryOptions)</code></a> on the wrapped index.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Calls <a href="SQLiteIndex.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)"><code>SQLiteIndex.destroy(QueryOptions)</code></a> on the wrapped index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
@@ -479,7 +479,7 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>getEffectiveIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#getEffectiveIndex()">Index</a></code></span></div>
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
  persistence requests. Most Index implementations will typically return a reference to themselves ('this').
@@ -488,7 +488,7 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
  index interacts with the persistence, it will identify itself as the outer or "effective" index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The effective index, in the case that this index is wrapped by another index.</dd>
 </dl>
@@ -500,12 +500,12 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>getAttribute</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getAttribute()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getAttribute()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../AttributeIndex.html#getAttribute()">AttributeIndex</a></code></span></div>
 <div class="block">Returns the attribute indexed by this index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../AttributeIndex.html#getAttribute()">getAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../AttributeIndex.html#getAttribute()">getAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The attribute indexed by this index</dd>
 </dl>
@@ -522,26 +522,26 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <div class="block">Indicates if objects can be added to or removed from the index after the index has been built.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if objects can be added to or removed from the index after the index has been built, false if
  the index cannot be modified after it is built</dd>
 </dl>
 </li>
 </ul>
-<a id="supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsQuery</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
 <div class="block">Indicates if the index can perform retrievals for the type of query supplied.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - A query to check</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
@@ -559,25 +559,25 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 <h4>isQuantized</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isQuantized()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#isQuantized()">Index</a></code></span></div>
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the index is quantized, false if not.</dd>
 </dl>
 </li>
 </ul>
-<a id="retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.
  <p/>
  Usually <code>ResultSet</code>s are <i>lazy</i> which means that they don't actually do any work, or encapsulate or
@@ -585,89 +585,89 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
  on-the-fly as the application iterates through the <code>ResultSet</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - An object which specifies some restriction on an attribute of an object</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A set of objects with attributes matching the restriction imposed by the query</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
+<dd><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being added</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&nbsp;objectSet,
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being removed</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="getDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistinctKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the distinct keys in the index, in ascending order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/KeyStatisticsIndex.html#getDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/KeyStatisticsIndex.html#getDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -675,24 +675,24 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getDistinctKeys(java.lang.Comparable,boolean,java.lang.Comparable,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getDistinctKeys(java.lang.Comparable,boolean,java.lang.Comparable,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getDistinctKeys(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getDistinctKeys(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistinctKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeys&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeys&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                                             boolean&nbsp;lowerInclusive,
                                             <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                                             boolean&nbsp;upperInclusive,
-                                            <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+                                            <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns distinct keys within an optional range from the index, in ascending order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeys(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lowerBound</code> - The lower bound for the keys returned, or null if no lower bound should be applied</dd>
 <dd><code>lowerInclusive</code> - true if the lowerBound is inclusive, false if exclusive</dd>
@@ -704,18 +704,18 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistinctKeysDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeysDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeysDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the distinct keys in the index, in descending order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -723,24 +723,24 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getDistinctKeysDescending(java.lang.Comparable,boolean,java.lang.Comparable,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getDistinctKeysDescending(java.lang.Comparable,boolean,java.lang.Comparable,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getDistinctKeysDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getDistinctKeysDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDistinctKeysDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeysDescending&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&nbsp;getDistinctKeysDescending&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                                                       boolean&nbsp;lowerInclusive,
                                                       <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                                                       boolean&nbsp;upperInclusive,
-                                                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+                                                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns distinct keys within an optional range from the index, in descending order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getDistinctKeysDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lowerBound</code> - The lower bound for the keys returned, or null if no lower bound should be applied</dd>
 <dd><code>lowerInclusive</code> - true if the lowerBound is inclusive, false if exclusive</dd>
@@ -752,19 +752,19 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getCountForKey(java.lang.Comparable,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getCountForKey(java.lang.Comparable,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getCountForKey(A,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getCountForKey(A,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCountForKey</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountForKey&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;key,
-                              <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                              <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/KeyStatisticsIndex.html#getCountForKey(A,com.googlecode.cqengine.query.option.QueryOptions)">getCountForKey</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/KeyStatisticsIndex.html#getCountForKey(A,network.rhizome.cqengine.query.option.QueryOptions)">getCountForKey</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - A key which may be contained in the index</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
@@ -773,37 +773,37 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getStatisticsForDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getStatisticsForDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getStatisticsForDistinctKeysDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeysDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getStatisticsForDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
-<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeysDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getStatisticsForDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getStatisticsForDistinctKeysDescending(com.googlecode.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getStatisticsForDistinctKeysDescending(network.rhizome.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeysDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</dd>
+<dd>The statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index,  in descending order</dd>
 </dl>
 </li>
 </ul>
-<a id="getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCountOfDistinctKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountOfDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/KeyStatisticsIndex.html#getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">KeyStatisticsIndex</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&nbsp;getCountOfDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/KeyStatisticsIndex.html#getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">KeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the count of distinct keys in the index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/KeyStatisticsIndex.html#getCountOfDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/KeyStatisticsIndex.html#getCountOfDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getCountOfDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -811,41 +811,41 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getStatisticsForDistinctKeys</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/KeyStatisticsIndex.html#getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">KeyStatisticsIndex</a></code></span></div>
-<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;&gt;&nbsp;getStatisticsForDistinctKeys&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/KeyStatisticsIndex.html#getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">KeyStatisticsIndex</a></code></span></div>
+<div class="block">Returns the statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/KeyStatisticsIndex.html#getStatisticsForDistinctKeys(com.googlecode.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/KeyStatisticsIndex.html#getStatisticsForDistinctKeys(network.rhizome.cqengine.query.option.QueryOptions)">getStatisticsForDistinctKeys</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The statistics <a href="../support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</dd>
+<dd>The statistics <a href="../support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support"><code>KeyStatistics</code></a> for all distinct keys in the index</dd>
 </dl>
 </li>
 </ul>
-<a id="getKeysAndValues(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getKeysAndValues(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the keys and corresponding values for those keys in the index. Note the same key
  will be returned multiple times if more than one object has the same key. Also the same value might be returned
  multiple times, each time for a different key, if the index is built on a multi-value attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/KeyStatisticsIndex.html#getKeysAndValues(com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/KeyStatisticsIndex.html#getKeysAndValues(network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/KeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">KeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -853,26 +853,26 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getKeysAndValues(java.lang.Comparable,boolean,java.lang.Comparable,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getKeysAndValues(java.lang.Comparable,boolean,java.lang.Comparable,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getKeysAndValues(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getKeysAndValues(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                                                                boolean&nbsp;lowerInclusive,
                                                                <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                                                                boolean&nbsp;upperInclusive,
-                                                               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+                                                               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the keys within an optional range and corresponding values for those keys in the index. Note the same key
  will be returned multiple times if more than one object has the same key. Also the same value might be returned
  multiple times, each time for a different key, if the index is built on a multi-value attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValues(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValues</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lowerBound</code> - The lower bound for the keys returned, or null if no lower bound should be applied</dd>
 <dd><code>lowerInclusive</code> - true if the lowerBound is inclusive, false if exclusive</dd>
@@ -884,20 +884,20 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getKeysAndValuesDescending(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getKeysAndValuesDescending(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValuesDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the keys and corresponding values for those keys in the index. Note the same key
  will be returned multiple times if more than one object has the same key. Also the same value might be returned
  multiple times, each time for a different key, if the index is built on a multi-value attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -905,26 +905,26 @@ implements <a href="../support/SortedKeyStatisticsAttributeIndex.html" title="in
 </dl>
 </li>
 </ul>
-<a id="getKeysAndValuesDescending(java.lang.Comparable,boolean,java.lang.Comparable,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getKeysAndValuesDescending(java.lang.Comparable,boolean,java.lang.Comparable,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getKeysAndValuesDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getKeysAndValuesDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValuesDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="../support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;lowerBound,
                                                                          boolean&nbsp;lowerInclusive,
                                                                          <a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&nbsp;upperBound,
                                                                          boolean&nbsp;upperInclusive,
-                                                                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
+                                                                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">SortedKeyStatisticsIndex</a></code></span></div>
 <div class="block">Returns the keys within an optional range and corresponding values for those keys in the index. Note the same key
  will be returned multiple times if more than one object has the same key. Also the same value might be returned
  multiple times, each time for a different key, if the index is built on a multi-value attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(A,boolean,A,boolean,com.googlecode.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in com.googlecode.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../support/SortedKeyStatisticsIndex.html#getKeysAndValuesDescending(A,boolean,A,boolean,network.rhizome.cqengine.query.option.QueryOptions)">getKeysAndValuesDescending</a></code>&nbsp;in interface&nbsp;<code><a href="../support/SortedKeyStatisticsIndex.html" title="interface in network.rhizome.cqengine.index.support">SortedKeyStatisticsIndex</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">A</a>&gt;,&#8203;<a href="SimplifiedSQLiteIndex.html" title="type parameter in SimplifiedSQLiteIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lowerBound</code> - The lower bound for the keys returned, or null if no lower bound should be applied</dd>
 <dd><code>lowerInclusive</code> - true if the lowerBound is inclusive, false if exclusive</dd>

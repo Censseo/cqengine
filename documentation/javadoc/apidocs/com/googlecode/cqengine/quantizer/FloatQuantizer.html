@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.quantizer</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.quantizer</a></div>
 <h2 title="Class FloatQuantizer" class="title">Class FloatQuantizer</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.quantizer.FloatQuantizer</li>
+<li>network.rhizome.cqengine.quantizer.FloatQuantizer</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +135,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">FloatQuantizer</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
-<div class="block">A static factory for creating <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>s for <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Float</code></a> attributes.
+<div class="block">A static factory for creating <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>s for <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>Float</code></a> attributes.
  <p/>
  See <a href="#withCompressionFactor(int)"><code>withCompressionFactor(int)</code></a> for details.</div>
 <dl>
@@ -163,10 +163,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer">Quantizer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink">Float</a>&gt;</code></td>
+<td class="colFirst"><code>static <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer">Quantizer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink">Float</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withCompressionFactor(int)">withCompressionFactor</a></span>&#8203;(int&nbsp;compressionFactor)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the nearest multiple of the compression
+<div class="block">Returns a <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the nearest multiple of the compression
  factor, in the direction towards zero.</div>
 </td>
 </tr>
@@ -200,8 +200,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>withCompressionFactor</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer">Quantizer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink">Float</a>&gt;&nbsp;withCompressionFactor&#8203;(int&nbsp;compressionFactor)</pre>
-<div class="block">Returns a <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the nearest multiple of the compression
+<pre class="methodSignature">public static&nbsp;<a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer">Quantizer</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Float.html?is-external=true" title="class or interface in java.lang" class="externalLink">Float</a>&gt;&nbsp;withCompressionFactor&#8203;(int&nbsp;compressionFactor)</pre>
+<div class="block">Returns a <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the nearest multiple of the compression
  factor, in the direction towards zero.
  <p/>
  <b>Examples (compression factor 5):</b><br/>
@@ -220,7 +220,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code>compressionFactor</code> - The number of adjacent mathematical integers to coalesce to a single key. <b>Supply a
  factor < 2 to disable compression</b> and simply truncate everything after the decimal point</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the closest multiple of the compression
+<dd>A <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a> which converts the input value to the closest multiple of the compression
  factor, in the direction towards zero</dd>
 </dl>
 </li>

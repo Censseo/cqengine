@@ -1,0 +1,113 @@
+plugins {
+    id 'java'
+    // id 'maven-publish'
+    // id 'com.github.johnrengelman.shadow' version '7.1.2'
+    // id 'jacoco'
+    // id 'signing'
+}
+
+group = 'network.rhizome.cqengine'
+version = '3.7.0-SNAPSHOT'
+description = 'Collection Query Engine: NoSQL indexing and query engine for Java collections with ultra-low latency'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://plugins.gradle.org/m2/'
+    }
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/com.googlecode.concurrent-trees/concurrent-trees
+    implementation 'com.googlecode.concurrent-trees:concurrent-trees:2.6.1'
+
+    // https://mvnrepository.com/artifact/org.javassist/javassist
+    implementation 'org.javassist:javassist:3.30.2-GA'
+
+    // ------- TO REPLACE BY CHRONICLE MAP
+    implementation 'org.xerial:sqlite-jdbc:3.27.2.1'
+
+    // ------- SERIALIZATION
+    implementation 'org.apache.fury:fury-core:0.5.0'
+
+    // https://mvnrepository.com/artifact/org.antlr/antlr4-runtime
+    // implementation 'org.antlr:antlr4-runtime:4.13.1'
+
+    // https://mvnrepository.com/artifact/net.jodah/typetools
+    implementation 'net.jodah:typetools:0.6.3'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:33.2.0-jre'
+
+    // Test dependencies
+    testImplementation 'org.mockito:mockito-core:2.27.0'
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'com.tngtech.java:junit-dataprovider:1.13.1'
+    testImplementation 'com.google.guava:guava-testlib:27.1-jre'
+    testImplementation 'nl.jqno.equalsverifier:equalsverifier:3.1.8'
+
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    // api 'org.apache.commons:commons-math3:3.6.1'
+}
+
+// // Shadow Plugin configuration
+// shadowJar {
+//     archiveClassifier.set('all')
+//     relocate 'com.googlecode.concurrenttrees', 'network.rhizome.cqengine.lib.com.googlecode.concurrenttrees'
+//     relocate 'com.esotericsoftware', 'network.rhizome.cqengine.lib.com.esotericsoftware'
+//     relocate 'org', 'network.rhizome.cqengine.lib.org', {
+//         exclude 'org.sqlite.**'
+//     }
+//     relocate 'de', 'network.rhizome.cqengine.lib.de'
+//     relocate 'javassist', 'network.rhizome.cqengine.lib.javassist'
+//     relocate 'com.google', 'network.rhizome.cqengine.lib.com.google', {
+//         exclude 'network.rhizome.cqengine.**'
+//     }
+//     relocate 'net.jodah', 'network.rhizome.cqengine.lib.net.jodah'
+// }
+
+// // Jacoco Plugin configuration
+// jacoco {
+//     toolVersion = "0.8.8"
+//     reportsDir = file("$buildDir/customJacocoReportDir")
+// }
+
+// jacocoTestReport {
+//     reports {
+//         xml.enabled true
+//         html.enabled true
+//     }
+// }
+
+// // GPG Signing configuration (Maven Central deployment)
+// signing {
+//     useGpgCmd()
+//     sign configurations.archives
+// }
+
+// publishing {
+//     publications {
+//         mavenJava(MavenPublication) {
+//             from components.java
+
+//             artifact sourceJar {
+//                 classifier "sources"
+//             }
+
+//             artifact javadocJar {
+//                 classifier "javadocs"
+//             }
+//         }
+//     }
+// }
+
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
+    useJUnitPlatform()
+}

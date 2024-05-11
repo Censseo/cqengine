@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.query.simple</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.query.simple</a></div>
 <h2 title="Class ExistsIn" class="title">Class ExistsIn&lt;O,&#8203;F,&#8203;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">com.googlecode.cqengine.query.simple.SimpleQuery</a>&lt;O,&#8203;A&gt;</li>
+<li><a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">network.rhizome.cqengine.query.simple.SimpleQuery</a>&lt;O,&#8203;A&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.query.simple.ExistsIn&lt;O,&#8203;F,&#8203;A&gt;</li>
+<li>network.rhizome.cqengine.query.simple.ExistsIn&lt;O,&#8203;F,&#8203;A&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,11 +139,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ExistsIn&lt;O,&#8203;F,&#8203;A&gt;</span>
-extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;O,&#8203;A&gt;</pre>
+extends <a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;O,&#8203;A&gt;</pre>
 <div class="block">Asserts than an object exists in a foreign collection, based on an attribute in the local collection being equal
  to an attribute in the foreign collection, and optionally with restrictions applied to objects in the foreign
  collection. This supports the equivalent of SQL EXISTS-type queries and JOINs between IndexedCollections.</div>
@@ -167,10 +167,10 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.googlecode.cqengine.query.simple.SimpleQuery">
+<li class="blockList"><a id="fields.inherited.from.class.network.rhizome.cqengine.query.simple.SimpleQuery">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.googlecode.cqengine.query.simple.<a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a></h3>
+<h3>Fields inherited from class&nbsp;network.rhizome.cqengine.query.simple.<a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a></h3>
 <code><a href="SimpleQuery.html#attribute">attribute</a>, <a href="SimpleQuery.html#attributeIsSimple">attributeIsSimple</a>, <a href="SimpleQuery.html#simpleAttribute">simpleAttribute</a></code></li>
 </ul>
 </li>
@@ -190,16 +190,16 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.IndexedCollection,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.attribute.Attribute)">ExistsIn</a></span>&#8203;(<a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
-        <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
-        <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.IndexedCollection,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.attribute.Attribute)">ExistsIn</a></span>&#8203;(<a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
+        <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
+        <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.IndexedCollection,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.query.Query)">ExistsIn</a></span>&#8203;(<a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
-        <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
-        <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute,
-        <a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignRestrictions)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.IndexedCollection,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.query.Query)">ExistsIn</a></span>&#8203;(<a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
+        <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
+        <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute,
+        <a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignRestrictions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -232,16 +232,16 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matchesNonSimpleAttribute(com.googlecode.cqengine.attribute.Attribute,O,com.googlecode.cqengine.query.option.QueryOptions)">matchesNonSimpleAttribute</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matchesNonSimpleAttribute(network.rhizome.cqengine.attribute.Attribute,O,network.rhizome.cqengine.query.option.QueryOptions)">matchesNonSimpleAttribute</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
                          <a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>&nbsp;object,
-                         <a href="../option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+                         <a href="../option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matchesSimpleAttribute(com.googlecode.cqengine.attribute.SimpleAttribute,O,com.googlecode.cqengine.query.option.QueryOptions)">matchesSimpleAttribute</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matchesSimpleAttribute(network.rhizome.cqengine.attribute.SimpleAttribute,O,network.rhizome.cqengine.query.option.QueryOptions)">matchesSimpleAttribute</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
                       <a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>&nbsp;object,
-                      <a href="../option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+                      <a href="../option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -251,11 +251,11 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.query.simple.SimpleQuery">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.query.simple.SimpleQuery">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.query.simple.<a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a></h3>
-<code><a href="SimpleQuery.html#asLiteral(java.lang.Object)">asLiteral</a>, <a href="SimpleQuery.html#asLiteral(java.lang.String)">asLiteral</a>, <a href="SimpleQuery.html#getAttribute()">getAttribute</a>, <a href="SimpleQuery.html#getAttributeName()">getAttributeName</a>, <a href="SimpleQuery.html#getAttributeType()">getAttributeType</a>, <a href="SimpleQuery.html#hashCode()">hashCode</a>, <a href="SimpleQuery.html#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.query.simple.<a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a></h3>
+<code><a href="SimpleQuery.html#asLiteral(java.lang.Object)">asLiteral</a>, <a href="SimpleQuery.html#asLiteral(java.lang.String)">asLiteral</a>, <a href="SimpleQuery.html#getAttribute()">getAttribute</a>, <a href="SimpleQuery.html#getAttributeName()">getAttributeName</a>, <a href="SimpleQuery.html#getAttributeType()">getAttributeType</a>, <a href="SimpleQuery.html#hashCode()">hashCode</a>, <a href="SimpleQuery.html#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -280,27 +280,27 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.IndexedCollection,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.attribute.Attribute)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.IndexedCollection,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.attribute.Attribute)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ExistsIn</h4>
-<pre>public&nbsp;ExistsIn&#8203;(<a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
-                <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
-                <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute)</pre>
+<pre>public&nbsp;ExistsIn&#8203;(<a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
+                <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
+                <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.googlecode.cqengine.IndexedCollection,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.query.Query)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.IndexedCollection,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.query.Query)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ExistsIn</h4>
-<pre>public&nbsp;ExistsIn&#8203;(<a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
-                <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
-                <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute,
-                <a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignRestrictions)</pre>
+<pre>public&nbsp;ExistsIn&#8203;(<a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignCollection,
+                <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;localKeyAttribute,
+                <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;foreignKeyAttribute,
+                <a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">F</a>&gt;&nbsp;foreignRestrictions)</pre>
 </li>
 </ul>
 </li>
@@ -313,37 +313,37 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="matchesSimpleAttribute(com.googlecode.cqengine.attribute.SimpleAttribute,java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="matchesSimpleAttribute(network.rhizome.cqengine.attribute.SimpleAttribute,java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="matchesSimpleAttribute(com.googlecode.cqengine.attribute.SimpleAttribute,O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="matchesSimpleAttribute(network.rhizome.cqengine.attribute.SimpleAttribute,O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>matchesSimpleAttribute</h4>
-<pre class="methodSignature">protected&nbsp;boolean&nbsp;matchesSimpleAttribute&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
+<pre class="methodSignature">protected&nbsp;boolean&nbsp;matchesSimpleAttribute&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
                                          <a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>&nbsp;object,
-                                         <a href="../option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                                         <a href="../option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="SimpleQuery.html#matchesSimpleAttribute(com.googlecode.cqengine.attribute.SimpleAttribute,O,com.googlecode.cqengine.query.option.QueryOptions)">matchesSimpleAttribute</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
+<dd><code><a href="SimpleQuery.html#matchesSimpleAttribute(network.rhizome.cqengine.attribute.SimpleAttribute,O,network.rhizome.cqengine.query.option.QueryOptions)">matchesSimpleAttribute</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="matchesNonSimpleAttribute(com.googlecode.cqengine.attribute.Attribute,java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="matchesNonSimpleAttribute(network.rhizome.cqengine.attribute.Attribute,java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="matchesNonSimpleAttribute(com.googlecode.cqengine.attribute.Attribute,O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="matchesNonSimpleAttribute(network.rhizome.cqengine.attribute.Attribute,O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>matchesNonSimpleAttribute</h4>
-<pre class="methodSignature">protected&nbsp;boolean&nbsp;matchesNonSimpleAttribute&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
+<pre class="methodSignature">protected&nbsp;boolean&nbsp;matchesNonSimpleAttribute&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;&nbsp;attribute,
                                             <a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>&nbsp;object,
-                                            <a href="../option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                                            <a href="../option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="SimpleQuery.html#matchesNonSimpleAttribute(com.googlecode.cqengine.attribute.Attribute,O,com.googlecode.cqengine.query.option.QueryOptions)">matchesNonSimpleAttribute</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
+<dd><code><a href="SimpleQuery.html#matchesNonSimpleAttribute(network.rhizome.cqengine.attribute.Attribute,O,network.rhizome.cqengine.query.option.QueryOptions)">matchesNonSimpleAttribute</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -382,7 +382,7 @@ extends <a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query
 <pre class="methodSignature">protected&nbsp;int&nbsp;calcHashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="SimpleQuery.html#calcHashCode()">calcHashCode</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
+<dd><code><a href="SimpleQuery.html#calcHashCode()">calcHashCode</a></code>&nbsp;in class&nbsp;<code><a href="SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;<a href="ExistsIn.html" title="type parameter in ExistsIn">O</a>,&#8203;<a href="ExistsIn.html" title="type parameter in ExistsIn">A</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

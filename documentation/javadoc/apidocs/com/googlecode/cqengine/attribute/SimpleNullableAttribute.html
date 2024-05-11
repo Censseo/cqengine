@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.attribute</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.attribute</a></div>
 <h2 title="Class SimpleNullableAttribute" class="title">Class SimpleNullableAttribute&lt;O,&#8203;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="support/AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">com.googlecode.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
+<li><a href="support/AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">network.rhizome.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.attribute.SimpleNullableAttribute&lt;O,&#8203;A&gt;</li>
+<li>network.rhizome.cqengine.attribute.SimpleNullableAttribute&lt;O,&#8203;A&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,15 +139,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;A&gt;</code></dd>
+<dd><code><a href="Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;A&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="support/FunctionalSimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute.support">FunctionalSimpleNullableAttribute</a></code>, <code><a href="SimpleNullableMapAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleNullableMapAttribute</a></code></dd>
+<dd><code><a href="support/FunctionalSimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute.support">FunctionalSimpleNullableAttribute</a></code>, <code><a href="SimpleNullableMapAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleNullableMapAttribute</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">SimpleNullableAttribute&lt;O,&#8203;A&gt;</span>
-extends <a href="support/AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">AbstractAttribute</a>&lt;O,&#8203;A&gt;</pre>
+extends <a href="support/AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">AbstractAttribute</a>&lt;O,&#8203;A&gt;</pre>
 <div class="block">Represents an attribute in an object (such as a field) which can be null.
 
  Provides a method to read the value of the field given such an object.</div>
@@ -155,7 +155,7 @@ extends <a href="support/AbstractAttribute.html" title="class in com.googlecode.
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Niall Gallagher</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a></dd>
+<dd><a href="SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -225,26 +225,26 @@ extends <a href="support/AbstractAttribute.html" title="class in com.googlecode.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>abstract <a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">A</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">getValue</a></span>&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
-        <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">getValue</a></span>&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
+        <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the (possibly null) value of the attribute from the object.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">A</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValues(O,com.googlecode.cqengine.query.option.QueryOptions)">getValues</a></span>&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
-         <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValues(O,network.rhizome.cqengine.query.option.QueryOptions)">getValues</a></span>&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
+         <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the values belonging to the attribute in the given object.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.attribute.support.AbstractAttribute">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.attribute.support.AbstractAttribute">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.attribute.support.<a href="support/AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">AbstractAttribute</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.attribute.support.<a href="support/AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">AbstractAttribute</a></h3>
 <code><a href="support/AbstractAttribute.html#calcHashCode()">calcHashCode</a>, <a href="support/AbstractAttribute.html#canEqual(java.lang.Object)">canEqual</a>, <a href="support/AbstractAttribute.html#equals(java.lang.Object)">equals</a>, <a href="support/AbstractAttribute.html#getAttributeName()">getAttributeName</a>, <a href="support/AbstractAttribute.html#getAttributeType()">getAttributeType</a>, <a href="support/AbstractAttribute.html#getObjectType()">getObjectType</a>, <a href="support/AbstractAttribute.html#hashCode()">hashCode</a>, <a href="support/AbstractAttribute.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
@@ -352,20 +352,20 @@ extends <a href="support/AbstractAttribute.html" title="class in com.googlecode.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getValues(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getValues(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getValues(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getValues(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getValues</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">A</a>&gt;&nbsp;getValues&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
-                             <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                             <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Returns the values belonging to the attribute in the given object.
  <p/>
- If the attribute is a <a href="SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a>, the list returned will contain a single value for the attribute.
- If the attribute is a <a href="MultiValueAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueAttribute</code></a>, the list returned will contain any number of values for the
+ If the attribute is a <a href="SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a>, the list returned will contain a single value for the attribute.
+ If the attribute is a <a href="MultiValueAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueAttribute</code></a>, the list returned will contain any number of values for the
  attribute.
  <p/></div>
 <dl>
@@ -378,16 +378,16 @@ extends <a href="support/AbstractAttribute.html" title="class in com.googlecode.
 </dl>
 </li>
 </ul>
-<a id="getValue(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getValue(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getValue</h4>
 <pre class="methodSignature">public abstract&nbsp;<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">A</a>&nbsp;getValue&#8203;(<a href="SimpleNullableAttribute.html" title="type parameter in SimpleNullableAttribute">O</a>&nbsp;object,
-                           <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                           <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Returns the (possibly null) value of the attribute from the object.
  <p/></div>
 <dl>

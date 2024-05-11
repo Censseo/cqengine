@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.offheap</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.offheap</a></div>
 <h2 title="Class OffHeapPersistence" class="title">Class OffHeapPersistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.persistence.offheap.OffHeapPersistence&lt;O,&#8203;A&gt;</li>
+<li>network.rhizome.cqengine.persistence.offheap.OffHeapPersistence&lt;O,&#8203;A&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,23 +134,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;</code>, <code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;</code>, <code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">OffHeapPersistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
+implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
 <div class="block">Specifies that a collection or indexes should be persisted in native memory, within the JVM process but outside the
  Java heap.
  <p/>
  Each instance of this object specifies persistence to a different area of memory. So for example, to have an
- <a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine"><code>IndexedCollection</code></a> and multiple indexes all persist to the same area of memory,
+ <a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine"><code>IndexedCollection</code></a> and multiple indexes all persist to the same area of memory,
  configure them all to persist via the same instance of this object.
  <p/>
  <b>Garbage collection</b><br/>
  The memory allocated off-heap will be freed automatically when this object is garbage collected. So using off-heap
  memory does not require any special handling per-se. This object will be garbage collected when any
- <a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine"><code>IndexedCollection</code></a> or indexes using this object for persistence (which hold a
+ <a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine"><code>IndexedCollection</code></a> or indexes using this object for persistence (which hold a
  reference to this object internally) are garbage collected, and the application also releases any direct reference to
  this object which it might be holding.
  <p/>
@@ -159,7 +159,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
  a connection to that database until either this object is garbage collected, or the <a href="#close()"><code>close()</code></a> method is
  called explicitly. (The <a href="#finalize()"><code>finalize()</code></a> method of this object calls <a href="#close()"><code>close()</code></a> automatically.)
  <p/>
- This object provides additional connections to the database on-demand; which the <a href="../../IndexedCollection.html" title="interface in com.googlecode.cqengine"><code>IndexedCollection</code></a>
+ This object provides additional connections to the database on-demand; which the <a href="../../IndexedCollection.html" title="interface in network.rhizome.cqengine"><code>IndexedCollection</code></a>
  and indexes will request on-the-fly as necessary whenever the collection or indexes need to be read or updated.
  SQLite automatically frees the memory used by an in-memory database when the last connection to the
  database is closed. So by holding open a connection, this object keeps the in-memory database alive between requests.
@@ -178,7 +178,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReadWriteLock.html?is-external=true" title="class or interface in java.util.concurrent.locks" class="externalLink"><code>ReadWriteLock</code></a>.
  <p/>
  As a workaround, any applications requiring more concurrency with an in-memory persistence, for example concurrent
- reads and concurrent writes which don't block each other, could consider using <a href="../disk/DiskPersistence.html" title="class in com.googlecode.cqengine.persistence.disk"><code>DiskPersistence</code></a> instead with
+ reads and concurrent writes which don't block each other, could consider using <a href="../disk/DiskPersistence.html" title="class in network.rhizome.cqengine.persistence.disk"><code>DiskPersistence</code></a> instead with
  the persistence file located on a ram disk.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -206,7 +206,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.attribute.SimpleAttribute,java.util.Properties)">OffHeapPersistence</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;primaryKeyAttribute,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.attribute.SimpleAttribute,java.util.Properties)">OffHeapPersistence</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;primaryKeyAttribute,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;overrideProperties)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -235,10 +235,10 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Closes a <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in com.googlecode.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> if it is present in the given query options with key
- <a href="../../index/sqlite/ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite"><code>ConnectionManager</code></a>.</div>
+<div class="block">Closes a <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in network.rhizome.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> if it is present in the given query options with key
+ <a href="../../index/sqlite/ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite"><code>ConnectionManager</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -249,14 +249,14 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createIdentityIndex()">createIdentityIndex</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
+<div class="block">Creates a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../support/sqlite/SQLiteObjectStore.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteObjectStore</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../support/sqlite/SQLiteObjectStore.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteObjectStore</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createObjectStore()">createObjectStore</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates an ObjectStore which can store the objects added to the collection, either on-heap off-heap or on disk,
@@ -287,16 +287,16 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a> to the SQLite database used for persistence.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnectionInternal(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnectionInternal</a></span>&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-                     <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnectionInternal(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnectionInternal</a></span>&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+                     <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -305,7 +305,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -315,33 +315,33 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPrimaryKey(com.googlecode.cqengine.attribute.SimpleAttribute)">onPrimaryKey</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute)</code></th>
+<td class="colFirst"><code>static &lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPrimaryKey(network.rhizome.cqengine.attribute.SimpleAttribute)">onPrimaryKey</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute)</code></th>
 <td class="colLast">
-<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
+<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
  the Java heap.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>static &lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPrimaryKeyWithProperties(com.googlecode.cqengine.attribute.SimpleAttribute,java.util.Properties)">onPrimaryKeyWithProperties</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute,
+<td class="colFirst"><code>static &lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onPrimaryKeyWithProperties(network.rhizome.cqengine.attribute.SimpleAttribute,java.util.Properties)">onPrimaryKeyWithProperties</a></span>&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute,
                           <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;overrideProperties)</code></th>
 <td class="colLast">
-<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
+<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
  the Java heap.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in com.googlecode.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> and adds it to the given query options with key
- <a href="../../index/sqlite/ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite"><code>ConnectionManager</code></a>, if an only if no object with that key is already in the query options.</div>
+<div class="block">Creates a new <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in network.rhizome.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> and adds it to the given query options with key
+ <a href="../../index/sqlite/ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite"><code>ConnectionManager</code></a>, if an only if no object with that key is already in the query options.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsIndex(com.googlecode.cqengine.index.Index)">supportsIndex</a></span>&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsIndex(network.rhizome.cqengine.index.Index)">supportsIndex</a></span>&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Checks if this persistence manages the given index.</div>
 </td>
@@ -375,13 +375,13 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.attribute.SimpleAttribute,java.util.Properties)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.attribute.SimpleAttribute,java.util.Properties)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>OffHeapPersistence</h4>
-<pre>protected&nbsp;OffHeapPersistence&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;primaryKeyAttribute,
+<pre>protected&nbsp;OffHeapPersistence&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;primaryKeyAttribute,
                              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;overrideProperties)</pre>
 </li>
 </ul>
@@ -401,10 +401,10 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>getPrimaryKeyAttribute</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;getPrimaryKeyAttribute()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;getPrimaryKeyAttribute()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Persistence.html#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Persistence.html#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the primary key attribute, if configured. This may be null for some persistence implementations
  especially on-heap persistence.</dd>
@@ -420,53 +420,53 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getInstanceName()</pre>
 </li>
 </ul>
-<a id="getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-                                <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">SQLitePersistence</a></code></span></div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+                                <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">SQLitePersistence</a></code></span></div>
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a> to the SQLite database used for persistence.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnection</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - The <a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
+<dd><code>index</code> - The <a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
 <dd><code>queryOptions</code> - The query options for the request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="getConnectionInternal(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getConnectionInternal(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnectionInternal</h4>
-<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnectionInternal&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-                                           <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnectionInternal&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+                                           <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="supportsIndex(com.googlecode.cqengine.index.Index)">
+<a id="supportsIndex(network.rhizome.cqengine.index.Index)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsIndex</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsIndex&#8203;(<a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;index)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Persistence.html#supportsIndex(com.googlecode.cqengine.index.Index)">Persistence</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsIndex&#8203;(<a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;index)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Persistence.html#supportsIndex(network.rhizome.cqengine.index.Index)">Persistence</a></code></span></div>
 <div class="block">Checks if this persistence manages the given index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Persistence.html#supportsIndex(com.googlecode.cqengine.index.Index)">supportsIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Persistence.html#supportsIndex(network.rhizome.cqengine.index.Index)">supportsIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - The <a href="../../index/Index.html" title="interface in com.googlecode.cqengine.index"><code>Index</code></a> for which a connection is required.</dd>
+<dd><code>index</code> - The <a href="../../index/Index.html" title="interface in network.rhizome.cqengine.index"><code>Index</code></a> for which a connection is required.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if the given index is an <a href="../../index/support/indextype/OffHeapTypeIndex.html" title="interface in com.googlecode.cqengine.index.support.indextype"><code>OffHeapTypeIndex</code></a>. Otherwise false.</dd>
+<dd>True if the given index is an <a href="../../index/support/indextype/OffHeapTypeIndex.html" title="interface in network.rhizome.cqengine.index.support.indextype"><code>OffHeapTypeIndex</code></a>. Otherwise false.</dd>
 </dl>
 </li>
 </ul>
@@ -494,7 +494,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <pre class="methodSignature">public&nbsp;long&nbsp;getBytesUsed()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html#getBytesUsed()">getBytesUsed</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html#getBytesUsed()">getBytesUsed</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The number of bytes used to persist the collection and/or indexes.</dd>
 </dl>
@@ -511,7 +511,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <div class="block">Compacts the underlying persistence, which returns unused memory or disk space to the operating system.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html#compact()">compact</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html#compact()">compact</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -535,7 +535,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
  imports when the persistence is on a non-SSD disk.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html#expand(long)">expand</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html#expand(long)">expand</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -600,13 +600,13 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>createObjectStore</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/sqlite/SQLiteObjectStore.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteObjectStore</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;createObjectStore()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../support/sqlite/SQLiteObjectStore.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteObjectStore</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&nbsp;createObjectStore()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Persistence.html#createObjectStore()">Persistence</a></code></span></div>
 <div class="block">Creates an ObjectStore which can store the objects added to the collection, either on-heap off-heap or on disk,
  depending on the persistence implementation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Persistence.html#createObjectStore()">createObjectStore</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Persistence.html#createObjectStore()">createObjectStore</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An ObjectStore which persists objects added to the collection.</dd>
 </dl>
@@ -618,79 +618,79 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>createIdentityIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;createIdentityIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>&gt;&nbsp;createIdentityIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html#createIdentityIndex()">SQLitePersistence</a></code></span></div>
-<div class="block">Creates a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
+<div class="block">Creates a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../index/sqlite/SQLitePersistence.html#createIdentityIndex()">createIdentityIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../../index/sqlite/SQLitePersistence.html#createIdentityIndex()">createIdentityIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</dd>
+<dd>a <a href="../../index/sqlite/SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</dd>
 </dl>
 </li>
 </ul>
-<a id="openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>openRequestScopeResources</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;openRequestScopeResources&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Creates a new <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in com.googlecode.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> and adds it to the given query options with key
- <a href="../../index/sqlite/ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite"><code>ConnectionManager</code></a>, if an only if no object with that key is already in the query options.
- This allows the application to supply its own implementation of <a href="../../index/sqlite/ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite"><code>ConnectionManager</code></a> to override the default
+<pre class="methodSignature">public&nbsp;void&nbsp;openRequestScopeResources&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Creates a new <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in network.rhizome.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> and adds it to the given query options with key
+ <a href="../../index/sqlite/ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite"><code>ConnectionManager</code></a>, if an only if no object with that key is already in the query options.
+ This allows the application to supply its own implementation of <a href="../../index/sqlite/ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite"><code>ConnectionManager</code></a> to override the default
  if necessary.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Persistence.html#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Persistence.html#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - The query options supplied with the request into CQEngine.</dd>
 </dl>
 </li>
 </ul>
-<a id="closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>closeRequestScopeResources</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;closeRequestScopeResources&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Closes a <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in com.googlecode.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> if it is present in the given query options with key
- <a href="../../index/sqlite/ConnectionManager.html" title="interface in com.googlecode.cqengine.index.sqlite"><code>ConnectionManager</code></a>.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;closeRequestScopeResources&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Closes a <a href="../../index/sqlite/RequestScopeConnectionManager.html" title="class in network.rhizome.cqengine.index.sqlite"><code>RequestScopeConnectionManager</code></a> if it is present in the given query options with key
+ <a href="../../index/sqlite/ConnectionManager.html" title="interface in network.rhizome.cqengine.index.sqlite"><code>ConnectionManager</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Persistence.html#closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
+<dd><code><a href="../Persistence.html#closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></code>&nbsp;in interface&nbsp;<code><a href="../Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">O</a>,&#8203;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="OffHeapPersistence.html" title="type parameter in OffHeapPersistence">A</a>&gt;&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - The query options supplied with the request into CQEngine.</dd>
 </dl>
 </li>
 </ul>
-<a id="onPrimaryKey(com.googlecode.cqengine.attribute.SimpleAttribute)">
+<a id="onPrimaryKey(network.rhizome.cqengine.attribute.SimpleAttribute)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPrimaryKey</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;&nbsp;onPrimaryKey&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute)</pre>
-<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;&nbsp;onPrimaryKey&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute)</pre>
+<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
  the Java heap.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>primaryKeyAttribute</code> - An attribute which returns the primary key of objects in the collection</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory</dd>
+<dd>An <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory</dd>
 </dl>
 </li>
 </ul>
-<a id="onPrimaryKeyWithProperties(com.googlecode.cqengine.attribute.SimpleAttribute,java.util.Properties)">
+<a id="onPrimaryKeyWithProperties(network.rhizome.cqengine.attribute.SimpleAttribute,java.util.Properties)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onPrimaryKeyWithProperties</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;&nbsp;onPrimaryKeyWithProperties&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute,
+<pre class="methodSignature">public static&nbsp;&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a>&lt;O,&#8203;A&gt;&nbsp;onPrimaryKeyWithProperties&#8203;(<a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;&nbsp;primaryKeyAttribute,
                                                                                                          <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a>&nbsp;overrideProperties)</pre>
-<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
+<div class="block">Creates an <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory, within the JVM process but outside
  the Java heap.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -698,7 +698,7 @@ implements <a href="../../index/sqlite/SQLitePersistence.html" title="interface 
 <dd><code>overrideProperties</code> - Optional properties to override default settings (can be empty to use all default
                            settings, but cannot be null)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <a href="OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory</dd>
+<dd>An <a href="OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap"><code>OffHeapPersistence</code></a> object which persists to native memory</dd>
 </dl>
 </li>
 </ul>

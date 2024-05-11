@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.support</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.support</a></div>
 <h2 title="Class ObjectSet" class="title">Class ObjectSet&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.persistence.support.ObjectSet&lt;O&gt;</li>
+<li>network.rhizome.cqengine.persistence.support.ObjectSet&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,16 +134,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang" class="externalLink">AutoCloseable</a></code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">ObjectSet&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;O&gt;, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
+implements <a href="../../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;O&gt;, <a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></pre>
 <div class="block">Represents a set of objects which may be iterated repeatedly, allowing the resources opened
  for each iteration to be closed afterwards.
  <p/>
- The <a href="../../index/support/CloseableIterable.html#iterator()"><code>CloseableIterable.iterator()</code></a> method returns a <a href="../../index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support"><code>CloseableIterator</code></a> which should ideally be
+ The <a href="../../index/support/CloseableIterable.html#iterator()"><code>CloseableIterable.iterator()</code></a> method returns a <a href="../../index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support"><code>CloseableIterator</code></a> which should ideally be
  closed after each iteration is complete.
  <p/>
  However this object also keeps track of iterators which were opened but not yet closed,
@@ -199,14 +199,14 @@ implements <a href="../../index/support/CloseableIterable.html" title="interface
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;</code></td>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromCollection(java.util.Collection)">fromCollection</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;&nbsp;collection)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromObjectStore(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">fromObjectStore</a></span>&#8203;(<a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;&nbsp;objectStore,
-               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromObjectStore(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">fromObjectStore</a></span>&#8203;(<a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;&nbsp;objectStore,
+               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -223,10 +223,10 @@ implements <a href="../../index/support/CloseableIterable.html" title="interface
 <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.index.support.CloseableIterable">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.index.support.CloseableIterable">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.index.support.<a href="../../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a></h3>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.index.support.<a href="../../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a></h3>
 <code><a href="../../index/support/CloseableIterable.html#iterator()">iterator</a></code></li>
 </ul>
 <ul class="blockList">
@@ -295,14 +295,14 @@ implements <a href="../../index/support/CloseableIterable.html" title="interface
 <pre class="methodSignature">public abstract&nbsp;boolean&nbsp;isEmpty()</pre>
 </li>
 </ul>
-<a id="fromObjectStore(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="fromObjectStore(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>fromObjectStore</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;&nbsp;fromObjectStore&#8203;(<a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;&nbsp;objectStore,
-                                               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;&nbsp;fromObjectStore&#8203;(<a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;&nbsp;objectStore,
+                                               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 <a id="fromCollection(java.util.Collection)">
@@ -311,7 +311,7 @@ implements <a href="../../index/support/CloseableIterable.html" title="interface
 <ul class="blockListLast">
 <li class="blockList">
 <h4>fromCollection</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;&nbsp;fromCollection&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;&nbsp;collection)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;O&gt;&nbsp;fromCollection&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;&nbsp;collection)</pre>
 </li>
 </ul>
 </li>

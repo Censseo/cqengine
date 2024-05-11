@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.quantizer</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.quantizer</a></div>
 <h2 title="Interface Quantizer" class="title">Interface Quantizer&lt;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -144,7 +144,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
          objects with price 5-9 against the the next key etc., potentially reducing the number of keys
          in the index by a factor of five. The <u><i>compression factor</i></u> (5 in this example) can be varied.
          <p/>
-         See: <a href="IntegerQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>IntegerQuantizer</code></a>, <a href="LongQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>LongQuantizer</code></a>, <a href="BigIntegerQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>BigIntegerQuantizer</code></a>
+         See: <a href="IntegerQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>IntegerQuantizer</code></a>, <a href="LongQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>LongQuantizer</code></a>, <a href="BigIntegerQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>BigIntegerQuantizer</code></a>
      </li>
      <li>
          Index attributes with <i>continuous</i> values, by quantizing to <i>discrete</i> values, and optionally
@@ -155,11 +155,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
          these objects would by default be stored against different keys, leading to an arbitrarily large number
          of keys for potentially small ranges in price.
          <p/>
-         See: <a href="FloatQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>FloatQuantizer</code></a>, <a href="DoubleQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>DoubleQuantizer</code></a>, <a href="BigDecimalQuantizer.html" title="class in com.googlecode.cqengine.quantizer"><code>BigDecimalQuantizer</code></a>
+         See: <a href="FloatQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>FloatQuantizer</code></a>, <a href="DoubleQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>DoubleQuantizer</code></a>, <a href="BigDecimalQuantizer.html" title="class in network.rhizome.cqengine.quantizer"><code>BigDecimalQuantizer</code></a>
      </li>
  </ul>
- When an index is configured with a <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a> and added to a collection, the index will use the function
- implemented by the <a href="Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a> to generate keys against which it will store objects in the index.
+ When an index is configured with a <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a> and added to a collection, the index will use the function
+ implemented by the <a href="Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a> to generate keys against which it will store objects in the index.
  <p/>
  Subsequently, when an index receives a query, it will use the same quantizer to determine from <i>sought</i> values
  in the query the relevant keys against which it can find matching objects in the index. Given that the set of objects

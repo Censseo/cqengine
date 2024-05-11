@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset.filter</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset.filter</a></div>
 <h2 title="Class FilteringIterator" class="title">Class FilteringIterator&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../iterator/UnmodifiableIterator.html" title="class in com.googlecode.cqengine.resultset.iterator">com.googlecode.cqengine.resultset.iterator.UnmodifiableIterator</a>&lt;O&gt;</li>
+<li><a href="../iterator/UnmodifiableIterator.html" title="class in network.rhizome.cqengine.resultset.iterator">network.rhizome.cqengine.resultset.iterator.UnmodifiableIterator</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.filter.FilteringIterator&lt;O&gt;</li>
+<li>network.rhizome.cqengine.resultset.filter.FilteringIterator&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -143,13 +143,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="DeduplicatingIterator.html" title="class in com.googlecode.cqengine.resultset.filter">DeduplicatingIterator</a></code></dd>
+<dd><code><a href="DeduplicatingIterator.html" title="class in network.rhizome.cqengine.resultset.filter">DeduplicatingIterator</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">FilteringIterator&lt;O&gt;</span>
-extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.googlecode.cqengine.resultset.iterator">UnmodifiableIterator</a>&lt;O&gt;</pre>
+extends <a href="../iterator/UnmodifiableIterator.html" title="class in network.rhizome.cqengine.resultset.iterator">UnmodifiableIterator</a>&lt;O&gt;</pre>
 <div class="block">An Iterator which wraps another iterator, and for each object returned by the wrapped iterator, calls an
- <a href="#isValid(O,com.googlecode.cqengine.query.option.QueryOptions)"><code>isValid(Object, com.googlecode.cqengine.query.option.QueryOptions)</code></a> method. If this method returns true, this iterator returns the object, if it returns false
+ <a href="#isValid(O,network.rhizome.cqengine.query.option.QueryOptions)"><code>isValid(Object, network.rhizome.cqengine.query.option.QueryOptions)</code></a> method. If this method returns true, this iterator returns the object, if it returns false
  it skips the object and moves to the next object.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -177,8 +177,8 @@ extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.goog
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.Iterator,com.googlecode.cqengine.query.option.QueryOptions)">FilteringIterator</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&gt;&nbsp;wrappedIterator,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.Iterator,network.rhizome.cqengine.query.option.QueryOptions)">FilteringIterator</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&gt;&nbsp;wrappedIterator,
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -206,8 +206,8 @@ extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.goog
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid(O,com.googlecode.cqengine.query.option.QueryOptions)">isValid</a></span>&#8203;(<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&nbsp;object,
-       <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid(O,network.rhizome.cqengine.query.option.QueryOptions)">isValid</a></span>&#8203;(<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&nbsp;object,
+       <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -217,10 +217,10 @@ extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.goog
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.resultset.iterator.UnmodifiableIterator">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.resultset.iterator.UnmodifiableIterator">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.resultset.iterator.<a href="../iterator/UnmodifiableIterator.html" title="class in com.googlecode.cqengine.resultset.iterator">UnmodifiableIterator</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.resultset.iterator.<a href="../iterator/UnmodifiableIterator.html" title="class in network.rhizome.cqengine.resultset.iterator">UnmodifiableIterator</a></h3>
 <code><a href="../iterator/UnmodifiableIterator.html#remove()">remove</a></code></li>
 </ul>
 <ul class="blockList">
@@ -253,14 +253,14 @@ extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.goog
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.util.Iterator,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="&lt;init&gt;(java.util.Iterator,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FilteringIterator</h4>
 <pre>public&nbsp;FilteringIterator&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&gt;&nbsp;wrappedIterator,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>
@@ -291,16 +291,16 @@ extends <a href="../iterator/UnmodifiableIterator.html" title="class in com.goog
 <pre class="methodSignature">public&nbsp;<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&nbsp;next()</pre>
 </li>
 </ul>
-<a id="isValid(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="isValid(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="isValid(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="isValid(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isValid</h4>
 <pre class="methodSignature">public abstract&nbsp;boolean&nbsp;isValid&#8203;(<a href="FilteringIterator.html" title="type parameter in FilteringIterator">O</a>&nbsp;object,
-                                <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                                <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>

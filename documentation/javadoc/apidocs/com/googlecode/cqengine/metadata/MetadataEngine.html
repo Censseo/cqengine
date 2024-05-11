@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.metadata</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.metadata</a></div>
 <h2 title="Class MetadataEngine" class="title">Class MetadataEngine&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.metadata.MetadataEngine&lt;O&gt;</li>
+<li>network.rhizome.cqengine.metadata.MetadataEngine&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -149,15 +149,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
      </li>
  </ul>
  <p>
- The <a href="#getAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)"><code>getAttributeMetadata(Attribute)</code></a> method returns an <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object,
+ The <a href="#getAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)"><code>getAttributeMetadata(Attribute)</code></a> method returns an <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object,
  which can provide access to basic metadata as discussed above for a given attribute, in unsorted order.
- This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
+ This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
  to be added to the collection on the given attribute. Most indexes implement that interface.
  <p>
- The <a href="#getSortedAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)"><code>getSortedAttributeMetadata(Attribute)</code></a> method returns a <a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object,
+ The <a href="#getSortedAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)"><code>getSortedAttributeMetadata(Attribute)</code></a> method returns a <a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object,
  which can provide access to additional metadata and in sorted order. It allows attribute values to be traversed
  in ascending or descending order, and it supports range queries. This requires in advance, an index which implements
- the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface, to be added to the collection on the given attribute.
+ the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface, to be added to the collection on the given attribute.
  That interface is implemented by many indexes.
  <p>
  This object can be accessed by calling <a href="../IndexedCollection.html#getMetadataEngine()"><code>IndexedCollection.getMetadataEngine()</code></a>.</div>
@@ -181,9 +181,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.IndexedCollection,java.util.function.Supplier,java.util.function.Consumer)">MetadataEngine</a></span>&#8203;(<a href="../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;indexedCollection,
-              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&gt;&nbsp;openResourcesHandler,
-              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&gt;&nbsp;closeResourcesHandler)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.IndexedCollection,java.util.function.Supplier,java.util.function.Consumer)">MetadataEngine</a></span>&#8203;(<a href="../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;indexedCollection,
+              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&gt;&nbsp;openResourcesHandler,
+              <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&gt;&nbsp;closeResourcesHandler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -205,18 +205,18 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>&lt;A&gt;&nbsp;<a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)">getAttributeMetadata</a></span>&#8203;(<a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</code></th>
+<td class="colFirst"><code>&lt;A&gt;&nbsp;<a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)">getAttributeMetadata</a></span>&#8203;(<a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</code></th>
 <td class="colLast">
-<div class="block">Returns an <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object, which can provide access to basic metadata
+<div class="block">Returns an <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object, which can provide access to basic metadata
  for a given attribute, in unsorted order.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">SortedAttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSortedAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)">getSortedAttributeMetadata</a></span>&#8203;(<a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</code></th>
+<td class="colFirst"><code>&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;<br><a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">SortedAttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSortedAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)">getSortedAttributeMetadata</a></span>&#8203;(<a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object, which can provide access to metadata in sorted order
+<div class="block">Returns a <a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object, which can provide access to metadata in sorted order
  for a given attribute.</div>
 </td>
 </tr>
@@ -244,15 +244,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.IndexedCollection,java.util.function.Supplier,java.util.function.Consumer)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.IndexedCollection,java.util.function.Supplier,java.util.function.Consumer)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MetadataEngine</h4>
-<pre>public&nbsp;MetadataEngine&#8203;(<a href="../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;indexedCollection,
-                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&gt;&nbsp;openResourcesHandler,
-                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&gt;&nbsp;closeResourcesHandler)</pre>
+<pre>public&nbsp;MetadataEngine&#8203;(<a href="../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;indexedCollection,
+                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&gt;&nbsp;openResourcesHandler,
+                      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Consumer</a>&lt;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&gt;&nbsp;closeResourcesHandler)</pre>
 </li>
 </ul>
 </li>
@@ -265,46 +265,46 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)">
+<a id="getAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAttributeMetadata</h4>
-<pre class="methodSignature">public&nbsp;&lt;A&gt;&nbsp;<a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;getAttributeMetadata&#8203;(<a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</pre>
-<div class="block">Returns an <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object, which can provide access to basic metadata
+<pre class="methodSignature">public&nbsp;&lt;A&gt;&nbsp;<a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;getAttributeMetadata&#8203;(<a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</pre>
+<div class="block">Returns an <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object, which can provide access to basic metadata
  for a given attribute, in unsorted order.
  <p>
- This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
+ This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
  to be added to the collection on the given attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - The attribute for which metadata is required</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object</dd>
+<dd>an <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - if no suitable index has been added to the collection</dd>
 </dl>
 </li>
 </ul>
-<a id="getSortedAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)">
+<a id="getSortedAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSortedAttributeMetadata</h4>
-<pre class="methodSignature">public&nbsp;&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">SortedAttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;getSortedAttributeMetadata&#8203;(<a href="../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</pre>
-<div class="block">Returns a <a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object, which can provide access to metadata in sorted order
+<pre class="methodSignature">public&nbsp;&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;&nbsp;<a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">SortedAttributeMetadata</a>&lt;A,&#8203;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>&gt;&nbsp;getSortedAttributeMetadata&#8203;(<a href="../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="MetadataEngine.html" title="type parameter in MetadataEngine">O</a>,&#8203;A&gt;&nbsp;attribute)</pre>
+<div class="block">Returns a <a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>SortedAttributeMetadata</code></a> accessor object, which can provide access to metadata in sorted order
  for a given attribute. It allows attribute values to be traversed in ascending or descending order, and it
  supports range queries.
  <p>
- This requires in advance, an index which implements the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface,
+ This requires in advance, an index which implements the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface,
  to be added to the collection on the given attribute.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attribute</code> - The attribute for which metadata is required</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>an <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object</dd>
+<dd>an <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata"><code>AttributeMetadata</code></a> accessor object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - if no suitable index has been added to the collection</dd>
 </dl>

@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.metadata</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.metadata</a></div>
 <h2 title="Class AttributeMetadata" class="title">Class AttributeMetadata&lt;A,&#8203;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.metadata.AttributeMetadata&lt;A,&#8203;O&gt;</li>
+<li>network.rhizome.cqengine.metadata.AttributeMetadata&lt;A,&#8203;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,18 +134,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="SortedAttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">SortedAttributeMetadata</a></code></dd>
+<dd><code><a href="SortedAttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">SortedAttributeMetadata</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">AttributeMetadata&lt;A,&#8203;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
 <div class="block">Provides access to basic metadata for a given attribute, in unsorted order.
  <p>
- This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
- to be added to the collection on the given attribute. See <a href="MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a> for more details.
+ This requires in advance, an index which implements the <a href="../index/support/KeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>KeyStatisticsAttributeIndex</code></a> interface,
+ to be added to the collection on the given attribute. See <a href="MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a> for more details.
  <p>
  This object can be accessed first by calling <a href="../IndexedCollection.html#getMetadataEngine()"><code>IndexedCollection.getMetadataEngine()</code></a> to access the
- <a href="MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a>, and then by calling <a href="MetadataEngine.html#getAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)"><code>MetadataEngine.getAttributeMetadata(Attribute)</code></a> for a given
+ <a href="MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a>, and then by calling <a href="MetadataEngine.html#getAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)"><code>MetadataEngine.getAttributeMetadata(Attribute)</code></a> for a given
  attribute.</div>
 </li>
 </ul>
@@ -168,20 +168,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asKeyFrequencyStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">asKeyFrequencyStream</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
-                    <a href="../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../index/support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;iterable)</code></th>
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asKeyFrequencyStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">asKeyFrequencyStream</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
+                    <a href="../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../index/support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;iterable)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected &lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">asStream</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
-        <a href="../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;iterable)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">asStream</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
+        <a href="../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;iterable)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -206,21 +206,21 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFrequencyDistribution()">getFrequencyDistribution</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the frequencies of distinct keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>,&#8203;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>,&#8203;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues()">getKeysAndValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>protected <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a></code></td>
+<td class="colFirst"><code>protected <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openResources()">openResources</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -254,10 +254,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getFrequencyDistribution</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistribution()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistribution()</pre>
 <div class="block">Returns the frequencies of distinct keys (a.k.a. attribute values) in the index.
  <p>
- The <a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
+ The <a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
  of how many objects in the collection match that key.</div>
 </li>
 </ul>
@@ -299,7 +299,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>,&#8203;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>,&#8203;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
 <div class="block">Returns the keys (a.k.a. attribute values) and the objects they match in the index.
  <p>
  Note the same key will be returned multiple times if more than one object has the same key. Also the same object
@@ -310,24 +310,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="asKeyFrequencyStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">
+<a id="asKeyFrequencyStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>asKeyFrequencyStream</h4>
-<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;asKeyFrequencyStream&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
-                                                       <a href="../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;<a href="../index/support/KeyStatistics.html" title="class in com.googlecode.cqengine.index.support">KeyStatistics</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;iterable)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;asKeyFrequencyStream&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
+                                                       <a href="../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;<a href="../index/support/KeyStatistics.html" title="class in network.rhizome.cqengine.index.support">KeyStatistics</a>&lt;<a href="AttributeMetadata.html" title="type parameter in AttributeMetadata">A</a>&gt;&gt;&nbsp;iterable)</pre>
 </li>
 </ul>
-<a id="asStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">
+<a id="asStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>asStream</h4>
-<pre class="methodSignature">protected&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;T&gt;&nbsp;asStream&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
-                                 <a href="../index/support/CloseableIterable.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;iterable)</pre>
+<pre class="methodSignature">protected&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;T&gt;&nbsp;asStream&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions,
+                                 <a href="../index/support/CloseableIterable.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterable</a>&lt;T&gt;&nbsp;iterable)</pre>
 </li>
 </ul>
 <a id="openResources()">
@@ -336,16 +336,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>openResources</h4>
-<pre class="methodSignature">protected&nbsp;<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;openResources()</pre>
+<pre class="methodSignature">protected&nbsp;<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;openResources()</pre>
 </li>
 </ul>
-<a id="closeResources(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="closeResources(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>closeResources</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;closeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;closeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>

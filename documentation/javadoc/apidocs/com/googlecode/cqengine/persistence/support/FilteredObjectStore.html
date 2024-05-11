@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.support</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.support</a></div>
 <h2 title="Class FilteredObjectStore" class="title">Class FilteredObjectStore&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.persistence.support.FilteredObjectStore&lt;O&gt;</li>
+<li>network.rhizome.cqengine.persistence.support.FilteredObjectStore&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,15 +134,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;</code></dd>
+<dd><code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">FilteredObjectStore&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;</pre>
-<div class="block">Wraps an <a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support"><code>ObjectStore</code></a> and filters objects returned by its iterator to ensure they match a given query.
+implements <a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;O&gt;</pre>
+<div class="block">Wraps an <a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support"><code>ObjectStore</code></a> and filters objects returned by its iterator to ensure they match a given query.
  <p/>
- Note this wrapper does not support any method except <a href="#iterator(com.googlecode.cqengine.query.option.QueryOptions)"><code>iterator(QueryOptions)</code></a>!
+ Note this wrapper does not support any method except <a href="#iterator(network.rhizome.cqengine.query.option.QueryOptions)"><code>iterator(QueryOptions)</code></a>!
  All other methods will throw <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink"><code>UnsupportedOperationException</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -168,8 +168,8 @@ implements <a href="ObjectStore.html" title="interface in com.googlecode.cqengin
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.Query)">FilteredObjectStore</a></span>&#8203;(<a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;backingObjectStore,
-                   <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;filterQuery)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.Query)">FilteredObjectStore</a></span>&#8203;(<a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;backingObjectStore,
+                   <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;filterQuery)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -192,67 +192,67 @@ implements <a href="ObjectStore.html" title="interface in com.googlecode.cqengin
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(O,com.googlecode.cqengine.query.option.QueryOptions)">add</a></span>&#8203;(<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&nbsp;object,
-   <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(O,network.rhizome.cqengine.query.option.QueryOptions)">add</a></span>&#8203;(<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&nbsp;object,
+   <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;c,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;c,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">contains</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">contains</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">containsAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-           <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">containsAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+           <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty(com.googlecode.cqengine.query.option.QueryOptions)">isEmpty</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty(network.rhizome.cqengine.query.option.QueryOptions)">isEmpty</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator(com.googlecode.cqengine.query.option.QueryOptions)">iterator</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../../index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator(network.rhizome.cqengine.query.option.QueryOptions)">iterator</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns the subset of objects from the backing <a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
+<div class="block">Returns the subset of objects from the backing <a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
  constructor.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">remove</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">remove</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retainAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">retainAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retainAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">retainAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size(com.googlecode.cqengine.query.option.QueryOptions)">size</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size(network.rhizome.cqengine.query.option.QueryOptions)">size</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -279,14 +279,14 @@ implements <a href="ObjectStore.html" title="interface in com.googlecode.cqengin
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.Query)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.Query)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FilteredObjectStore</h4>
-<pre>public&nbsp;FilteredObjectStore&#8203;(<a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;backingObjectStore,
-                           <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;filterQuery)</pre>
+<pre>public&nbsp;FilteredObjectStore&#8203;(<a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;backingObjectStore,
+                           <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;filterQuery)</pre>
 </li>
 </ul>
 </li>
@@ -299,178 +299,178 @@ implements <a href="ObjectStore.html" title="interface in com.googlecode.cqengin
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="iterator(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="iterator(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;iterator&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Returns the subset of objects from the backing <a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
+<pre class="methodSignature">public&nbsp;<a href="../../index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;iterator&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Returns the subset of objects from the backing <a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
  constructor.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#iterator(com.googlecode.cqengine.query.option.QueryOptions)">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#iterator(network.rhizome.cqengine.query.option.QueryOptions)">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the subset of objects from the backing <a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
+<dd>the subset of objects from the backing <a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support"><code>ObjectStore</code></a> which match the filter query supplied to the
  constructor.</dd>
 </dl>
 </li>
 </ul>
-<a id="size(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="size(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;size&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;size&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#size(com.googlecode.cqengine.query.option.QueryOptions)">size</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#size(network.rhizome.cqengine.query.option.QueryOptions)">size</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="contains(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="contains(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-                        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#contains(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">contains</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#contains(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">contains</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="isEmpty(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="isEmpty(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEmpty</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isEmpty&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isEmpty&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#isEmpty(com.googlecode.cqengine.query.option.QueryOptions)">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#isEmpty(network.rhizome.cqengine.query.option.QueryOptions)">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="add(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="add(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="add(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="add(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;add&#8203;(<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&nbsp;object,
-                   <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                   <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#add(O,com.googlecode.cqengine.query.option.QueryOptions)">add</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#add(O,network.rhizome.cqengine.query.option.QueryOptions)">add</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="remove(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="remove(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;remove&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#remove(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">remove</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#remove(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">remove</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="containsAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="containsAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>containsAll</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;containsAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                           <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                           <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#containsAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">containsAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#containsAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">containsAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="addAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;&nbsp;c,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#addAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#addAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="retainAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retainAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retainAll</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;retainAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#retainAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">retainAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#retainAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">retainAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="removeAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#removeAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#removeAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ObjectStore.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
+<dd><code><a href="ObjectStore.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FilteredObjectStore.html" title="type parameter in FilteredObjectStore">O</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang" class="externalLink">UnsupportedOperationException</a></code> - Always.</dd>
 </dl>

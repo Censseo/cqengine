@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset.filter</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset.filter</a></div>
 <h2 title="Class DeduplicatingResultSet" class="title">Class DeduplicatingResultSet&lt;O,&#8203;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">com.googlecode.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
+<li><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">network.rhizome.cqengine.resultset.ResultSet</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.filter.DeduplicatingResultSet&lt;O,&#8203;A&gt;</li>
+<li>network.rhizome.cqengine.resultset.filter.DeduplicatingResultSet&lt;O,&#8203;A&gt;</li>
 </ul>
 </li>
 </ul>
@@ -143,8 +143,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DeduplicatingResultSet&lt;O,&#8203;A&gt;</span>
-extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;</pre>
-<div class="block">A <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which wraps another, to suppress duplicate objects, where a duplicate object is one which has
+extends <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;</pre>
+<div class="block">A <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which wraps another, to suppress duplicate objects, where a duplicate object is one which has
  the same value(s) for the given attribute.
  <p/>
  Say an object had an attribute <code>COLOR</code>. This result set would return only one object of each color from the
@@ -176,10 +176,10 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.resultset.ResultSet,com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">DeduplicatingResultSet</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>,&#8203;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">A</a>&gt;&nbsp;uniqueAttribute,
-                      <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;wrappedResultSet,
-                      <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;query,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.resultset.ResultSet,network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">DeduplicatingResultSet</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>,&#8203;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">A</a>&gt;&nbsp;uniqueAttribute,
+                      <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;wrappedResultSet,
+                      <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;query,
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -211,7 +211,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(O)">contains</a></span>&#8203;(<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&nbsp;object)</code></th>
 <td class="colLast">
-<div class="block">Returns true if this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.</div>
+<div class="block">Returns true if this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -222,14 +222,14 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQuery()">getQuery</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the query for which this ResultSet provides results.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a></code></td>
+<td class="colFirst"><code><a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQueryOptions()">getQueryOptions</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the query options associated with the query.</div>
@@ -247,7 +247,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -267,10 +267,10 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.resultset.ResultSet">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.resultset.ResultSet">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.resultset.<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.resultset.<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a></h3>
 <code><a href="../ResultSet.html#isEmpty()">isEmpty</a>, <a href="../ResultSet.html#isNotEmpty()">isNotEmpty</a>, <a href="../ResultSet.html#spliterator()">spliterator</a>, <a href="../ResultSet.html#stream()">stream</a>, <a href="../ResultSet.html#uniqueResult()">uniqueResult</a></code></li>
 </ul>
 <ul class="blockList">
@@ -303,16 +303,16 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.resultset.ResultSet,com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.resultset.ResultSet,network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DeduplicatingResultSet</h4>
-<pre>public&nbsp;DeduplicatingResultSet&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>,&#8203;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">A</a>&gt;&nbsp;uniqueAttribute,
-                              <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;wrappedResultSet,
-                              <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;query,
-                              <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre>public&nbsp;DeduplicatingResultSet&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>,&#8203;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">A</a>&gt;&nbsp;uniqueAttribute,
+                              <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;wrappedResultSet,
+                              <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;query,
+                              <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>
@@ -333,14 +333,14 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <h4>iterator</h4>
 <pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;iterator()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#iterator()">ResultSet</a></code></span></div>
-<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
+<div class="block">Returns an <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator()" title="class or interface in java.lang" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#iterator()">iterator</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
+<dd>An <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Iterator</code></a> over objects matching the query for which this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> was constructed</dd>
 </dl>
 </li>
 </ul>
@@ -354,7 +354,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <h4>contains</h4>
 <pre class="methodSignature">public final&nbsp;boolean&nbsp;contains&#8203;(<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&nbsp;object)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#contains(O)">ResultSet</a></code></span></div>
-<div class="block">Returns true if this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.
+<div class="block">Returns true if this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not.
  <p/>
  Note that the cost of calling this method will most likely be cheaper than iterating all results to check if an
  object is contained. If indexes are available to support the query, this method will query indexes to check if
@@ -364,11 +364,11 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  than this method.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#contains(O)">contains</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#contains(O)">contains</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - The object to check for containment in this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd><code>object</code> - The object to check for containment in this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not</dd>
+<dd>True if this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> contains the given object, false if it does not</dd>
 </dl>
 </li>
 </ul>
@@ -395,11 +395,11 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  than querying attributes, which is usually the case.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#matches(O)">matches</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#matches(O)">matches</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>object</code> - The object to check for logical containment in this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a></dd>
+<dd><code>object</code> - The object to check for logical containment in this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if this <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> logically contains the given object, false if it does not</dd>
+<dd>True if this <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> logically contains the given object, false if it does not</dd>
 </dl>
 </li>
 </ul>
@@ -416,7 +416,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  Note that the cost of calling this method depends on the query for which it was constructed.
  <p/>
  For simple queries where a single query is supplied and a matching index exists, or where several such simple
- queries are supplied and are connected using a simple <a href="../../query/logical/Or.html" title="class in com.googlecode.cqengine.query.logical"><code>Or</code></a>
+ queries are supplied and are connected using a simple <a href="../../query/logical/Or.html" title="class in network.rhizome.cqengine.query.logical"><code>Or</code></a>
  query, calculating the size via this method will be cheaper than iterating through the ResultSet and counting
  the number of objects individually.
  <p/>
@@ -425,7 +425,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  counting the number of objects individually.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#size()">size</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#size()">size</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The number of objects which would be returned by this <code>ResultSet</code> if iterated</dd>
 </dl>
@@ -451,7 +451,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  both indexes, retrieval cost allows the query engine to <i>prefer</i> the hash index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#getRetrievalCost()">getRetrievalCost</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#getRetrievalCost()">getRetrievalCost</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An estimate of the cost of looking up a particular query in the index</dd>
 </dl>
@@ -486,7 +486,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
  versus filtering strategies.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#getMergeCost()">getMergeCost</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#getMergeCost()">getMergeCost</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An estimate of the cost of merging (or otherwise processing) objects matching a query</dd>
 </dl>
@@ -510,7 +510,7 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true#close()" title="class or interface in java.io" class="externalLink">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io" class="externalLink">Closeable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#close()">close</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#close()">close</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -520,12 +520,12 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <ul class="blockList">
 <li class="blockList">
 <h4>getQuery</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;getQuery()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;&nbsp;getQuery()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#getQuery()">ResultSet</a></code></span></div>
 <div class="block">Returns the query for which this ResultSet provides results.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#getQuery()">getQuery</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#getQuery()">getQuery</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The query for which this ResultSet provides results.</dd>
 </dl>
@@ -537,12 +537,12 @@ extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resu
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getQueryOptions</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;getQueryOptions()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;getQueryOptions()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../ResultSet.html#getQueryOptions()">ResultSet</a></code></span></div>
 <div class="block">Returns the query options associated with the query.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../ResultSet.html#getQueryOptions()">getQueryOptions</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
+<dd><code><a href="../ResultSet.html#getQueryOptions()">getQueryOptions</a></code>&nbsp;in class&nbsp;<code><a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="DeduplicatingResultSet.html" title="type parameter in DeduplicatingResultSet">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The query options associated with the query.</dd>
 </dl>

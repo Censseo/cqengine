@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.sqlite</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.sqlite</a></div>
 <h2 title="Interface IdentityAttributeIndex" class="title">Interface IdentityAttributeIndex&lt;A,&#8203;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -126,15 +126,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</code>, <code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</code>, <code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../persistence/support/sqlite/SQLiteDiskIdentityIndex.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteDiskIdentityIndex</a></code>, <code><a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite">SQLiteIdentityIndex</a></code>, <code><a href="../../persistence/support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a></code></dd>
+<dd><code><a href="../../persistence/support/sqlite/SQLiteDiskIdentityIndex.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteDiskIdentityIndex</a></code>, <code><a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite">SQLiteIdentityIndex</a></code>, <code><a href="../../persistence/support/sqlite/SQLiteOffHeapIdentityIndex.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteOffHeapIdentityIndex</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">IdentityAttributeIndex&lt;A,&#8203;O&gt;</span>
-extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
+extends <a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
 <div class="block">Implemented by indexes which persist serialized objects directly in the index instead of persisting foreign keys.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -161,7 +161,7 @@ extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqen
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">A</a>,&#8203;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">A</a>,&#8203;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getForeignKeyAttribute()">getForeignKeyAttribute</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns an attribute which given a primary key of a stored object can read (deserialize) the corresponding
@@ -170,25 +170,25 @@ extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqen
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.index.AttributeIndex">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.index.AttributeIndex">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.index.<a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a></h3>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.index.<a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a></h3>
 <code><a href="../AttributeIndex.html#getAttribute()">getAttribute</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.index.Index">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.index.Index">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.index.<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a></h3>
-<code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a>, <a href="../Index.html#isMutable()">isMutable</a>, <a href="../Index.html#isQuantized()">isQuantized</a>, <a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a>, <a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></code></li>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.index.<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a></h3>
+<code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a>, <a href="../Index.html#isMutable()">isMutable</a>, <a href="../Index.html#isQuantized()">isQuantized</a>, <a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a>, <a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.engine.ModificationListener">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.engine.ModificationListener">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.engine.<a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a></h3>
-<code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a>, <a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a>, <a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a>, <a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a>, <a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></code></li>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.engine.<a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a></h3>
+<code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a>, <a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a>, <a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a>, <a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a>, <a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></code></li>
 </ul>
 </li>
 </ul>
@@ -212,7 +212,7 @@ extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqen
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getForeignKeyAttribute</h4>
-<pre class="methodSignature"><a href="../../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">A</a>,&#8203;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">O</a>&gt;&nbsp;getForeignKeyAttribute()</pre>
+<pre class="methodSignature"><a href="../../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">A</a>,&#8203;<a href="IdentityAttributeIndex.html" title="type parameter in IdentityAttributeIndex">O</a>&gt;&nbsp;getForeignKeyAttribute()</pre>
 <div class="block">Returns an attribute which given a primary key of a stored object can read (deserialize) the corresponding
  object from the identity index. This is called a foreign key attribute, because typically those keys will
  be stored in other indexes, referring to the primary keys of this index.</div>

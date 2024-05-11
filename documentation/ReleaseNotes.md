@@ -105,7 +105,7 @@
 ### Version 2.10.0 - 2017-06-07 ###
   * Maintenance release. This version is backward compatible with 2.9.3 with the exception of the following packaging issue which affects users of the CQEngine shaded jar only.
   * Fixed packaging issue in shaded jar which existed since CQEngine 2.8.0 (issue #144)
-    * If and only if, you were using the shaded version of CQEngine versions 2.8.0 thru 2.9.3, note that as of CQEngine 2.10.0 the package names of CQEngine’s own classes as provided in the shaded jar have now reverted from `com.googlecode.cqengine.lib.com.googlecode.cqengine` to `com.googlecode.cqengine`, to match the packaging in the regular/non-shaded jar. You will need to update import statements in your classes using CQEngine accordingly. No other code changes will be necessary.
+    * If and only if, you were using the shaded version of CQEngine versions 2.8.0 thru 2.9.3, note that as of CQEngine 2.10.0 the package names of CQEngine’s own classes as provided in the shaded jar have now reverted from `network.rhizome.cqengine.lib.network.rhizome.cqengine` to `network.rhizome.cqengine`, to match the packaging in the regular/non-shaded jar. You will need to update import statements in your classes using CQEngine accordingly. No other code changes will be necessary.
   * Updated dependency on SQLite to version 3.16.1 (issue #123)
   * Added utility method for testing POJO compatibility with disk and off-heap persistence `PojoSerializer.validateObjectIsRoundTripSerializable()`
 
@@ -125,7 +125,7 @@
 
 ### Version 2.9.0 - 2016-11-02 ###
   * Maintenance release. The minor version has been bumped only because of the following minor API change.
-  * The `StreamFactory` class has been moved from package `com.googlecode.cqengine.query` to package `com.googlecode.cqengine.stream`.
+  * The `StreamFactory` class has been moved from package `network.rhizome.cqengine.query` to package `network.rhizome.cqengine.stream`.
   * This fixes an OSGi packaging problem, discussed in issue #96.
   
 ### Version 2.8.0 - 2016-09-19 ###

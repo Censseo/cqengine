@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.resultset.common</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.resultset.common</a></div>
 <h2 title="Class ResultSets" class="title">Class ResultSets</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.resultset.common.ResultSets</li>
+<li>network.rhizome.cqengine.resultset.common.ResultSets</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +135,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">ResultSets</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
-<div class="block">Utility methods for working with <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> objects.</div>
+<div class="block">Utility methods for working with <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> objects.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Niall Gallagher</dd>
@@ -162,25 +162,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCollection(com.googlecode.cqengine.resultset.ResultSet)">asCollection</a></span>&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCollection(network.rhizome.cqengine.resultset.ResultSet)">asCollection</a></span>&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</code></th>
 <td class="colLast">
 <div class="block">Returns a Collection-like view of the given ResultSet.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapWithCostCachingIfNecessary(com.googlecode.cqengine.resultset.ResultSet)">wrapWithCostCachingIfNecessary</a></span>&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</code></th>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapWithCostCachingIfNecessary(network.rhizome.cqengine.resultset.ResultSet)">wrapWithCostCachingIfNecessary</a></span>&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</code></th>
 <td class="colLast">
-<div class="block">Returns the given <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> as-is if it is already an instance of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a>, otherwise
+<div class="block">Returns the given <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> as-is if it is already an instance of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a>, otherwise
  wraps it accordingly and returns the result.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapWithCostCachingIfNecessary(java.lang.Iterable)">wrapWithCostCachingIfNecessary</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;resultSets)</code></th>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wrapWithCostCachingIfNecessary(java.lang.Iterable)">wrapWithCostCachingIfNecessary</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;resultSets)</code></th>
 <td class="colLast">
-<div class="block">Returns a list of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s, by copying from the result sets given, wrapping them as
- necessary via <a href="#wrapWithCostCachingIfNecessary(com.googlecode.cqengine.resultset.ResultSet)"><code>wrapWithCostCachingIfNecessary(ResultSet)</code></a>.</div>
+<div class="block">Returns a list of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s, by copying from the result sets given, wrapping them as
+ necessary via <a href="#wrapWithCostCachingIfNecessary(network.rhizome.cqengine.resultset.ResultSet)"><code>wrapWithCostCachingIfNecessary(ResultSet)</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -207,13 +207,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="asCollection(com.googlecode.cqengine.resultset.ResultSet)">
+<a id="asCollection(network.rhizome.cqengine.resultset.ResultSet)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>asCollection</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;&nbsp;asCollection&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;&nbsp;asCollection&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</pre>
 <div class="block">Returns a Collection-like view of the given ResultSet.
  <p/>
  The collection simply delegates to the ResultSet, which in turn will reflect
@@ -234,29 +234,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>wrapWithCostCachingIfNecessary</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;wrapWithCostCachingIfNecessary&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;resultSets)</pre>
-<div class="block">Returns a list of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s, by copying from the result sets given, wrapping them as
- necessary via <a href="#wrapWithCostCachingIfNecessary(com.googlecode.cqengine.resultset.ResultSet)"><code>wrapWithCostCachingIfNecessary(ResultSet)</code></a>.</div>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;wrapWithCostCachingIfNecessary&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&gt;&nbsp;resultSets)</pre>
+<div class="block">Returns a list of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s, by copying from the result sets given, wrapping them as
+ necessary via <a href="#wrapWithCostCachingIfNecessary(network.rhizome.cqengine.resultset.ResultSet)"><code>wrapWithCostCachingIfNecessary(ResultSet)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>resultSets</code> - a list of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s</dd>
+<dd><code>resultSets</code> - a list of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a>s</dd>
 </dl>
 </li>
 </ul>
-<a id="wrapWithCostCachingIfNecessary(com.googlecode.cqengine.resultset.ResultSet)">
+<a id="wrapWithCostCachingIfNecessary(network.rhizome.cqengine.resultset.ResultSet)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>wrapWithCostCachingIfNecessary</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;wrapWithCostCachingIfNecessary&#8203;(<a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</pre>
-<div class="block">Returns the given <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> as-is if it is already an instance of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a>, otherwise
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;wrapWithCostCachingIfNecessary&#8203;(<a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;O&gt;&nbsp;resultSet)</pre>
+<div class="block">Returns the given <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> as-is if it is already an instance of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a>, otherwise
  wraps it accordingly and returns the result.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>resultSet</code> - A <a href="../ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which may or may not be an instance of <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a></dd>
+<dd><code>resultSet</code> - A <a href="../ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which may or may not be an instance of <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="CostCachingResultSet.html" title="class in com.googlecode.cqengine.resultset.common"><code>CostCachingResultSet</code></a> as described</dd>
+<dd>A <a href="CostCachingResultSet.html" title="class in network.rhizome.cqengine.resultset.common"><code>CostCachingResultSet</code></a> as described</dd>
 </dl>
 </li>
 </ul>

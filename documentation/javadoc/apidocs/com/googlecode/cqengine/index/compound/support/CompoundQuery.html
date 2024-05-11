@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.compound.support</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.compound.support</a></div>
 <h2 title="Class CompoundQuery" class="title">Class CompoundQuery&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.compound.support.CompoundQuery&lt;O&gt;</li>
+<li>network.rhizome.cqengine.index.compound.support.CompoundQuery&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,14 +134,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">CompoundQuery&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</pre>
-<div class="block">A query which wraps a <a href="CompoundAttribute.html" title="class in com.googlecode.cqengine.index.compound.support"><code>CompoundAttribute</code></a>, used only in the query engine's internal communication
- with a <a href="../CompoundIndex.html" title="class in com.googlecode.cqengine.index.compound"><code>CompoundIndex</code></a>.
+implements <a href="../../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</pre>
+<div class="block">A query which wraps a <a href="CompoundAttribute.html" title="class in network.rhizome.cqengine.index.compound.support"><code>CompoundAttribute</code></a>, used only in the query engine's internal communication
+ with a <a href="../CompoundIndex.html" title="class in network.rhizome.cqengine.index.compound"><code>CompoundIndex</code></a>.
  <p/></div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -167,8 +167,8 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.query.logical.And,com.googlecode.cqengine.index.compound.support.CompoundAttribute)">CompoundQuery</a></span>&#8203;(<a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;andQuery,
-             <a href="CompoundAttribute.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;compoundAttribute)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.query.logical.And,network.rhizome.cqengine.index.compound.support.CompoundAttribute)">CompoundQuery</a></span>&#8203;(<a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;andQuery,
+             <a href="CompoundAttribute.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;compoundAttribute)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -190,29 +190,29 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CompoundQuery.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundQuery</a>&lt;O&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromAndQueryIfSuitable(com.googlecode.cqengine.query.logical.And)">fromAndQueryIfSuitable</a></span>&#8203;(<a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;O&gt;&nbsp;andQuery)</code></th>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CompoundQuery.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundQuery</a>&lt;O&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromAndQueryIfSuitable(network.rhizome.cqengine.query.logical.And)">fromAndQueryIfSuitable</a></span>&#8203;(<a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;O&gt;&nbsp;andQuery)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAndQuery()">getAndQuery</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="CompoundAttribute.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="CompoundAttribute.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCompoundAttribute()">getCompoundAttribute</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="CompoundValueTuple.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundValueTuple</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="CompoundValueTuple.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundValueTuple</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCompoundValueTuple()">getCompoundValueTuple</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></span>&#8203;(<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&nbsp;object,
-       <a href="../../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></span>&#8203;(<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&nbsp;object,
+       <a href="../../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Tests an object to see if it matches the assertion represented by the query.</div>
 </td>
@@ -241,14 +241,14 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.query.logical.And,com.googlecode.cqengine.index.compound.support.CompoundAttribute)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.query.logical.And,network.rhizome.cqengine.index.compound.support.CompoundAttribute)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CompoundQuery</h4>
-<pre>public&nbsp;CompoundQuery&#8203;(<a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;andQuery,
-                     <a href="CompoundAttribute.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;compoundAttribute)</pre>
+<pre>public&nbsp;CompoundQuery&#8203;(<a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;andQuery,
+                     <a href="CompoundAttribute.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;compoundAttribute)</pre>
 </li>
 </ul>
 </li>
@@ -261,31 +261,31 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="matches(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="matches(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="matches(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="matches(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>matches</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;matches&#8203;(<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&nbsp;object,
-                       <a href="../../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                       <a href="../../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Tests an object to see if it matches the assertion represented by the query.
  <p/>
- This implementation for <a href="CompoundQuery.html" title="class in com.googlecode.cqengine.index.compound.support"><code>CompoundQuery</code></a> iterates each of the child <a href="../../../query/simple/Equal.html" title="class in com.googlecode.cqengine.query.simple"><code>Equal</code></a> queries of the
- <a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical"><code>And</code></a> query from which the <a href="CompoundQuery.html" title="class in com.googlecode.cqengine.index.compound.support"><code>CompoundQuery</code></a> was constructed, and for each child <a href="../../../query/simple/Equal.html" title="class in com.googlecode.cqengine.query.simple"><code>Equal</code></a> query,
+ This implementation for <a href="CompoundQuery.html" title="class in network.rhizome.cqengine.index.compound.support"><code>CompoundQuery</code></a> iterates each of the child <a href="../../../query/simple/Equal.html" title="class in network.rhizome.cqengine.query.simple"><code>Equal</code></a> queries of the
+ <a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical"><code>And</code></a> query from which the <a href="CompoundQuery.html" title="class in network.rhizome.cqengine.index.compound.support"><code>CompoundQuery</code></a> was constructed, and for each child <a href="../../../query/simple/Equal.html" title="class in network.rhizome.cqengine.query.simple"><code>Equal</code></a> query,
  tests if the given object matches that query.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../query/Query.html#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></code>&nbsp;in interface&nbsp;<code><a href="../../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></dd>
+<dd><code><a href="../../../query/Query.html#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></code>&nbsp;in interface&nbsp;<code><a href="../../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>object</code> - The object to test</dd>
 <dd><code>queryOptions</code> - Optional parameters supplied by the application along with the operation which is causing
  this attribute to be invoked (either a query, or an update to the collection)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>True if the object matches all of the child <a href="../../../query/simple/Equal.html" title="class in com.googlecode.cqengine.query.simple"><code>Equal</code></a> queries, false if the object does not match
- one or more child <a href="../../../query/simple/Equal.html" title="class in com.googlecode.cqengine.query.simple"><code>Equal</code></a> queries</dd>
+<dd>True if the object matches all of the child <a href="../../../query/simple/Equal.html" title="class in network.rhizome.cqengine.query.simple"><code>Equal</code></a> queries, false if the object does not match
+ one or more child <a href="../../../query/simple/Equal.html" title="class in network.rhizome.cqengine.query.simple"><code>Equal</code></a> queries</dd>
 </dl>
 </li>
 </ul>
@@ -295,7 +295,7 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <ul class="blockList">
 <li class="blockList">
 <h4>getAndQuery</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getAndQuery()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getAndQuery()</pre>
 </li>
 </ul>
 <a id="getCompoundAttribute()">
@@ -304,7 +304,7 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <ul class="blockList">
 <li class="blockList">
 <h4>getCompoundAttribute</h4>
-<pre class="methodSignature">public&nbsp;<a href="CompoundAttribute.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getCompoundAttribute()</pre>
+<pre class="methodSignature">public&nbsp;<a href="CompoundAttribute.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundAttribute</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getCompoundAttribute()</pre>
 </li>
 </ul>
 <a id="getCompoundValueTuple()">
@@ -313,16 +313,16 @@ implements <a href="../../../query/Query.html" title="interface in com.googlecod
 <ul class="blockList">
 <li class="blockList">
 <h4>getCompoundValueTuple</h4>
-<pre class="methodSignature">public&nbsp;<a href="CompoundValueTuple.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundValueTuple</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getCompoundValueTuple()</pre>
+<pre class="methodSignature">public&nbsp;<a href="CompoundValueTuple.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundValueTuple</a>&lt;<a href="CompoundQuery.html" title="type parameter in CompoundQuery">O</a>&gt;&nbsp;getCompoundValueTuple()</pre>
 </li>
 </ul>
-<a id="fromAndQueryIfSuitable(com.googlecode.cqengine.query.logical.And)">
+<a id="fromAndQueryIfSuitable(network.rhizome.cqengine.query.logical.And)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>fromAndQueryIfSuitable</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CompoundQuery.html" title="class in com.googlecode.cqengine.index.compound.support">CompoundQuery</a>&lt;O&gt;&nbsp;fromAndQueryIfSuitable&#8203;(<a href="../../../query/logical/And.html" title="class in com.googlecode.cqengine.query.logical">And</a>&lt;O&gt;&nbsp;andQuery)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CompoundQuery.html" title="class in network.rhizome.cqengine.index.compound.support">CompoundQuery</a>&lt;O&gt;&nbsp;fromAndQueryIfSuitable&#8203;(<a href="../../../query/logical/And.html" title="class in network.rhizome.cqengine.query.logical">And</a>&lt;O&gt;&nbsp;andQuery)</pre>
 </li>
 </ul>
 </li>

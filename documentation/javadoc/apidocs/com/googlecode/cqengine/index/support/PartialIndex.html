@@ -117,15 +117,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.support</a></div>
-<h2 title="Class PartialIndex" class="title">Class PartialIndex&lt;A,&#8203;O,&#8203;I extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;&gt;</h2>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.support</a></div>
+<h2 title="Class PartialIndex" class="title">Class PartialIndex&lt;A,&#8203;O,&#8203;I extends <a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.support.PartialIndex&lt;A,&#8203;O,&#8203;I&gt;</li>
+<li>network.rhizome.cqengine.index.support.PartialIndex&lt;A,&#8203;O,&#8203;I&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,18 +134,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</code>, <code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="PartialSortedKeyStatisticsAttributeIndex.html" title="class in com.googlecode.cqengine.index.support">PartialSortedKeyStatisticsAttributeIndex</a></code></dd>
+<dd><code><a href="PartialSortedKeyStatisticsAttributeIndex.html" title="class in network.rhizome.cqengine.index.support">PartialSortedKeyStatisticsAttributeIndex</a></code></dd>
 </dl>
 <hr>
-<pre>public abstract class <span class="typeNameLabel">PartialIndex&lt;A,&#8203;O,&#8203;I extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;&gt;</span>
+<pre>public abstract class <span class="typeNameLabel">PartialIndex&lt;A,&#8203;O,&#8203;I extends <a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
+implements <a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;A,&#8203;O&gt;</pre>
 <div class="block">An index which indexes and can answer queries on a subset of the collection; a kind of hybrid between a
- <a href="../standingquery/StandingQueryIndex.html" title="class in com.googlecode.cqengine.index.standingquery"><code>StandingQueryIndex</code></a> and a <a href="../compound/CompoundIndex.html" title="class in com.googlecode.cqengine.index.compound"><code>CompoundIndex</code></a>.
+ <a href="../standingquery/StandingQueryIndex.html" title="class in network.rhizome.cqengine.index.standingquery"><code>StandingQueryIndex</code></a> and a <a href="../compound/CompoundIndex.html" title="class in network.rhizome.cqengine.index.compound"><code>CompoundIndex</code></a>.
  <p/>
  A partial index wraps a backing index and adds only a subset of objects which match a given <i>filter
  query</i> to the backing index. As such, a partial index accelerates queries on an "interesting subset"
@@ -185,7 +185,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
          </ul>
      </li>
  </ol>
- These conditions are implemented by the <a href="#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>supportsQuery(Query, QueryOptions)</code></a> method.</div>
+ These conditions are implemented by the <a href="#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>supportsQuery(Query, QueryOptions)</code></a> method.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>niall.gallagher</dd>
@@ -211,7 +211,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#attribute">attribute</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -221,7 +221,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterQuery">filterQuery</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -245,8 +245,8 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.query.Query)">PartialIndex</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;attribute,
-            <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filterQuery)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.query.Query)">PartialIndex</a></span>&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;attribute,
+            <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filterQuery)</code></th>
 <td class="colLast">
 <div class="block">Protected constructor, called by subclasses.</div>
 </td>
@@ -271,8 +271,8 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
@@ -285,7 +285,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
@@ -298,9 +298,9 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Calls <a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)"><code>ModificationListener.destroy(QueryOptions)</code></a> on the backing index.</div>
+<div class="block">Calls <a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)"><code>ModificationListener.destroy(QueryOptions)</code></a> on the backing index.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -310,24 +310,24 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">filter</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objects,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filter(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">filter</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objects,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAttribute()">getAttribute</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the attribute indexed by this index.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBackingIndex()">getBackingIndex</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEffectiveIndex()">getEffectiveIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
@@ -335,7 +335,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFilterQuery()">getFilterQuery</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -346,8 +346,8 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectStore,
-    <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectStore,
+    <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 </td>
@@ -363,31 +363,31 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isQuantized()">isQuantized</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns true if this partial index can answer this branch of the query.</div>
 </td>
@@ -422,7 +422,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>filterQuery</h4>
-<pre>protected final&nbsp;<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt; filterQuery</pre>
+<pre>protected final&nbsp;<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt; filterQuery</pre>
 </li>
 </ul>
 <a id="attribute">
@@ -431,7 +431,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>attribute</h4>
-<pre>protected final&nbsp;<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt; attribute</pre>
+<pre>protected final&nbsp;<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt; attribute</pre>
 </li>
 </ul>
 <a id="backingIndex">
@@ -440,7 +440,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>backingIndex</h4>
-<pre>protected volatile&nbsp;<a href="PartialIndex.html" title="type parameter in PartialIndex">I</a> extends <a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt; backingIndex</pre>
+<pre>protected volatile&nbsp;<a href="PartialIndex.html" title="type parameter in PartialIndex">I</a> extends <a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt; backingIndex</pre>
 </li>
 </ul>
 </li>
@@ -453,14 +453,14 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.attribute.Attribute,com.googlecode.cqengine.query.Query)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.attribute.Attribute,network.rhizome.cqengine.query.Query)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PartialIndex</h4>
-<pre>protected&nbsp;PartialIndex&#8203;(<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;attribute,
-                       <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filterQuery)</pre>
+<pre>protected&nbsp;PartialIndex&#8203;(<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;attribute,
+                       <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filterQuery)</pre>
 <div class="block">Protected constructor, called by subclasses.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -494,12 +494,12 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getAttribute</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;getAttribute()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;&nbsp;getAttribute()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../AttributeIndex.html#getAttribute()">AttributeIndex</a></code></span></div>
 <div class="block">Returns the attribute indexed by this index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../AttributeIndex.html#getAttribute()">getAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../AttributeIndex.html#getAttribute()">getAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The attribute indexed by this index</dd>
 </dl>
@@ -511,7 +511,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getFilterQuery</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getFilterQuery()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getFilterQuery()</pre>
 </li>
 </ul>
 <a id="getBackingIndex()">
@@ -520,23 +520,23 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getBackingIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../AttributeIndex.html" title="interface in com.googlecode.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getBackingIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../AttributeIndex.html" title="interface in network.rhizome.cqengine.index">AttributeIndex</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>,&#8203;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getBackingIndex()</pre>
 </li>
 </ul>
-<a id="supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsQuery</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Returns true if this partial index can answer this branch of the query.
  <p/>
  See the class JavaDoc for the conditions which must be satisfied for this method to return true.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - The query supplied by the query engine, which is typically a branch of the overall query being
               evaluated.</dd>
@@ -584,7 +584,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <div class="block">Indicates if objects can be added to or removed from the index after the index has been built.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if objects can be added to or removed from the index after the index has been built, false if
  the index cannot be modified after it is built</dd>
@@ -599,25 +599,25 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <h4>isQuantized</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isQuantized()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#isQuantized()">Index</a></code></span></div>
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the index is quantized, false if not.</dd>
 </dl>
 </li>
 </ul>
-<a id="retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">Index</a></code></span></div>
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.
  <p/>
  Usually <code>ResultSet</code>s are <i>lazy</i> which means that they don't actually do any work, or encapsulate or
@@ -625,14 +625,14 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
  on-the-fly as the application iterates through the <code>ResultSet</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - An object which specifies some restriction on an attribute of an object</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A set of objects with attributes matching the restriction imposed by the query</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
+<dd><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -642,7 +642,7 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getEffectiveIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#getEffectiveIndex()">Index</a></code></span></div>
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
  persistence requests. Most Index implementations will typically return a reference to themselves ('this').
@@ -651,113 +651,113 @@ implements <a href="../AttributeIndex.html" title="interface in com.googlecode.c
  index interacts with the persistence, it will identify itself as the outer or "effective" index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The effective index, in the case that this index is wrapped by another index.</dd>
 </dl>
 </li>
 </ul>
-<a id="init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectStore,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectStore,
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectStore</code> - The ObjectStore which persists objects</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="destroy(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="destroy(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>destroy</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Calls <a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)"><code>ModificationListener.destroy(QueryOptions)</code></a> on the backing index.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Calls <a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)"><code>ModificationListener.destroy(QueryOptions)</code></a> on the backing index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being added</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objectSet,
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being removed</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
+<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">ModificationListener</a></code></span></div>
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="filter(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="filter(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>filter</h4>
-<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filter&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objects,
-                               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;filter&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="PartialIndex.html" title="type parameter in PartialIndex">O</a>&gt;&nbsp;objects,
+                               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 <a id="createBackingIndex()">

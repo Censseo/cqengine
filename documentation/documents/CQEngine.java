@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.googlecode.cqengine;
+package network.rhizome.cqengine;
 
-import com.googlecode.cqengine.index.support.DefaultConcurrentSetFactory;
-import com.googlecode.cqengine.index.support.Factory;
+import network.rhizome.cqengine.index.support.DefaultConcurrentSetFactory;
+import network.rhizome.cqengine.index.support.Factory;
 
 import java.util.Collection;
 import java.util.Set;
@@ -27,17 +27,17 @@ import java.util.Set;
  * </p>
  * <p>
  * In CQEngine 2.0, applications should not use the static factory methods in this class to create instances of
- * {@link com.googlecode.cqengine.IndexedCollection}s, but should use the constructors of the required
+ * {@link network.rhizome.cqengine.IndexedCollection}s, but should use the constructors of the required
  * IndexedCollection implementation instead, such as:
  * <ul>
  *     <li>
- *         {@link com.googlecode.cqengine.ConcurrentIndexedCollection}
+ *         {@link network.rhizome.cqengine.ConcurrentIndexedCollection}
  *     </li>
  *     <li>
- *         {@link com.googlecode.cqengine.ObjectLockingIndexedCollection}
+ *         {@link network.rhizome.cqengine.ObjectLockingIndexedCollection}
  *     </li>
  *     <li>
- *         {@link com.googlecode.cqengine.TransactionalIndexedCollection}
+ *         {@link network.rhizome.cqengine.TransactionalIndexedCollection}
  *     </li>
  * </ul>
  * </p>

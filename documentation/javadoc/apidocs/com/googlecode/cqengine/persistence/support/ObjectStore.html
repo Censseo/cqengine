@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.support</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.support</a></div>
 <h2 title="Interface ObjectStore" class="title">Interface ObjectStore&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -126,11 +126,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="CollectionWrappingObjectStore.html" title="class in com.googlecode.cqengine.persistence.support">CollectionWrappingObjectStore</a></code>, <code><a href="ConcurrentOnHeapObjectStore.html" title="class in com.googlecode.cqengine.persistence.support">ConcurrentOnHeapObjectStore</a></code>, <code><a href="FilteredObjectStore.html" title="class in com.googlecode.cqengine.persistence.support">FilteredObjectStore</a></code>, <code><a href="sqlite/SQLiteObjectStore.html" title="class in com.googlecode.cqengine.persistence.support.sqlite">SQLiteObjectStore</a></code></dd>
+<dd><code><a href="CollectionWrappingObjectStore.html" title="class in network.rhizome.cqengine.persistence.support">CollectionWrappingObjectStore</a></code>, <code><a href="ConcurrentOnHeapObjectStore.html" title="class in network.rhizome.cqengine.persistence.support">ConcurrentOnHeapObjectStore</a></code>, <code><a href="FilteredObjectStore.html" title="class in network.rhizome.cqengine.persistence.support">FilteredObjectStore</a></code>, <code><a href="sqlite/SQLiteObjectStore.html" title="class in network.rhizome.cqengine.persistence.support.sqlite">SQLiteObjectStore</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">ObjectStore&lt;O&gt;</span></pre>
-<div class="block">An interface providing similar methods as <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>, except the methods accept <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option"><code>QueryOptions</code></a>.
+<div class="block">An interface providing similar methods as <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>, except the methods accept <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option"><code>QueryOptions</code></a>.
  <p/>
  This interface can thus wrap a standard on-heap Set, or an off-heap or disk implementation of a Set where the
  implementation can extract details of the persistence to use from the supplied query options.</div>
@@ -156,64 +156,64 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(O,com.googlecode.cqengine.query.option.QueryOptions)">add</a></span>&#8203;(<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&nbsp;object,
-   <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(O,network.rhizome.cqengine.query.option.QueryOptions)">add</a></span>&#8203;(<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&nbsp;object,
+   <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;&nbsp;c,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;&nbsp;c,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">contains</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#contains(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">contains</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">containsAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-           <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">containsAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+           <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty(com.googlecode.cqengine.query.option.QueryOptions)">isEmpty</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty(network.rhizome.cqengine.query.option.QueryOptions)">isEmpty</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator(com.googlecode.cqengine.query.option.QueryOptions)">iterator</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../../index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator(network.rhizome.cqengine.query.option.QueryOptions)">iterator</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">remove</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">remove</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retainAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">retainAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retainAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">retainAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size(com.googlecode.cqengine.query.option.QueryOptions)">size</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#size(network.rhizome.cqengine.query.option.QueryOptions)">size</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -233,112 +233,112 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="size(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="size(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
-<pre class="methodSignature">int&nbsp;size&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">int&nbsp;size&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="contains(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="contains(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
 <pre class="methodSignature">boolean&nbsp;contains&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="iterator(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="iterator(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
-<pre class="methodSignature"><a href="../../index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;&nbsp;iterator&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature"><a href="../../index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;&nbsp;iterator&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="isEmpty(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="isEmpty(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEmpty</h4>
-<pre class="methodSignature">boolean&nbsp;isEmpty&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">boolean&nbsp;isEmpty&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="add(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="add(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="add(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="add(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
 <pre class="methodSignature">boolean&nbsp;add&#8203;(<a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&nbsp;object,
-            <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+            <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="remove(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="remove(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>remove</h4>
 <pre class="methodSignature">boolean&nbsp;remove&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o,
-               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="containsAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="containsAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>containsAll</h4>
 <pre class="methodSignature">boolean&nbsp;containsAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                    <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                    <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="addAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
 <pre class="methodSignature">boolean&nbsp;addAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="ObjectStore.html" title="type parameter in ObjectStore">O</a>&gt;&nbsp;c,
-               <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+               <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="retainAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retainAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retainAll</h4>
 <pre class="methodSignature">boolean&nbsp;retainAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                  <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                  <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="removeAll(java.util.Collection,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(java.util.Collection,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
 <pre class="methodSignature">boolean&nbsp;removeAll&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c,
-                  <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                  <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 </li>

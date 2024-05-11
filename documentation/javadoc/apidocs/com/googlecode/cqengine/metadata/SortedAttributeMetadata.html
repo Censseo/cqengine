@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.metadata</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.metadata</a></div>
 <h2 title="Class SortedAttributeMetadata" class="title">Class SortedAttributeMetadata&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;,&#8203;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">com.googlecode.cqengine.metadata.AttributeMetadata</a>&lt;A,&#8203;O&gt;</li>
+<li><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">network.rhizome.cqengine.metadata.AttributeMetadata</a>&lt;A,&#8203;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.metadata.SortedAttributeMetadata&lt;A,&#8203;O&gt;</li>
+<li>network.rhizome.cqengine.metadata.SortedAttributeMetadata&lt;A,&#8203;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,15 +139,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public class <span class="typeNameLabel">SortedAttributeMetadata&lt;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;,&#8203;O&gt;</span>
-extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;O&gt;</pre>
+extends <a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;A,&#8203;O&gt;</pre>
 <div class="block">Provides access to metadata in sorted order for a given attribute. Allows attribute values to be traversed
- in ascending or descending order, and supports range queries. See <a href="MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a> for more details.
+ in ascending or descending order, and supports range queries. See <a href="MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a> for more details.
  <p>
- This requires in advance, an index which implements the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in com.googlecode.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface,
+ This requires in advance, an index which implements the <a href="../index/support/SortedKeyStatisticsAttributeIndex.html" title="interface in network.rhizome.cqengine.index.support"><code>SortedKeyStatisticsAttributeIndex</code></a> interface,
  to be added to the collection on the given attribute.
  <p>
  This object can be accessed first by calling <a href="../IndexedCollection.html#getMetadataEngine()"><code>IndexedCollection.getMetadataEngine()</code></a> to access the
- <a href="MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a>, and then by calling <a href="MetadataEngine.html#getSortedAttributeMetadata(com.googlecode.cqengine.attribute.Attribute)"><code>MetadataEngine.getSortedAttributeMetadata(Attribute)</code></a> for a given
+ <a href="MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a>, and then by calling <a href="MetadataEngine.html#getSortedAttributeMetadata(network.rhizome.cqengine.attribute.Attribute)"><code>MetadataEngine.getSortedAttributeMetadata(Attribute)</code></a> for a given
  attribute.</div>
 </li>
 </ul>
@@ -218,28 +218,28 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFrequencyDistribution()">getFrequencyDistribution</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the frequencies of distinct keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFrequencyDistributionDescending()">getFrequencyDistributionDescending</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the frequencies of distinct keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues()">getKeysAndValues</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValues(A,boolean,A,boolean)">getKeysAndValues</a></span>&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
                 boolean&nbsp;lowerInclusive,
                 <a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;upperBound,
@@ -249,14 +249,14 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending()">getKeysAndValuesDescending</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the keys (a.k.a.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getKeysAndValuesDescending(A,boolean,A,boolean)">getKeysAndValuesDescending</a></span>&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
                           boolean&nbsp;lowerInclusive,
                           <a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;upperBound,
@@ -267,11 +267,11 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.metadata.AttributeMetadata">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.metadata.AttributeMetadata">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.metadata.<a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a></h3>
-<code><a href="AttributeMetadata.html#asKeyFrequencyStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">asKeyFrequencyStream</a>, <a href="AttributeMetadata.html#asStream(com.googlecode.cqengine.query.option.QueryOptions,com.googlecode.cqengine.index.support.CloseableIterable)">asStream</a>, <a href="AttributeMetadata.html#closeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeResources</a>, <a href="AttributeMetadata.html#openResources()">openResources</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.metadata.<a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a></h3>
+<code><a href="AttributeMetadata.html#asKeyFrequencyStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">asKeyFrequencyStream</a>, <a href="AttributeMetadata.html#asStream(network.rhizome.cqengine.query.option.QueryOptions,network.rhizome.cqengine.index.support.CloseableIterable)">asStream</a>, <a href="AttributeMetadata.html#closeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeResources</a>, <a href="AttributeMetadata.html#openResources()">openResources</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -302,14 +302,14 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockList">
 <li class="blockList">
 <h4>getFrequencyDistribution</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistribution()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistribution()</pre>
 <div class="block">Returns the frequencies of distinct keys (a.k.a. attribute values) in the index, in ascending order.
  <p>
- The <a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
+ The <a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
  of how many objects in the collection match that key.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AttributeMetadata.html#getFrequencyDistribution()">getFrequencyDistribution</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
+<dd><code><a href="AttributeMetadata.html#getFrequencyDistribution()">getFrequencyDistribution</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -319,10 +319,10 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockList">
 <li class="blockList">
 <h4>getFrequencyDistributionDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistributionDescending()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata">KeyFrequency</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;&gt;&nbsp;getFrequencyDistributionDescending()</pre>
 <div class="block">Returns the frequencies of distinct keys (a.k.a. attribute values) in the index, in descending order.
  <p>
- The <a href="KeyFrequency.html" title="interface in com.googlecode.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
+ The <a href="KeyFrequency.html" title="interface in network.rhizome.cqengine.metadata"><code>KeyFrequency</code></a> objects encapsulate a key (a.k.a. attribute value), and the frequency (or count)
  of how many objects in the collection match that key.</div>
 </li>
 </ul>
@@ -336,7 +336,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <div class="block">Returns the distinct keys in the index, in ascending order.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AttributeMetadata.html#getDistinctKeys()">getDistinctKeys</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
+<dd><code><a href="AttributeMetadata.html#getDistinctKeys()">getDistinctKeys</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -408,7 +408,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <div class="block">Returns the count of distinct keys in the index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AttributeMetadata.html#getCountOfDistinctKeys()">getCountOfDistinctKeys</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
+<dd><code><a href="AttributeMetadata.html#getCountOfDistinctKeys()">getCountOfDistinctKeys</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -424,7 +424,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <div class="block">Returns the number of objects in the index which match the given key.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AttributeMetadata.html#getCountForKey(A)">getCountForKey</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
+<dd><code><a href="AttributeMetadata.html#getCountForKey(A)">getCountForKey</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -434,14 +434,14 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues()</pre>
 <div class="block">Returns the keys (a.k.a. attribute values) and the objects they match in the index, in ascending order of key.
  <p>
  Note the same key will be returned multiple times if more than one object has the same key. Also the same object
  might be returned multiple times, each time for a different key, if the index is built on a multi-value attribute.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AttributeMetadata.html#getKeysAndValues()">getKeysAndValues</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in com.googlecode.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
+<dd><code><a href="AttributeMetadata.html#getKeysAndValues()">getKeysAndValues</a></code>&nbsp;in class&nbsp;<code><a href="AttributeMetadata.html" title="class in network.rhizome.cqengine.metadata">AttributeMetadata</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&gt;,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The keys and objects they match in the index, in ascending order of key</dd>
 </dl>
@@ -453,7 +453,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValuesDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending()</pre>
 <div class="block">Returns the keys (a.k.a. attribute values) and the objects they match in the index, in descending order of key.
  <p>
  Note the same key will be returned multiple times if more than one object has the same key. Also the same object
@@ -472,7 +472,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockList">
 <li class="blockList">
 <h4>getKeysAndValues</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValues&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
                                                     boolean&nbsp;lowerInclusive,
                                                     <a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;upperBound,
                                                     boolean&nbsp;upperInclusive)</pre>
@@ -500,7 +500,7 @@ extends <a href="AttributeMetadata.html" title="class in com.googlecode.cqengine
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getKeysAndValuesDescending</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in com.googlecode.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html?is-external=true" title="class or interface in java.util.stream" class="externalLink">Stream</a>&lt;<a href="../index/support/KeyValue.html" title="interface in network.rhizome.cqengine.index.support">KeyValue</a>&lt;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>,&#8203;<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">O</a>&gt;&gt;&nbsp;getKeysAndValuesDescending&#8203;(<a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;lowerBound,
                                                               boolean&nbsp;lowerInclusive,
                                                               <a href="SortedAttributeMetadata.html" title="type parameter in SortedAttributeMetadata">A</a>&nbsp;upperBound,
                                                               boolean&nbsp;upperInclusive)</pre>

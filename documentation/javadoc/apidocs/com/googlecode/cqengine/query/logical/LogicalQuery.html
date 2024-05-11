@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.query.logical</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.query.logical</a></div>
 <h2 title="Class LogicalQuery" class="title">Class LogicalQuery&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.query.logical.LogicalQuery&lt;O&gt;</li>
+<li>network.rhizome.cqengine.query.logical.LogicalQuery&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -138,17 +138,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="And.html" title="class in com.googlecode.cqengine.query.logical">And</a></code>, <code><a href="Not.html" title="class in com.googlecode.cqengine.query.logical">Not</a></code>, <code><a href="Or.html" title="class in com.googlecode.cqengine.query.logical">Or</a></code></dd>
+<dd><code><a href="And.html" title="class in network.rhizome.cqengine.query.logical">And</a></code>, <code><a href="Not.html" title="class in network.rhizome.cqengine.query.logical">Not</a></code>, <code><a href="Or.html" title="class in network.rhizome.cqengine.query.logical">Or</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">LogicalQuery&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;O&gt;</pre>
-<div class="block">The superclass of <a href="../Query.html" title="interface in com.googlecode.cqengine.query"><code>Query</code></a>s which logically connect other queries together to form complex queries.</div>
+implements <a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;O&gt;</pre>
+<div class="block">The superclass of <a href="../Query.html" title="interface in network.rhizome.cqengine.query"><code>Query</code></a>s which logically connect other queries together to form complex queries.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2012-04-30 16:56</dd>
@@ -176,7 +176,7 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#childQueries">childQueries</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -198,9 +198,9 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.Collection)">LogicalQuery</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;childQueries)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.util.Collection)">LogicalQuery</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;childQueries)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a> initialized to logically connect the supplied set of child queries.</div>
+<div class="block">Creates a new <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a> initialized to logically connect the supplied set of child queries.</div>
 </td>
 </tr>
 </table>
@@ -227,38 +227,38 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChildQueries()">getChildQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<div class="block">The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query">ComparativeQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query">ComparativeQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getComparativeQueries()">getComparativeQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
+<div class="block">Returns a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical">LogicalQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical">LogicalQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLogicalQueries()">getLogicalQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<div class="block">Returns a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSimpleQueries()">getSimpleQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
+<div class="block">Returns a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasComparativeQueries()">hasComparativeQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -270,14 +270,14 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasLogicalQueries()">hasLogicalQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasSimpleQueries()">hasSimpleQueries</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -296,11 +296,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.query.Query">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.query.Query">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.query.<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a></h3>
-<code><a href="../Query.html#matches(O,com.googlecode.cqengine.query.option.QueryOptions)">matches</a></code></li>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.query.<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a></h3>
+<code><a href="../Query.html#matches(O,network.rhizome.cqengine.query.option.QueryOptions)">matches</a></code></li>
 </ul>
 </li>
 </ul>
@@ -324,7 +324,7 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockListLast">
 <li class="blockList">
 <h4>childQueries</h4>
-<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt; childQueries</pre>
+<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt; childQueries</pre>
 </li>
 </ul>
 </li>
@@ -343,8 +343,8 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LogicalQuery</h4>
-<pre>public&nbsp;LogicalQuery&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;childQueries)</pre>
-<div class="block">Creates a new <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a> initialized to logically connect the supplied set of child queries.</div>
+<pre>public&nbsp;LogicalQuery&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;childQueries)</pre>
+<div class="block">Creates a new <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a> initialized to logically connect the supplied set of child queries.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>childQueries</code> - The child queries which this <code>LogicalQuery</code> is to logically connect</dd>
@@ -367,11 +367,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockList">
 <li class="blockList">
 <h4>getLogicalQueries</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical">LogicalQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;getLogicalQueries()</pre>
-<div class="block">Returns a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical">LogicalQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;getLogicalQueries()</pre>
+<div class="block">Returns a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s</dd>
+<dd>a collection of child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -381,11 +381,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockList">
 <li class="blockList">
 <h4>getSimpleQueries</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple">SimpleQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;&nbsp;getSimpleQueries()</pre>
-<div class="block">Returns a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple">SimpleQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;&nbsp;getSimpleQueries()</pre>
+<div class="block">Returns a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s</dd>
+<dd>a collection of child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -395,11 +395,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockList">
 <li class="blockList">
 <h4>getComparativeQueries</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query">ComparativeQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;&nbsp;getComparativeQueries()</pre>
-<div class="block">Returns a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query">ComparativeQuery</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>,&#8203;?&gt;&gt;&nbsp;getComparativeQueries()</pre>
+<div class="block">Returns a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s</dd>
+<dd>a collection of child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -409,11 +409,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <ul class="blockList">
 <li class="blockList">
 <h4>getChildQueries</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;getChildQueries()</pre>
-<div class="block">The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="LogicalQuery.html" title="type parameter in LogicalQuery">O</a>&gt;&gt;&nbsp;getChildQueries()</pre>
+<div class="block">The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</dd>
+<dd>The entire collection of child queries, which may be either <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s or <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</dd>
 </dl>
 </li>
 </ul>
@@ -424,11 +424,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <li class="blockList">
 <h4>hasLogicalQueries</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;hasLogicalQueries()</pre>
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s,
- false if this logical query has no child queries which are themselves <a href="LogicalQuery.html" title="class in com.googlecode.cqengine.query.logical"><code>LogicalQuery</code></a>s</dd>
+<dd>true if this logical query has child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s,
+ false if this logical query has no child queries which are themselves <a href="LogicalQuery.html" title="class in network.rhizome.cqengine.query.logical"><code>LogicalQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -439,11 +439,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <li class="blockList">
 <h4>hasSimpleQueries</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;hasSimpleQueries()</pre>
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s,
- false if this logical query has no child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in com.googlecode.cqengine.query.simple"><code>SimpleQuery</code></a>s</dd>
+<dd>true if this logical query has child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s,
+ false if this logical query has no child queries which are themselves <a href="../simple/SimpleQuery.html" title="class in network.rhizome.cqengine.query.simple"><code>SimpleQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -454,11 +454,11 @@ implements <a href="../Query.html" title="interface in com.googlecode.cqengine.q
 <li class="blockList">
 <h4>hasComparativeQueries</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;hasComparativeQueries()</pre>
-<div class="block">Returns true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
+<div class="block">Returns true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s,
- false if this logical query has no child queries which are themselves <a href="../ComparativeQuery.html" title="interface in com.googlecode.cqengine.query"><code>ComparativeQuery</code></a>s</dd>
+<dd>true if this logical query has child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s,
+ false if this logical query has no child queries which are themselves <a href="../ComparativeQuery.html" title="interface in network.rhizome.cqengine.query"><code>ComparativeQuery</code></a>s</dd>
 </dl>
 </li>
 </ul>

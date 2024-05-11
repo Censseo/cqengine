@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.fallback</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.fallback</a></div>
 <h2 title="Class FallbackIndex" class="title">Class FallbackIndex&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.fallback.FallbackIndex&lt;O&gt;</li>
+<li>network.rhizome.cqengine.index.fallback.FallbackIndex&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,18 +134,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;O&gt;</code>, <code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">FallbackIndex&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;O&gt;</pre>
+implements <a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;O&gt;</pre>
 <div class="block">A special index which when asked to retrieve data simply scans the underlying collection for matching objects.
  This index does not maintain any data structure of its own.
  <p/>
  This index supports <b>all</b> query types, because it it relies on the supplied query object itself
  to determine if objects in the collection match the query, by calling
- <a href="../../query/Query.html#matches(O,com.googlecode.cqengine.query.option.QueryOptions)"><code>Query.matches(Object, com.googlecode.cqengine.query.option.QueryOptions)</code></a>.
+ <a href="../../query/Query.html#matches(O,network.rhizome.cqengine.query.option.QueryOptions)"><code>Query.matches(Object, network.rhizome.cqengine.query.option.QueryOptions)</code></a>.
  <p/>
  The query engine automatically uses this <i>fallback</i> index when an attribute is referenced by a query,
  and no other index has been added for that attribute that supports the query.
@@ -199,8 +199,8 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
-      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
+      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.</div>
@@ -208,7 +208,7 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
@@ -216,13 +216,13 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></span>&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">This is a no-op for this type of index.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEffectiveIndex()">getEffectiveIndex</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
@@ -231,8 +231,8 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectStore,
-    <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></span>&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectStore,
+    <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the given ObjectStore has just been created.</div>
 </td>
@@ -248,31 +248,31 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isQuantized()">isQuantized</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
-         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></span>&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
+         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Indicates if the index can perform retrievals for the type of query supplied.</div>
 </td>
@@ -332,7 +332,7 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
  This index is mutable.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#isMutable()">isMutable</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true</dd>
 </dl>
@@ -344,7 +344,7 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 <ul class="blockList">
 <li class="blockList">
 <h4>getEffectiveIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;getEffectiveIndex()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#getEffectiveIndex()">Index</a></code></span></div>
 <div class="block">Returns the effective index, which Persistence objects will use to determine the identity of the index making
  persistence requests. Most Index implementations will typically return a reference to themselves ('this').
@@ -353,26 +353,26 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
  index interacts with the persistence, it will identify itself as the outer or "effective" index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#getEffectiveIndex()">getEffectiveIndex</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The effective index, in the case that this index is wrapped by another index.</dd>
 </dl>
 </li>
 </ul>
-<a id="supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsQuery</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;supportsQuery&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Indicates if the index can perform retrievals for the type of query supplied.
  <p/>
  <b>This implementation always returns true, as this index supports all types of query.</b></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">supportsQuery</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - A query to check</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
@@ -389,24 +389,24 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
 <h4>isQuantized</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isQuantized()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../Index.html#isQuantized()">Index</a></code></span></div>
-<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>.</div>
+<div class="block">Indicates if the index is quantized, using a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#isQuantized()">isQuantized</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the index is quantized, false if not.</dd>
 </dl>
 </li>
 </ul>
-<a id="retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
-                             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
+<pre class="methodSignature">public&nbsp;<a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;query,
+                             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Returns a <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which when iterated will return objects from the index matching the query
  supplied.
  <p/>
  Usually <code>ResultSet</code>s are <i>lazy</i> which means that they don't actually do any work, or encapsulate or
@@ -414,108 +414,108 @@ implements <a href="../Index.html" title="interface in com.googlecode.cqengine.i
  on-the-fly as the application iterates through the <code>ResultSet</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - An object which specifies some restriction on an attribute of an object</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A set of objects with attributes matching the restriction imposed by the query</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../Index.html#supportsQuery(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
+<dd><a href="../Index.html#supportsQuery(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>Index.supportsQuery(Query, QueryOptions)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
-                      <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;addAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
+                      <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the specified objects are being added to the collection, and so it can take action
  and update its internal data structures.
  <p/>
  <b>In this implementation, does nothing.</b></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#addAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#addAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being added</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeAll</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;removeAll&#8203;(<a href="../../persistence/support/ObjectSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectSet</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectSet,
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the specified objects are being removed from the collection, and so it can take action
  and update its internal data structures.
  <p/>
  <b>In this implementation, does nothing.</b></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#removeAll(com.googlecode.cqengine.persistence.support.ObjectSet,com.googlecode.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#removeAll(network.rhizome.cqengine.persistence.support.ObjectSet,network.rhizome.cqengine.query.option.QueryOptions)">removeAll</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectSet</code> - The objects being removed</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>init</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectStore,
-                 <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;init&#8203;(<a href="../../persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;&nbsp;objectStore,
+                 <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that the given ObjectStore has just been created.
  <p/>
  <b>In this implementation, stores a reference to the supplied collection, which the
- <a href="../Index.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>Index.retrieve(com.googlecode.cqengine.query.Query, com.googlecode.cqengine.query.option.QueryOptions)</code></a> method can subsequently iterate.</b></div>
+ <a href="../Index.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>Index.retrieve(network.rhizome.cqengine.query.Query, network.rhizome.cqengine.query.option.QueryOptions)</code></a> method can subsequently iterate.</b></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#init(com.googlecode.cqengine.persistence.support.ObjectStore,com.googlecode.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#init(network.rhizome.cqengine.persistence.support.ObjectStore,network.rhizome.cqengine.query.option.QueryOptions)">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectStore</code> - The ObjectStore which persists objects</dd>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="destroy(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="destroy(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>destroy</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;destroy&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">This is a no-op for this type of index.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#destroy(com.googlecode.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#destroy(network.rhizome.cqengine.query.option.QueryOptions)">destroy</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - Optional parameters for the update</dd>
 </dl>
 </li>
 </ul>
-<a id="clear(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="clear(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>clear</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;clear&#8203;(<a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Notifies the listener that all objects have been removed from the collection, and so it can take action
  and update its internal data structures.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../engine/ModificationListener.html#clear(com.googlecode.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in com.googlecode.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
+<dd><code><a href="../../engine/ModificationListener.html#clear(network.rhizome.cqengine.query.option.QueryOptions)">clear</a></code>&nbsp;in interface&nbsp;<code><a href="../../engine/ModificationListener.html" title="interface in network.rhizome.cqengine.engine">ModificationListener</a>&lt;<a href="FallbackIndex.html" title="type parameter in FallbackIndex">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - </dd>
 </dl>

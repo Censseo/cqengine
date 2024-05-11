@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.engine</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.engine</a></div>
 <h2 title="Interface QueryEngine" class="title">Interface QueryEngine&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -126,11 +126,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="QueryEngineInternal.html" title="interface in com.googlecode.cqengine.engine">QueryEngineInternal</a>&lt;O&gt;</code></dd>
+<dd><code><a href="../IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="QueryEngineInternal.html" title="interface in network.rhizome.cqengine.engine">QueryEngineInternal</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="CollectionQueryEngine.html" title="class in com.googlecode.cqengine.engine">CollectionQueryEngine</a></code>, <code><a href="../ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine">ConcurrentIndexedCollection</a></code>, <code><a href="../ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine">ObjectLockingIndexedCollection</a></code>, <code><a href="../TransactionalIndexedCollection.html" title="class in com.googlecode.cqengine">TransactionalIndexedCollection</a></code></dd>
+<dd><code><a href="CollectionQueryEngine.html" title="class in network.rhizome.cqengine.engine">CollectionQueryEngine</a></code>, <code><a href="../ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine">ConcurrentIndexedCollection</a></code>, <code><a href="../ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine">ObjectLockingIndexedCollection</a></code>, <code><a href="../TransactionalIndexedCollection.html" title="class in network.rhizome.cqengine">TransactionalIndexedCollection</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">QueryEngine&lt;O&gt;</span></pre>
@@ -162,35 +162,35 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">addIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
-        <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">addIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
+        <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Adds the given index to the collection.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndexes()">getIndexes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the set of indexes which were previously added to the collection via the
- <a href="#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method.</div>
+ <a href="#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">removeIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
-           <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">removeIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
+           <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Removes the given index from the collection.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;query,
-        <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;query,
+        <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Retrieves a <a href="../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
- <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
+<div class="block">Retrieves a <a href="../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
+ <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
 </td>
 </tr>
 </table>
@@ -210,36 +210,36 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature"><a href="../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;query,
-                      <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Retrieves a <a href="../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
- <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
+<pre class="methodSignature"><a href="../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;retrieve&#8203;(<a href="../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;query,
+                      <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Retrieves a <a href="../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
+ <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - A query representing some assertions which sought objects must match</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query</dd>
+<dd>A <a href="../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query</dd>
 </dl>
 </li>
 </ul>
-<a id="addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addIndex</h4>
-<pre class="methodSignature">void&nbsp;addIndex&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
-              <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">void&nbsp;addIndex&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
+              <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Adds the given index to the collection.
  <p/>
- Subsequently queries passed to the <a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>retrieve(com.googlecode.cqengine.query.Query, QueryOptions)</code></a> method
+ Subsequently queries passed to the <a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>retrieve(network.rhizome.cqengine.query.Query, QueryOptions)</code></a> method
  will use these indexes if suitable for the particular queries, to speed up retrievals.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -248,14 +248,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeIndex</h4>
-<pre class="methodSignature">void&nbsp;removeIndex&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
-                 <a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">void&nbsp;removeIndex&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&nbsp;index,
+                 <a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Removes the given index from the collection.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -270,13 +270,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getIndexes</h4>
-<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&gt;&nbsp;getIndexes()</pre>
+<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="QueryEngine.html" title="type parameter in QueryEngine">O</a>&gt;&gt;&nbsp;getIndexes()</pre>
 <div class="block">Returns the set of indexes which were previously added to the collection via the
- <a href="#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method.</div>
+ <a href="#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The set of which were previously added to the collection via the
- <a href="#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method</dd>
+ <a href="#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method</dd>
 </dl>
 </li>
 </ul>

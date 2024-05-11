@@ -109,7 +109,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.support.serialization</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.support.serialization</a></div>
 <h2 title="Annotation Type PersistenceConfig" class="title">Annotation Type PersistenceConfig</h2>
 </div>
 <div class="contentContainer">
@@ -146,7 +146,7 @@ public @interface <span class="memberNameLabel">PersistenceConfig</span></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="PersistenceConfig.html" title="annotation in com.googlecode.cqengine.persistence.support.serialization">PersistenceConfig</a></code></td>
+<td class="colFirst"><code>static <a href="PersistenceConfig.html" title="annotation in network.rhizome.cqengine.persistence.support.serialization">PersistenceConfig</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DEFAULT_CONFIG">DEFAULT_CONFIG</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -177,10 +177,10 @@ public @interface <span class="memberNameLabel">PersistenceConfig</span></pre>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serializer()">serializer</a></span></code></th>
 <td class="colLast">
-<div class="block">The <a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization"><code>PojoSerializer</code></a> implementation to use.</div>
+<div class="block">The <a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization"><code>PojoSerializer</code></a> implementation to use.</div>
 </td>
 </tr>
 </table>
@@ -206,7 +206,7 @@ public @interface <span class="memberNameLabel">PersistenceConfig</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DEFAULT_CONFIG</h4>
-<pre>static final&nbsp;<a href="PersistenceConfig.html" title="annotation in com.googlecode.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;DEFAULT_CONFIG</pre>
+<pre>static final&nbsp;<a href="PersistenceConfig.html" title="annotation in network.rhizome.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;DEFAULT_CONFIG</pre>
 </li>
 </ul>
 </li>
@@ -225,17 +225,17 @@ public @interface <span class="memberNameLabel">PersistenceConfig</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>serializer</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&gt;&nbsp;serializer</pre>
-<div class="block">The <a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization"><code>PojoSerializer</code></a> implementation to use.
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&gt;&nbsp;serializer</pre>
+<div class="block">The <a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization"><code>PojoSerializer</code></a> implementation to use.
  <p>
-     The default is <a href="KryoSerializer.html" title="class in com.googlecode.cqengine.persistence.support.serialization"><code>KryoSerializer</code></a>. Note that the behaviour of that serializer
+     The default is <a href="KryoSerializer.html" title="class in network.rhizome.cqengine.persistence.support.serialization"><code>KryoSerializer</code></a>. Note that the behaviour of that serializer
      is highly customizable via annotations itself, including the ability to configure
      it to use Java's built-in serialization. See
      <a href="https://github.com/EsotericSoftware/kryo">Kryo</a> for details.
  </p></div>
 <dl>
 <dt>Default:</dt>
-<dd>com.googlecode.cqengine.persistence.support.serialization.KryoSerializer.class</dd>
+<dd>network.rhizome.cqengine.persistence.support.serialization.KryoSerializer.class</dd>
 </dl>
 </li>
 </ul>

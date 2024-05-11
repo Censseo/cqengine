@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.attribute.support</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.attribute.support</a></div>
 <h2 title="Class FunctionalSimpleAttribute" class="title">Class FunctionalSimpleAttribute&lt;O,&#8203;A&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,13 +125,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">com.googlecode.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
+<li><a href="AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">network.rhizome.cqengine.attribute.support.AbstractAttribute</a>&lt;O,&#8203;A&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">com.googlecode.cqengine.attribute.SimpleAttribute</a>&lt;O,&#8203;A&gt;</li>
+<li><a href="../SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">network.rhizome.cqengine.attribute.SimpleAttribute</a>&lt;O,&#8203;A&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.attribute.support.FunctionalSimpleAttribute&lt;O,&#8203;A&gt;</li>
+<li>network.rhizome.cqengine.attribute.support.FunctionalSimpleAttribute&lt;O,&#8203;A&gt;</li>
 </ul>
 </li>
 </ul>
@@ -144,15 +144,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;A&gt;</code></dd>
+<dd><code><a href="../Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;A&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">FunctionalSimpleAttribute&lt;O,&#8203;A&gt;</span>
-extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;</pre>
-<div class="block">A <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a> which wraps a <a href="SimpleFunction.html" title="interface in com.googlecode.cqengine.attribute.support"><code>SimpleFunction</code></a>, for the purpose of allowing
+extends <a href="../SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;O,&#8203;A&gt;</pre>
+<div class="block">A <a href="../SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a> which wraps a <a href="SimpleFunction.html" title="interface in network.rhizome.cqengine.attribute.support"><code>SimpleFunction</code></a>, for the purpose of allowing
  attributes to be created from lambda expressions.
  <p/>
- These attributes can be created via <a href="../../query/QueryFactory.html#attribute(com.googlecode.cqengine.attribute.support.SimpleFunction)"><code>QueryFactory.attribute(SimpleFunction)</code></a>.</div>
+ These attributes can be created via <a href="../../query/QueryFactory.html#attribute(network.rhizome.cqengine.attribute.support.SimpleFunction)"><code>QueryFactory.attribute(SimpleFunction)</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>npgall</dd>
@@ -177,10 +177,10 @@ extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengin
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,java.lang.Class,java.lang.String,com.googlecode.cqengine.attribute.support.SimpleFunction)">FunctionalSimpleAttribute</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&gt;&nbsp;objectType,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,java.lang.Class,java.lang.String,network.rhizome.cqengine.attribute.support.SimpleFunction)">FunctionalSimpleAttribute</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&gt;&nbsp;objectType,
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;attributeType,
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName,
-                         <a href="SimpleFunction.html" title="interface in com.googlecode.cqengine.attribute.support">SimpleFunction</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;function)</code></th>
+                         <a href="SimpleFunction.html" title="interface in network.rhizome.cqengine.attribute.support">SimpleFunction</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;function)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -203,25 +203,25 @@ extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengin
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">getValue</a></span>&#8203;(<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&nbsp;object,
-        <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">getValue</a></span>&#8203;(<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&nbsp;object,
+        <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns the (non-null) value of the attribute from the object.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.attribute.SimpleAttribute">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.attribute.SimpleAttribute">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.attribute.<a href="../SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a></h3>
-<code><a href="../SimpleAttribute.html#canEqual(java.lang.Object)">canEqual</a>, <a href="../SimpleAttribute.html#getValues(O,com.googlecode.cqengine.query.option.QueryOptions)">getValues</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.attribute.<a href="../SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a></h3>
+<code><a href="../SimpleAttribute.html#canEqual(java.lang.Object)">canEqual</a>, <a href="../SimpleAttribute.html#getValues(O,network.rhizome.cqengine.query.option.QueryOptions)">getValues</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.attribute.support.AbstractAttribute">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.attribute.support.AbstractAttribute">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.attribute.support.<a href="AbstractAttribute.html" title="class in com.googlecode.cqengine.attribute.support">AbstractAttribute</a></h3>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.attribute.support.<a href="AbstractAttribute.html" title="class in network.rhizome.cqengine.attribute.support">AbstractAttribute</a></h3>
 <code><a href="AbstractAttribute.html#calcHashCode()">calcHashCode</a>, <a href="AbstractAttribute.html#equals(java.lang.Object)">equals</a>, <a href="AbstractAttribute.html#getAttributeName()">getAttributeName</a>, <a href="AbstractAttribute.html#getAttributeType()">getAttributeType</a>, <a href="AbstractAttribute.html#getObjectType()">getObjectType</a>, <a href="AbstractAttribute.html#hashCode()">hashCode</a>, <a href="AbstractAttribute.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
@@ -247,7 +247,7 @@ extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengin
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.Class,java.lang.Class,java.lang.String,com.googlecode.cqengine.attribute.support.SimpleFunction)">
+<a id="&lt;init&gt;(java.lang.Class,java.lang.Class,java.lang.String,network.rhizome.cqengine.attribute.support.SimpleFunction)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -256,7 +256,7 @@ extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengin
 <pre>public&nbsp;FunctionalSimpleAttribute&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&gt;&nbsp;objectType,
                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;attributeType,
                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;attributeName,
-                                 <a href="SimpleFunction.html" title="interface in com.googlecode.cqengine.attribute.support">SimpleFunction</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;function)</pre>
+                                 <a href="SimpleFunction.html" title="interface in network.rhizome.cqengine.attribute.support">SimpleFunction</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;&nbsp;function)</pre>
 </li>
 </ul>
 </li>
@@ -269,22 +269,22 @@ extends <a href="../SimpleAttribute.html" title="class in com.googlecode.cqengin
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getValue(java.lang.Object,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getValue(java.lang.Object,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
-</a><a id="getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">
+</a><a id="getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getValue</h4>
 <pre class="methodSignature">public&nbsp;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&nbsp;getValue&#8203;(<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>&nbsp;object,
-                  <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../SimpleAttribute.html#getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">SimpleAttribute</a></code></span></div>
+                  <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../SimpleAttribute.html#getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">SimpleAttribute</a></code></span></div>
 <div class="block">Returns the (non-null) value of the attribute from the object.
  <p/></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../SimpleAttribute.html#getValue(O,com.googlecode.cqengine.query.option.QueryOptions)">getValue</a></code>&nbsp;in class&nbsp;<code><a href="../SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;</code></dd>
+<dd><code><a href="../SimpleAttribute.html#getValue(O,network.rhizome.cqengine.query.option.QueryOptions)">getValue</a></code>&nbsp;in class&nbsp;<code><a href="../SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">O</a>,&#8203;<a href="FunctionalSimpleAttribute.html" title="type parameter in FunctionalSimpleAttribute">A</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>object</code> - The object from which the value of the attribute is required</dd>
 <dd><code>queryOptions</code> - Optional parameters supplied by the application along with the operation which is causing

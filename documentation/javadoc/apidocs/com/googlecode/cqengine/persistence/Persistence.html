@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence</a></div>
 <h2 title="Interface Persistence" class="title">Interface Persistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -126,11 +126,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../index/sqlite/SQLitePersistence.html" title="interface in com.googlecode.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;</code></dd>
+<dd><code><a href="../index/sqlite/SQLitePersistence.html" title="interface in network.rhizome.cqengine.index.sqlite">SQLitePersistence</a>&lt;O,&#8203;A&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="composite/CompositePersistence.html" title="class in com.googlecode.cqengine.persistence.composite">CompositePersistence</a></code>, <code><a href="disk/DiskPersistence.html" title="class in com.googlecode.cqengine.persistence.disk">DiskPersistence</a></code>, <code><a href="offheap/OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a></code>, <code><a href="onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap">OnHeapPersistence</a></code>, <code><a href="wrapping/WrappingPersistence.html" title="class in com.googlecode.cqengine.persistence.wrapping">WrappingPersistence</a></code></dd>
+<dd><code><a href="composite/CompositePersistence.html" title="class in network.rhizome.cqengine.persistence.composite">CompositePersistence</a></code>, <code><a href="disk/DiskPersistence.html" title="class in network.rhizome.cqengine.persistence.disk">DiskPersistence</a></code>, <code><a href="offheap/OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a></code>, <code><a href="onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap">OnHeapPersistence</a></code>, <code><a href="wrapping/WrappingPersistence.html" title="class in network.rhizome.cqengine.persistence.wrapping">WrappingPersistence</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">Persistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</span></pre>
@@ -162,14 +162,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Called at the end of every request into CQEngine, to close any resources which were opened by the
- <a href="#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method and stored in the given query options.</div>
+ <a href="#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method and stored in the given query options.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createObjectStore()">createObjectStore</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Creates an ObjectStore which can store the objects added to the collection, either on-heap off-heap or on disk,
@@ -177,13 +177,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>,&#8203;<a href="Persistence.html" title="type parameter in Persistence">A</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>,&#8203;<a href="Persistence.html" title="type parameter in Persistence">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResources</a></span>&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Called at the start of every request into CQEngine, to prepare any resources needed by the request in order
  to access the persistence.</div>
@@ -191,7 +191,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsIndex(com.googlecode.cqengine.index.Index)">supportsIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#supportsIndex(network.rhizome.cqengine.index.Index)">supportsIndex</a></span>&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;index)</code></th>
 <td class="colLast">
 <div class="block">Checks if this persistence manages the given index.</div>
 </td>
@@ -219,7 +219,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <h4>createObjectStore</h4>
-<pre class="methodSignature"><a href="support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;createObjectStore()</pre>
+<pre class="methodSignature"><a href="support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;createObjectStore()</pre>
 <div class="block">Creates an ObjectStore which can store the objects added to the collection, either on-heap off-heap or on disk,
  depending on the persistence implementation.</div>
 <dl>
@@ -228,29 +228,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="supportsIndex(com.googlecode.cqengine.index.Index)">
+<a id="supportsIndex(network.rhizome.cqengine.index.Index)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>supportsIndex</h4>
-<pre class="methodSignature">boolean&nbsp;supportsIndex&#8203;(<a href="../index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;index)</pre>
+<pre class="methodSignature">boolean&nbsp;supportsIndex&#8203;(<a href="../index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>&gt;&nbsp;index)</pre>
 <div class="block">Checks if this persistence manages the given index.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - The <a href="../index/Index.html" title="interface in com.googlecode.cqengine.index"><code>Index</code></a> to check.</dd>
+<dd><code>index</code> - The <a href="../index/Index.html" title="interface in network.rhizome.cqengine.index"><code>Index</code></a> to check.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if this persistence manages the given index. False otherwise.</dd>
 </dl>
 </li>
 </ul>
-<a id="openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>openRequestScopeResources</h4>
-<pre class="methodSignature">void&nbsp;openRequestScopeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">void&nbsp;openRequestScopeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Called at the start of every request into CQEngine, to prepare any resources needed by the request in order
  to access the persistence.
  <p/>
@@ -260,7 +260,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  request.
  <p/>
  This method does not modify the state of the Persistence object; instead it will add any resources it opens to
- the given QueryOptions object. The related <a href="#closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)"><code>closeRequestScopeResources(QueryOptions)</code></a> method will then
+ the given QueryOptions object. The related <a href="#closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)"><code>closeRequestScopeResources(QueryOptions)</code></a> method will then
  be called at the end of every request into CQEngine, to close any resources in the QueryOptions which this method
  opened.</div>
 <dl>
@@ -269,19 +269,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>closeRequestScopeResources</h4>
-<pre class="methodSignature">void&nbsp;closeRequestScopeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">void&nbsp;closeRequestScopeResources&#8203;(<a href="../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Called at the end of every request into CQEngine, to close any resources which were opened by the
- <a href="#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method and stored in the given query options.</div>
+ <a href="#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method and stored in the given query options.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>queryOptions</code> - The query options supplied with the request into CQEngine, and which has earlier been
-                     supplied to the <a href="#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method.</dd>
+                     supplied to the <a href="#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)"><code>openRequestScopeResources(QueryOptions)</code></a> method.</dd>
 </dl>
 </li>
 </ul>
@@ -291,7 +291,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPrimaryKeyAttribute</h4>
-<pre class="methodSignature"><a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute">SimpleAttribute</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>,&#8203;<a href="Persistence.html" title="type parameter in Persistence">A</a>&gt;&nbsp;getPrimaryKeyAttribute()</pre>
+<pre class="methodSignature"><a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute">SimpleAttribute</a>&lt;<a href="Persistence.html" title="type parameter in Persistence">O</a>,&#8203;<a href="Persistence.html" title="type parameter in Persistence">A</a>&gt;&nbsp;getPrimaryKeyAttribute()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the primary key attribute, if configured. This may be null for some persistence implementations

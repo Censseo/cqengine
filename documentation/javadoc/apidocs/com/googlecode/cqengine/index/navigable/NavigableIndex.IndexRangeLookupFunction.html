@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.navigable</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.navigable</a></div>
 <h2 title="Class NavigableIndex.IndexRangeLookupFunction" class="title">Class NavigableIndex.IndexRangeLookupFunction&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.index.navigable.NavigableIndex.IndexRangeLookupFunction&lt;O&gt;</li>
+<li>network.rhizome.cqengine.index.navigable.NavigableIndex.IndexRangeLookupFunction&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -138,13 +138,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
-<dd><a href="NavigableIndex.html" title="class in com.googlecode.cqengine.index.navigable">NavigableIndex</a>&lt;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">A</a>&gt;,&#8203;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">O</a>&gt;</dd>
+<dd><a href="NavigableIndex.html" title="class in network.rhizome.cqengine.index.navigable">NavigableIndex</a>&lt;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">A</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">A</a>&gt;,&#8203;<a href="NavigableIndex.html" title="type parameter in NavigableIndex">O</a>&gt;</dd>
 </dl>
 <hr>
 <pre>protected abstract class <span class="typeNameLabel">NavigableIndex.IndexRangeLookupFunction&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
-<div class="block">An interface which when implemented encapsulates the logic to retrieve zero or more <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>s from an
- index, where the logic for selecting these <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a>s is implemented by the <a href="#perform()"><code>perform()</code></a> method.</div>
+<div class="block">An interface which when implemented encapsulates the logic to retrieve zero or more <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>s from an
+ index, where the logic for selecting these <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a>s is implemented by the <a href="#perform()"><code>perform()</code></a> method.</div>
 </li>
 </ul>
 </div>
@@ -176,7 +176,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#query">query</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -200,11 +200,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.query.Query,boolean,boolean)">IndexRangeLookupFunction</a></span>&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&nbsp;query,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.query.Query,boolean,boolean)">IndexRangeLookupFunction</a></span>&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&nbsp;query,
                         boolean&nbsp;filterFirstResultSet,
                         boolean&nbsp;filterLastResultSet)</code></th>
 <td class="colLast">
-<div class="block">The following arguments are useful when the index uses a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>,
+<div class="block">The following arguments are useful when the index uses a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>,
  and so the stored sets of objects might need to be filtered on retrieval.</div>
 </td>
 </tr>
@@ -227,7 +227,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#perform()">perform</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -279,7 +279,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>query</h4>
-<pre>protected final&nbsp;<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt; query</pre>
+<pre>protected final&nbsp;<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt; query</pre>
 </li>
 </ul>
 </li>
@@ -292,26 +292,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(com.googlecode.cqengine.query.Query,boolean,boolean)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.query.Query,boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IndexRangeLookupFunction</h4>
-<pre>protected&nbsp;IndexRangeLookupFunction&#8203;(<a href="../../query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&nbsp;query,
+<pre>protected&nbsp;IndexRangeLookupFunction&#8203;(<a href="../../query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&nbsp;query,
                                    boolean&nbsp;filterFirstResultSet,
                                    boolean&nbsp;filterLastResultSet)</pre>
-<div class="block">The following arguments are useful when the index uses a <a href="../../quantizer/Quantizer.html" title="interface in com.googlecode.cqengine.quantizer"><code>Quantizer</code></a>,
+<div class="block">The following arguments are useful when the index uses a <a href="../../quantizer/Quantizer.html" title="interface in network.rhizome.cqengine.quantizer"><code>Quantizer</code></a>,
  and so the stored sets of objects might need to be filtered on retrieval.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - The query against which objects should be filtered</dd>
-<dd><code>filterFirstResultSet</code> - True if the first <a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored"><code>StoredResultSet</code></a> returned by the function should be
- filtered to return only objects which actually match the query - typically true for <a href="../../query/simple/GreaterThan.html" title="class in com.googlecode.cqengine.query.simple"><code>GreaterThan</code></a> and
- <a href="../../query/simple/Between.html" title="class in com.googlecode.cqengine.query.simple"><code>Between</code></a> queries and false for <a href="../../query/simple/LessThan.html" title="class in com.googlecode.cqengine.query.simple"><code>LessThan</code></a> queries</dd>
-<dd><code>filterLastResultSet</code> - True if the last <a href="../../resultset/stored/StoredResultSet.html" title="class in com.googlecode.cqengine.resultset.stored"><code>StoredResultSet</code></a> returned by the function should be
- filtered to return only objects which actually match the query - typically true for <a href="../../query/simple/LessThan.html" title="class in com.googlecode.cqengine.query.simple"><code>LessThan</code></a> and
- <a href="../../query/simple/Between.html" title="class in com.googlecode.cqengine.query.simple"><code>Between</code></a> queries and false for <a href="../../query/simple/GreaterThan.html" title="class in com.googlecode.cqengine.query.simple"><code>GreaterThan</code></a> queries</dd>
+<dd><code>filterFirstResultSet</code> - True if the first <a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored"><code>StoredResultSet</code></a> returned by the function should be
+ filtered to return only objects which actually match the query - typically true for <a href="../../query/simple/GreaterThan.html" title="class in network.rhizome.cqengine.query.simple"><code>GreaterThan</code></a> and
+ <a href="../../query/simple/Between.html" title="class in network.rhizome.cqengine.query.simple"><code>Between</code></a> queries and false for <a href="../../query/simple/LessThan.html" title="class in network.rhizome.cqengine.query.simple"><code>LessThan</code></a> queries</dd>
+<dd><code>filterLastResultSet</code> - True if the last <a href="../../resultset/stored/StoredResultSet.html" title="class in network.rhizome.cqengine.resultset.stored"><code>StoredResultSet</code></a> returned by the function should be
+ filtered to return only objects which actually match the query - typically true for <a href="../../query/simple/LessThan.html" title="class in network.rhizome.cqengine.query.simple"><code>LessThan</code></a> and
+ <a href="../../query/simple/Between.html" title="class in network.rhizome.cqengine.query.simple"><code>Between</code></a> queries and false for <a href="../../query/simple/GreaterThan.html" title="class in network.rhizome.cqengine.query.simple"><code>GreaterThan</code></a> queries</dd>
 </dl>
 </li>
 </ul>
@@ -331,7 +331,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockListLast">
 <li class="blockList">
 <h4>perform</h4>
-<pre class="methodSignature">protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&gt;&nbsp;perform()</pre>
+<pre class="methodSignature">protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;? extends <a href="../../resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="NavigableIndex.IndexRangeLookupFunction.html" title="type parameter in NavigableIndex.IndexRangeLookupFunction">O</a>&gt;&gt;&nbsp;perform()</pre>
 </li>
 </ul>
 </li>

@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.persistence.support.serialization</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.persistence.support.serialization</a></div>
 <h2 title="Class KryoSerializer" class="title">Class KryoSerializer&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.persistence.support.serialization.KryoSerializer&lt;O&gt;</li>
+<li>network.rhizome.cqengine.persistence.support.serialization.KryoSerializer&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,12 +134,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;O&gt;</code></dd>
+<dd><code><a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;O&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">KryoSerializer&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;O&gt;</pre>
+implements <a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;O&gt;</pre>
 <div class="block">Uses <a href="https://github.com/EsotericSoftware/kryo">Kryo</a> to serialize and deserialize objects;
  for use with CQEngine's disk and off-heap indexes and persistence.
  <p/>
@@ -202,8 +202,8 @@ implements <a href="PojoSerializer.html" title="interface in com.googlecode.cqen
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,com.googlecode.cqengine.persistence.support.serialization.PersistenceConfig)">KryoSerializer</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;&nbsp;objectType,
-              <a href="PersistenceConfig.html" title="annotation in com.googlecode.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;persistenceConfig)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,network.rhizome.cqengine.persistence.support.serialization.PersistenceConfig)">KryoSerializer</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;&nbsp;objectType,
+              <a href="PersistenceConfig.html" title="annotation in network.rhizome.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;persistenceConfig)</code></th>
 <td class="colLast">
 <div class="block">Creates a new Kryo serializer which is configured to serialize objects of the given type.</div>
 </td>
@@ -316,14 +316,14 @@ implements <a href="PojoSerializer.html" title="interface in com.googlecode.cqen
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.Class,com.googlecode.cqengine.persistence.support.serialization.PersistenceConfig)">
+<a id="&lt;init&gt;(java.lang.Class,network.rhizome.cqengine.persistence.support.serialization.PersistenceConfig)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>KryoSerializer</h4>
 <pre>public&nbsp;KryoSerializer&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;&nbsp;objectType,
-                      <a href="PersistenceConfig.html" title="annotation in com.googlecode.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;persistenceConfig)</pre>
+                      <a href="PersistenceConfig.html" title="annotation in network.rhizome.cqengine.persistence.support.serialization">PersistenceConfig</a>&nbsp;persistenceConfig)</pre>
 <div class="block">Creates a new Kryo serializer which is configured to serialize objects of the given type.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -377,7 +377,7 @@ implements <a href="PojoSerializer.html" title="interface in com.googlecode.cqen
 <div class="block">Serializes the given object, using the given instance of Kryo serializer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PojoSerializer.html#serialize(O)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;</code></dd>
+<dd><code><a href="PojoSerializer.html#serialize(O)">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>object</code> - The object to serialize</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -395,7 +395,7 @@ implements <a href="PojoSerializer.html" title="interface in com.googlecode.cqen
 <div class="block">Deserializes the given bytes, into an object of the given type, using the given instance of Kryo serializer.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="PojoSerializer.html#deserialize(byte%5B%5D)">deserialize</a></code>&nbsp;in interface&nbsp;<code><a href="PojoSerializer.html" title="interface in com.googlecode.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;</code></dd>
+<dd><code><a href="PojoSerializer.html#deserialize(byte%5B%5D)">deserialize</a></code>&nbsp;in interface&nbsp;<code><a href="PojoSerializer.html" title="interface in network.rhizome.cqengine.persistence.support.serialization">PojoSerializer</a>&lt;<a href="KryoSerializer.html" title="type parameter in KryoSerializer">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bytes</code> - The serialized form of the object as a byte array</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

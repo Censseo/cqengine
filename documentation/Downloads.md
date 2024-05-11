@@ -2,7 +2,7 @@
 CQEngine is in Maven Central, and can be added to a Maven project as follows:
 ```
 <dependency>
-    <groupId>com.googlecode.cqengine</groupId>
+    <groupId>network.rhizome.cqengine</groupId>
     <artifactId>cqengine</artifactId>
     <version>x.x.x</version>
 </dependency>
@@ -12,7 +12,7 @@ See [ReleaseNotes](ReleaseNotes.md) for the latest version number.
 ## Download for Non-Maven Projects ##
 For non-Maven projects, a version built with [maven-shade-plugin](http://maven.apache.org/plugins/maven-shade-plugin/) is provided, which contains CQEngine and all of its own dependencies packaged in a single jar file (ending "-all").
 
-It can be downloaded from Maven central as "-all.jar" [here](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.googlecode.cqengine%22%20AND%20a%3A%22cqengine%22).
+It can be downloaded from Maven central as "-all.jar" [here](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22network.rhizome.cqengine%22%20AND%20a%3A%22cqengine%22).
 
 ## Download statistics, as at December 2014 ##
 

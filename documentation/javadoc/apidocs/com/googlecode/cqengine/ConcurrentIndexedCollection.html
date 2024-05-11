@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine</a></div>
 <h2 title="Class ConcurrentIndexedCollection" class="title">Class ConcurrentIndexedCollection&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.ConcurrentIndexedCollection&lt;O&gt;</li>
+<li>network.rhizome.cqengine.ConcurrentIndexedCollection&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -134,19 +134,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;O&gt;</code>, <code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;O&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;O&gt;</code>, <code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;O&gt;</code>, <code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;O&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine">ObjectLockingIndexedCollection</a></code>, <code><a href="TransactionalIndexedCollection.html" title="class in com.googlecode.cqengine">TransactionalIndexedCollection</a></code></dd>
+<dd><code><a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine">ObjectLockingIndexedCollection</a></code>, <code><a href="TransactionalIndexedCollection.html" title="class in network.rhizome.cqengine">TransactionalIndexedCollection</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ConcurrentIndexedCollection&lt;O&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;O&gt;</pre>
-<div class="block">An implementation of <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> and <a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine"><code>QueryEngine</code></a>, thus providing
- <a href="#retrieve(com.googlecode.cqengine.query.Query)"><code>retrieve(com.googlecode.cqengine.query.Query)</code></a> methods for performing queries on the collection to retrieve
- matching objects, and <a href="#addIndex(com.googlecode.cqengine.index.Index)"><code>addIndex(com.googlecode.cqengine.index.Index)</code></a> methods allowing indexes to be
+implements <a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;O&gt;</pre>
+<div class="block">An implementation of <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a> and <a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine"><code>QueryEngine</code></a>, thus providing
+ <a href="#retrieve(network.rhizome.cqengine.query.Query)"><code>retrieve(network.rhizome.cqengine.query.Query)</code></a> methods for performing queries on the collection to retrieve
+ matching objects, and <a href="#addIndex(network.rhizome.cqengine.index.Index)"><code>addIndex(network.rhizome.cqengine.index.Index)</code></a> methods allowing indexes to be
  added to the collection to improve query performance.
  <p/>
  This collection takes care of automatically updating any indexes with objects added to/from the collection.
@@ -161,7 +161,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
  inconsistent results in that scenario with this implementation.
  <p/>
  In applications where multiple threads might add/remove the same object concurrently, then the subclass
- <a href="ObjectLockingIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ObjectLockingIndexedCollection</code></a> should be used instead. That subclass allows concurrent writes, but with
+ <a href="ObjectLockingIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ObjectLockingIndexedCollection</code></a> should be used instead. That subclass allows concurrent writes, but with
  additional safeguards against concurrent modification for the same object, with some additional overhead.
  <p/>
  Note that in this context the <i>same object</i> refers to either the same object instance, OR two object instances
@@ -191,22 +191,22 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="engine/QueryEngineInternal.html" title="interface in com.googlecode.cqengine.engine">QueryEngineInternal</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="engine/QueryEngineInternal.html" title="interface in network.rhizome.cqengine.engine">QueryEngineInternal</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#indexEngine">indexEngine</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#metadataEngine">metadataEngine</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code>protected <a href="persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#objectStore">objectStore</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;</code></td>
+<td class="colFirst"><code>protected <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#persistence">persistence</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -230,13 +230,13 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">ConcurrentIndexedCollection</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>.</div>
+<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.googlecode.cqengine.persistence.Persistence)">ConcurrentIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;persistence)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(network.rhizome.cqengine.persistence.Persistence)">ConcurrentIndexedCollection</a></span>&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;persistence)</code></th>
 <td class="colLast">
-<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> which will use the given persistence to create the backing set.</div>
+<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> which will use the given persistence to create the backing set.</div>
 </td>
 </tr>
 </table>
@@ -267,12 +267,12 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(com.googlecode.cqengine.index.Index)">addIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(network.rhizome.cqengine.index.Index)">addIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</code></th>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">addIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
-        <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">addIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
+        <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Adds the given index to the collection.</div>
 </td>
@@ -283,7 +283,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResourcesIfNecessary</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#closeRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResourcesIfNecessary</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -301,38 +301,38 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flagAsReadRequest(com.googlecode.cqengine.query.option.QueryOptions)">flagAsReadRequest</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#flagAsReadRequest(network.rhizome.cqengine.query.option.QueryOptions)">flagAsReadRequest</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Sets a flag into the given query options to record that this request will read from the collection
  but will not modify it.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIndexes()">getIndexes</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the set of indexes which were previously added to the collection via the
- <a href="engine/QueryEngine.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method.</div>
+ <a href="engine/QueryEngine.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMetadataEngine()">getMetadataEngine</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the <a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a>, which can retrieve metadata and statistics from indexes
+<div class="block">Returns the <a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a>, which can retrieve metadata and statistics from indexes
  on the distribution of attribute values in the collection.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>protected <a href="persistence/support/ObjectStoreAsSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectStoreAsSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectStoreAsSet(com.googlecode.cqengine.query.option.QueryOptions)">getObjectStoreAsSet</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code>protected <a href="persistence/support/ObjectStoreAsSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectStoreAsSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObjectStoreAsSet(network.rhizome.cqengine.query.option.QueryOptions)">getObjectStoreAsSet</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;</code></td>
+<td class="colFirst"><code><a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPersistence()">getPersistence</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> used by the the collection.</div>
+<div class="block">Returns the <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> used by the the collection.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
@@ -345,12 +345,12 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>protected <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResourcesIfNecessary</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code>protected <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResourcesIfNecessary</a></span>&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
@@ -363,12 +363,12 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(com.googlecode.cqengine.index.Index)">removeIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(network.rhizome.cqengine.index.Index)">removeIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</code></th>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">removeIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
-           <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">removeIndex</a></span>&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
+           <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Removes the given index from the collection.</div>
 </td>
@@ -378,19 +378,19 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retainAll(java.util.Collection)">retainAll</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;?&gt;&nbsp;c)</code></th>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code><a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query)">retrieve</a></span>&#8203;(<a href="query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query)</code></th>
+<td class="colFirst"><code><a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query)">retrieve</a></span>&#8203;(<a href="query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query)</code></th>
 <td class="colLast">
-<div class="block">Shortcut for calling <a href="IndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>IndexedCollection.retrieve(Query, QueryOptions)</code></a> without supplying any query options.</div>
+<div class="block">Shortcut for calling <a href="IndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>IndexedCollection.retrieve(Query, QueryOptions)</code></a> without supplying any query options.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query,
-        <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<td class="colFirst"><code><a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></span>&#8203;(<a href="query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query,
+        <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
-<div class="block">Retrieves a <a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
- <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
+<div class="block">Retrieves a <a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
+ <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -420,9 +420,9 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(java.lang.Iterable,java.lang.Iterable,com.googlecode.cqengine.query.option.QueryOptions)">update</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;objectsToRemove,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(java.lang.Iterable,java.lang.Iterable,network.rhizome.cqengine.query.option.QueryOptions)">update</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;objectsToRemove,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;objectsToAdd,
-      <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+      <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Removes or adds objects to/from the collection and indexes in bulk.</div>
 </td>
@@ -478,7 +478,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>persistence</h4>
-<pre>protected final&nbsp;<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt; persistence</pre>
+<pre>protected final&nbsp;<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt; persistence</pre>
 </li>
 </ul>
 <a id="objectStore">
@@ -487,7 +487,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>objectStore</h4>
-<pre>protected final&nbsp;<a href="persistence/support/ObjectStore.html" title="interface in com.googlecode.cqengine.persistence.support">ObjectStore</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; objectStore</pre>
+<pre>protected final&nbsp;<a href="persistence/support/ObjectStore.html" title="interface in network.rhizome.cqengine.persistence.support">ObjectStore</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; objectStore</pre>
 </li>
 </ul>
 <a id="indexEngine">
@@ -496,7 +496,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>indexEngine</h4>
-<pre>protected final&nbsp;<a href="engine/QueryEngineInternal.html" title="interface in com.googlecode.cqengine.engine">QueryEngineInternal</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; indexEngine</pre>
+<pre>protected final&nbsp;<a href="engine/QueryEngineInternal.html" title="interface in network.rhizome.cqengine.engine">QueryEngineInternal</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; indexEngine</pre>
 </li>
 </ul>
 <a id="metadataEngine">
@@ -505,7 +505,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>metadataEngine</h4>
-<pre>protected final&nbsp;<a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; metadataEngine</pre>
+<pre>protected final&nbsp;<a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt; metadataEngine</pre>
 </li>
 </ul>
 </li>
@@ -525,20 +525,20 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <li class="blockList">
 <h4>ConcurrentIndexedCollection</h4>
 <pre>public&nbsp;ConcurrentIndexedCollection()</pre>
-<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>.</div>
+<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> with default settings, using <a href="persistence/onheap/OnHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.onheap"><code>OnHeapPersistence</code></a>.</div>
 </li>
 </ul>
-<a id="&lt;init&gt;(com.googlecode.cqengine.persistence.Persistence)">
+<a id="&lt;init&gt;(network.rhizome.cqengine.persistence.Persistence)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConcurrentIndexedCollection</h4>
-<pre>public&nbsp;ConcurrentIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;persistence)</pre>
-<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in com.googlecode.cqengine"><code>ConcurrentIndexedCollection</code></a> which will use the given persistence to create the backing set.</div>
+<pre>public&nbsp;ConcurrentIndexedCollection&#8203;(<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&gt;&nbsp;persistence)</pre>
+<div class="block">Creates a new <a href="ConcurrentIndexedCollection.html" title="class in network.rhizome.cqengine"><code>ConcurrentIndexedCollection</code></a> which will use the given persistence to create the backing set.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
+<dd><code>persistence</code> - The <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> implementation which will create a concurrent <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Set</code></a>
                     in which objects added to the indexed collection will be stored, and which will provide
                     access to the underlying storage of indexes.</dd>
 </dl>
@@ -560,13 +560,13 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getPersistence</h4>
-<pre class="methodSignature">public&nbsp;<a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;&nbsp;getPersistence()</pre>
-<div class="block">Returns the <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> used by the the collection.</div>
+<pre class="methodSignature">public&nbsp;<a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>,&#8203;?&gt;&nbsp;getPersistence()</pre>
+<div class="block">Returns the <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> used by the the collection.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#getPersistence()">getPersistence</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#getPersistence()">getPersistence</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The <a href="persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> used by the the collection</dd>
+<dd>The <a href="persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> used by the the collection</dd>
 </dl>
 </li>
 </ul>
@@ -576,50 +576,50 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getMetadataEngine</h4>
-<pre class="methodSignature">public&nbsp;<a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;getMetadataEngine()</pre>
+<pre class="methodSignature">public&nbsp;<a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata">MetadataEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;getMetadataEngine()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="IndexedCollection.html#getMetadataEngine()">IndexedCollection</a></code></span></div>
-<div class="block">Returns the <a href="metadata/MetadataEngine.html" title="class in com.googlecode.cqengine.metadata"><code>MetadataEngine</code></a>, which can retrieve metadata and statistics from indexes
+<div class="block">Returns the <a href="metadata/MetadataEngine.html" title="class in network.rhizome.cqengine.metadata"><code>MetadataEngine</code></a>, which can retrieve metadata and statistics from indexes
  on the distribution of attribute values in the collection.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#getMetadataEngine()">getMetadataEngine</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#getMetadataEngine()">getMetadataEngine</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="retrieve(com.googlecode.cqengine.query.Query)">
+<a id="retrieve(network.rhizome.cqengine.query.Query)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature">public&nbsp;<a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;retrieve&#8203;(<a href="query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query)</pre>
-<div class="block">Shortcut for calling <a href="IndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>IndexedCollection.retrieve(Query, QueryOptions)</code></a> without supplying any query options.</div>
+<pre class="methodSignature">public&nbsp;<a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;retrieve&#8203;(<a href="query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query)</pre>
+<div class="block">Shortcut for calling <a href="IndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>IndexedCollection.retrieve(Query, QueryOptions)</code></a> without supplying any query options.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>retrieve</h4>
-<pre class="methodSignature">public&nbsp;<a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;retrieve&#8203;(<a href="query/Query.html" title="interface in com.googlecode.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query,
-                             <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
-<div class="block">Retrieves a <a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
- <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
+<pre class="methodSignature">public&nbsp;<a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset">ResultSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;retrieve&#8203;(<a href="query/Query.html" title="interface in network.rhizome.cqengine.query">Query</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;query,
+                             <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<div class="block">Retrieves a <a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query, additionally accepting
+ <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option"><code>QueryOptions</code></a> which can specify ordering of results, deduplication strategy etc.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="engine/QueryEngine.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)">retrieve</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - A query representing some assertions which sought objects must match</dd>
 <dd><code>queryOptions</code> - Optional parameters for the query</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="resultset/ResultSet.html" title="class in com.googlecode.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query</dd>
+<dd>A <a href="resultset/ResultSet.html" title="class in network.rhizome.cqengine.resultset"><code>ResultSet</code></a> which provides objects matching the given query</dd>
 </dl>
 </li>
 </ul>
@@ -659,7 +659,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
  </ul></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable)">update</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable)">update</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectsToRemove</code> - The objects to remove from the collection</dd>
 <dd><code>objectsToAdd</code> - The objects to add to the collection</dd>
@@ -668,7 +668,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </dl>
 </li>
 </ul>
-<a id="update(java.lang.Iterable,java.lang.Iterable,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="update(java.lang.Iterable,java.lang.Iterable,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -676,7 +676,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <h4>update</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;update&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;objectsToRemove,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;objectsToAdd,
-                      <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+                      <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Removes or adds objects to/from the collection and indexes in bulk.
  <p/>
  Note that although this method accepts either <code>Iterable</code>s or <code>Collection</code>s for its
@@ -705,7 +705,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
  </ul></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable,com.googlecode.cqengine.query.option.QueryOptions)">update</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#update(java.lang.Iterable,java.lang.Iterable,network.rhizome.cqengine.query.option.QueryOptions)">update</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>objectsToRemove</code> - The objects to remove from the collection</dd>
 <dd><code>objectsToAdd</code> - The objects to add to the collection</dd>
@@ -715,73 +715,73 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </dl>
 </li>
 </ul>
-<a id="addIndex(com.googlecode.cqengine.index.Index)">
+<a id="addIndex(network.rhizome.cqengine.index.Index)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addIndex</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addIndex&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addIndex&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#addIndex(com.googlecode.cqengine.index.Index)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#addIndex(network.rhizome.cqengine.index.Index)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="IndexedCollection.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>IndexedCollection.addIndex(Index, QueryOptions)</code></a></dd>
+<dd><a href="IndexedCollection.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>IndexedCollection.addIndex(Index, QueryOptions)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addIndex</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addIndex&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
-                     <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;addIndex&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
+                     <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Adds the given index to the collection.
  <p/>
- Subsequently queries passed to the <a href="engine/QueryEngine.html#retrieve(com.googlecode.cqengine.query.Query,com.googlecode.cqengine.query.option.QueryOptions)"><code>QueryEngine.retrieve(com.googlecode.cqengine.query.Query, QueryOptions)</code></a> method
+ Subsequently queries passed to the <a href="engine/QueryEngine.html#retrieve(network.rhizome.cqengine.query.Query,network.rhizome.cqengine.query.option.QueryOptions)"><code>QueryEngine.retrieve(network.rhizome.cqengine.query.Query, QueryOptions)</code></a> method
  will use these indexes if suitable for the particular queries, to speed up retrievals.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="engine/QueryEngine.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">addIndex</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - The index to add</dd>
 <dd><code>queryOptions</code> - Optional parameters for the index</dd>
 </dl>
 </li>
 </ul>
-<a id="removeIndex(com.googlecode.cqengine.index.Index)">
+<a id="removeIndex(network.rhizome.cqengine.index.Index)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeIndex</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;removeIndex&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeIndex&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#removeIndex(com.googlecode.cqengine.index.Index)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#removeIndex(network.rhizome.cqengine.index.Index)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="IndexedCollection.html#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>IndexedCollection.removeIndex(Index, QueryOptions)</code></a></dd>
+<dd><a href="IndexedCollection.html#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>IndexedCollection.removeIndex(Index, QueryOptions)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeIndex</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;removeIndex&#8203;(<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
-                        <a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;removeIndex&#8203;(<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;index,
+                        <a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Removes the given index from the collection.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IndexedCollection.html#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in com.googlecode.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="IndexedCollection.html#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="IndexedCollection.html" title="interface in network.rhizome.cqengine">IndexedCollection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="engine/QueryEngine.html#removeIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html#removeIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">removeIndex</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - The index to remove</dd>
 <dd><code>queryOptions</code> - Optional parameters for the index</dd>
@@ -794,16 +794,16 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>getIndexes</h4>
-<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="index/Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&gt;&nbsp;getIndexes()</pre>
+<pre class="methodSignature">public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;<a href="index/Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&gt;&nbsp;getIndexes()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="engine/QueryEngine.html#getIndexes()">QueryEngine</a></code></span></div>
 <div class="block">Returns the set of indexes which were previously added to the collection via the
- <a href="engine/QueryEngine.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method.</div>
+ <a href="engine/QueryEngine.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="engine/QueryEngine.html#getIndexes()">getIndexes</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in com.googlecode.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
+<dd><code><a href="engine/QueryEngine.html#getIndexes()">getIndexes</a></code>&nbsp;in interface&nbsp;<code><a href="engine/QueryEngine.html" title="interface in network.rhizome.cqengine.engine">QueryEngine</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The set of which were previously added to the collection via the
- <a href="engine/QueryEngine.html#addIndex(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(com.googlecode.cqengine.index.Index, QueryOptions)</code></a> method</dd>
+ <a href="engine/QueryEngine.html#addIndex(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)"><code>QueryEngine.addIndex(network.rhizome.cqengine.index.Index, QueryOptions)</code></a> method</dd>
 </dl>
 </li>
 </ul>
@@ -905,7 +905,7 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 <ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
-<pre class="methodSignature">public&nbsp;<a href="index/support/CloseableIterator.html" title="interface in com.googlecode.cqengine.index.support">CloseableIterator</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;iterator()</pre>
+<pre class="methodSignature">public&nbsp;<a href="index/support/CloseableIterator.html" title="interface in network.rhizome.cqengine.index.support">CloseableIterator</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#iterator()" title="class or interface in java.util" class="externalLink">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;</code></dd>
@@ -1008,31 +1008,31 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </dl>
 </li>
 </ul>
-<a id="openRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="openRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>openRequestScopeResourcesIfNecessary</h4>
-<pre class="methodSignature">protected&nbsp;<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;openRequestScopeResourcesIfNecessary&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;openRequestScopeResourcesIfNecessary&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="closeRequestScopeResourcesIfNecessary(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="closeRequestScopeResourcesIfNecessary(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>closeRequestScopeResourcesIfNecessary</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;closeRequestScopeResourcesIfNecessary&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;closeRequestScopeResourcesIfNecessary&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
-<a id="getObjectStoreAsSet(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getObjectStoreAsSet(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getObjectStoreAsSet</h4>
-<pre class="methodSignature">protected&nbsp;<a href="persistence/support/ObjectStoreAsSet.html" title="class in com.googlecode.cqengine.persistence.support">ObjectStoreAsSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;getObjectStoreAsSet&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="persistence/support/ObjectStoreAsSet.html" title="class in network.rhizome.cqengine.persistence.support">ObjectStoreAsSet</a>&lt;<a href="ConcurrentIndexedCollection.html" title="type parameter in ConcurrentIndexedCollection">O</a>&gt;&nbsp;getObjectStoreAsSet&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 </li>
 </ul>
 <a id="equals(java.lang.Object)">
@@ -1082,13 +1082,13 @@ implements <a href="IndexedCollection.html" title="interface in com.googlecode.c
 </dl>
 </li>
 </ul>
-<a id="flagAsReadRequest(com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="flagAsReadRequest(network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>flagAsReadRequest</h4>
-<pre class="methodSignature">protected static&nbsp;void&nbsp;flagAsReadRequest&#8203;(<a href="query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature">protected static&nbsp;void&nbsp;flagAsReadRequest&#8203;(<a href="query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Sets a flag into the given query options to record that this request will read from the collection
  but will not modify it.
  This is used to facilitate locking in some persistence implementations.</div>

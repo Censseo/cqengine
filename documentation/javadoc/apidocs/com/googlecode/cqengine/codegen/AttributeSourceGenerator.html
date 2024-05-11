@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.codegen</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.codegen</a></div>
 <h2 title="Class AttributeSourceGenerator" class="title">Class AttributeSourceGenerator</h2>
 </div>
 <div class="contentContainer">
@@ -125,7 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.codegen.AttributeSourceGenerator</li>
+<li>network.rhizome.cqengine.codegen.AttributeSourceGenerator</li>
 </ul>
 </li>
 </ul>
@@ -138,9 +138,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Automatically generates source code defining CQEngine attributes for accessing the fields and methods (aka members)
  of a given target class.
  <p/>
- Generates CQEngine <a href="../attribute/SimpleAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleAttribute</code></a>s or
- <a href="../attribute/SimpleNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>SimpleNullableAttribute</code></a>s for members which return singular values,
- and generates CQEngine <a href="../attribute/MultiValueNullableAttribute.html" title="class in com.googlecode.cqengine.attribute"><code>MultiValueNullableAttribute</code></a>s for members
+ Generates CQEngine <a href="../attribute/SimpleAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleAttribute</code></a>s or
+ <a href="../attribute/SimpleNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>SimpleNullableAttribute</code></a>s for members which return singular values,
+ and generates CQEngine <a href="../attribute/MultiValueNullableAttribute.html" title="class in network.rhizome.cqengine.attribute"><code>MultiValueNullableAttribute</code></a>s for members
  which return Iterables or arrays.
  <p/>
  Note that by default this code generator is cautious and generates "Nullable" attributes by default, for all members
@@ -189,8 +189,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateAttributesForPastingIntoTargetClass(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter)">generateAttributesForPastingIntoTargetClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                                           <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateAttributesForPastingIntoTargetClass(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter)">generateAttributesForPastingIntoTargetClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
+                                           <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
 <td class="colLast">
 <div class="block">Generates source code which defines attributes for accessing all members (fields and methods) in the given target
  class which are acceptable to the given filter, for the purpose of copy-pasting directly into the target class.</div>
@@ -207,9 +207,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSeparateAttributesClass(java.lang.Class,java.lang.Package,com.googlecode.cqengine.codegen.MemberFilter)">generateSeparateAttributesClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSeparateAttributesClass(java.lang.Class,java.lang.Package,network.rhizome.cqengine.codegen.MemberFilter)">generateSeparateAttributesClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Package.html?is-external=true" title="class or interface in java.lang" class="externalLink">Package</a>&nbsp;packageOfAttributesClass,
-                               <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
+                               <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
 <td class="colLast">
 <div class="block">Generates source code of a complete separate class, containing attributes for accessing all members
  (fields and methods) in the given target class which are acceptable to the given filter.</div>
@@ -226,9 +226,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSeparateAttributesClass(java.lang.Class,java.lang.String,com.googlecode.cqengine.codegen.MemberFilter)">generateSeparateAttributesClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generateSeparateAttributesClass(java.lang.Class,java.lang.String,network.rhizome.cqengine.codegen.MemberFilter)">generateSeparateAttributesClass</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;packageOfAttributesClass,
-                               <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
+                               <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</code></th>
 <td class="colLast">
 <div class="block">Generates source code of a complete separate class, containing attributes for accessing all members
  (fields and methods) in the given target class which are acceptable to the given filter.</div>
@@ -275,14 +275,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="generateAttributesForPastingIntoTargetClass(java.lang.Class,com.googlecode.cqengine.codegen.MemberFilter)">
+<a id="generateAttributesForPastingIntoTargetClass(java.lang.Class,network.rhizome.cqengine.codegen.MemberFilter)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>generateAttributesForPastingIntoTargetClass</h4>
 <pre class="methodSignature">public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;generateAttributesForPastingIntoTargetClass&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
-                                                                 <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
+                                                                 <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
 <div class="block">Generates source code which defines attributes for accessing all members (fields and methods) in the given target
  class which are acceptable to the given filter, for the purpose of copy-pasting directly into the target class.</div>
 <dl>
@@ -317,7 +317,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="generateSeparateAttributesClass(java.lang.Class,java.lang.String,com.googlecode.cqengine.codegen.MemberFilter)">
+<a id="generateSeparateAttributesClass(java.lang.Class,java.lang.String,network.rhizome.cqengine.codegen.MemberFilter)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -325,7 +325,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>generateSeparateAttributesClass</h4>
 <pre class="methodSignature">public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;generateSeparateAttributesClass&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;packageOfAttributesClass,
-                                                     <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
+                                                     <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
 <div class="block">Generates source code of a complete separate class, containing attributes for accessing all members
  (fields and methods) in the given target class which are acceptable to the given filter.</div>
 <dl>
@@ -363,7 +363,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a id="generateSeparateAttributesClass(java.lang.Class,java.lang.Package,com.googlecode.cqengine.codegen.MemberFilter)">
+<a id="generateSeparateAttributesClass(java.lang.Class,java.lang.Package,network.rhizome.cqengine.codegen.MemberFilter)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -371,7 +371,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>generateSeparateAttributesClass</h4>
 <pre class="methodSignature">public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;generateSeparateAttributesClass&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;?&gt;&nbsp;targetClass,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Package.html?is-external=true" title="class or interface in java.lang" class="externalLink">Package</a>&nbsp;packageOfAttributesClass,
-                                                     <a href="MemberFilter.html" title="interface in com.googlecode.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
+                                                     <a href="MemberFilter.html" title="interface in network.rhizome.cqengine.codegen">MemberFilter</a>&nbsp;memberFilter)</pre>
 <div class="block">Generates source code of a complete separate class, containing attributes for accessing all members
  (fields and methods) in the given target class which are acceptable to the given filter.</div>
 <dl>

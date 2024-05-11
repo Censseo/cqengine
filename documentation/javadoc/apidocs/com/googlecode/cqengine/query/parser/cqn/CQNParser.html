@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.query.parser.cqn</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.query.parser.cqn</a></div>
 <h2 title="Class CQNParser" class="title">Class CQNParser&lt;O&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -125,10 +125,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../common/QueryParser.html" title="class in com.googlecode.cqengine.query.parser.common">com.googlecode.cqengine.query.parser.common.QueryParser</a>&lt;O&gt;</li>
+<li><a href="../common/QueryParser.html" title="class in network.rhizome.cqengine.query.parser.common">network.rhizome.cqengine.query.parser.common.QueryParser</a>&lt;O&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.googlecode.cqengine.query.parser.cqn.CQNParser&lt;O&gt;</li>
+<li>network.rhizome.cqengine.query.parser.cqn.CQNParser&lt;O&gt;</li>
 </ul>
 </li>
 </ul>
@@ -139,7 +139,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public class <span class="typeNameLabel">CQNParser&lt;O&gt;</span>
-extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqengine.query.parser.common">QueryParser</a>&lt;O&gt;</pre>
+extends <a href="../common/QueryParser.html" title="class in network.rhizome.cqengine.query.parser.common">QueryParser</a>&lt;O&gt;</pre>
 <div class="block">A parser for CQN queries - CQEngine-Native syntax.
  <p/>
  CQN syntax is based on how CQEngine queries look in native Java code, and the format returned by
@@ -162,10 +162,10 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.com.googlecode.cqengine.query.parser.common.QueryParser">
+<li class="blockList"><a id="fields.inherited.from.class.network.rhizome.cqengine.query.parser.common.QueryParser">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.googlecode.cqengine.query.parser.common.<a href="../common/QueryParser.html" title="class in com.googlecode.cqengine.query.parser.common">QueryParser</a></h3>
+<h3>Fields inherited from class&nbsp;network.rhizome.cqengine.query.parser.common.<a href="../common/QueryParser.html" title="class in network.rhizome.cqengine.query.parser.common">QueryParser</a></h3>
 <code><a href="../common/QueryParser.html#attributes">attributes</a>, <a href="../common/QueryParser.html#fallbackValueParser">fallbackValueParser</a>, <a href="../common/QueryParser.html#objectType">objectType</a>, <a href="../common/QueryParser.html#SYNTAX_ERROR_LISTENER">SYNTAX_ERROR_LISTENER</a>, <a href="../common/QueryParser.html#valueParsers">valueParsers</a></code></li>
 </ul>
 </li>
@@ -207,22 +207,22 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in com.googlecode.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;</code></td>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in network.rhizome.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forPojo(java.lang.Class)">forPojo</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</code></th>
 <td class="colLast">
 <div class="block">Creates a new CQNParser for the given POJO class.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in com.googlecode.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;</code></td>
+<td class="colFirst"><code>static &lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in network.rhizome.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forPojoWithAttributes(java.lang.Class,java.util.Map)">forPojoWithAttributes</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;attributes)</code></th>
+                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;attributes)</code></th>
 <td class="colLast">
 <div class="block">Creates a new CQNParser for the given POJO class, and registers the given attributes with it.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../common/ParseResult.html" title="class in com.googlecode.cqengine.query.parser.common">ParseResult</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="../common/ParseResult.html" title="class in network.rhizome.cqengine.query.parser.common">ParseResult</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String)">parse</a></span>&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;query)</code></th>
 <td class="colLast">
 <div class="block">Parses the given query and its query options, encapsulating both in the object returned.</div>
@@ -230,11 +230,11 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.query.parser.common.QueryParser">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.query.parser.common.QueryParser">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.googlecode.cqengine.query.parser.common.<a href="../common/QueryParser.html" title="class in com.googlecode.cqengine.query.parser.common">QueryParser</a></h3>
-<code><a href="../common/QueryParser.html#getAttribute(org.antlr.v4.runtime.tree.ParseTree,java.lang.Class)">getAttribute</a>, <a href="../common/QueryParser.html#getObjectType()">getObjectType</a>, <a href="../common/QueryParser.html#parseValue(com.googlecode.cqengine.attribute.Attribute,org.antlr.v4.runtime.tree.ParseTree)">parseValue</a>, <a href="../common/QueryParser.html#parseValue(java.lang.Class,java.lang.String)">parseValue</a>, <a href="../common/QueryParser.html#parseValue(java.lang.Class,org.antlr.v4.runtime.tree.ParseTree)">parseValue</a>, <a href="../common/QueryParser.html#query(java.lang.String)">query</a>, <a href="../common/QueryParser.html#queryOptions(java.lang.String)">queryOptions</a>, <a href="../common/QueryParser.html#registerAttribute(com.googlecode.cqengine.attribute.Attribute)">registerAttribute</a>, <a href="../common/QueryParser.html#registerAttributes(java.lang.Iterable)">registerAttributes</a>, <a href="../common/QueryParser.html#registerAttributes(java.util.Map)">registerAttributes</a>, <a href="../common/QueryParser.html#registerFallbackValueParser(com.googlecode.cqengine.query.parser.common.ValueParser)">registerFallbackValueParser</a>, <a href="../common/QueryParser.html#registerValueParser(java.lang.Class,com.googlecode.cqengine.query.parser.common.ValueParser)">registerValueParser</a>, <a href="../common/QueryParser.html#retrieve(com.googlecode.cqengine.IndexedCollection,java.lang.String)">retrieve</a></code></li>
+<h3>Methods inherited from class&nbsp;network.rhizome.cqengine.query.parser.common.<a href="../common/QueryParser.html" title="class in network.rhizome.cqengine.query.parser.common">QueryParser</a></h3>
+<code><a href="../common/QueryParser.html#getAttribute(org.antlr.v4.runtime.tree.ParseTree,java.lang.Class)">getAttribute</a>, <a href="../common/QueryParser.html#getObjectType()">getObjectType</a>, <a href="../common/QueryParser.html#parseValue(network.rhizome.cqengine.attribute.Attribute,org.antlr.v4.runtime.tree.ParseTree)">parseValue</a>, <a href="../common/QueryParser.html#parseValue(java.lang.Class,java.lang.String)">parseValue</a>, <a href="../common/QueryParser.html#parseValue(java.lang.Class,org.antlr.v4.runtime.tree.ParseTree)">parseValue</a>, <a href="../common/QueryParser.html#query(java.lang.String)">query</a>, <a href="../common/QueryParser.html#queryOptions(java.lang.String)">queryOptions</a>, <a href="../common/QueryParser.html#registerAttribute(network.rhizome.cqengine.attribute.Attribute)">registerAttribute</a>, <a href="../common/QueryParser.html#registerAttributes(java.lang.Iterable)">registerAttributes</a>, <a href="../common/QueryParser.html#registerAttributes(java.util.Map)">registerAttributes</a>, <a href="../common/QueryParser.html#registerFallbackValueParser(network.rhizome.cqengine.query.parser.common.ValueParser)">registerFallbackValueParser</a>, <a href="../common/QueryParser.html#registerValueParser(java.lang.Class,network.rhizome.cqengine.query.parser.common.ValueParser)">registerValueParser</a>, <a href="../common/QueryParser.html#retrieve(network.rhizome.cqengine.IndexedCollection,java.lang.String)">retrieve</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -284,12 +284,12 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 <ul class="blockList">
 <li class="blockList">
 <h4>parse</h4>
-<pre class="methodSignature">public&nbsp;<a href="../common/ParseResult.html" title="class in com.googlecode.cqengine.query.parser.common">ParseResult</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;&nbsp;parse&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;query)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../common/ParseResult.html" title="class in network.rhizome.cqengine.query.parser.common">ParseResult</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;&nbsp;parse&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;query)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../common/QueryParser.html#parse(java.lang.String)">QueryParser</a></code></span></div>
 <div class="block">Parses the given query and its query options, encapsulating both in the object returned.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../common/QueryParser.html#parse(java.lang.String)">parse</a></code>&nbsp;in class&nbsp;<code><a href="../common/QueryParser.html" title="class in com.googlecode.cqengine.query.parser.common">QueryParser</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;</code></dd>
+<dd><code><a href="../common/QueryParser.html#parse(java.lang.String)">parse</a></code>&nbsp;in class&nbsp;<code><a href="../common/QueryParser.html" title="class in network.rhizome.cqengine.query.parser.common">QueryParser</a>&lt;<a href="CQNParser.html" title="type parameter in CQNParser">O</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>query</code> - The query to parse</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -303,7 +303,7 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 <ul class="blockList">
 <li class="blockList">
 <h4>forPojo</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in com.googlecode.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;&nbsp;forPojo&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in network.rhizome.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;&nbsp;forPojo&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass)</pre>
 <div class="block">Creates a new CQNParser for the given POJO class.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -319,8 +319,8 @@ extends <a href="../common/QueryParser.html" title="class in com.googlecode.cqen
 <ul class="blockListLast">
 <li class="blockList">
 <h4>forPojoWithAttributes</h4>
-<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in com.googlecode.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;&nbsp;forPojoWithAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
-                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../../../attribute/Attribute.html" title="interface in com.googlecode.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;attributes)</pre>
+<pre class="methodSignature">public static&nbsp;&lt;O&gt;&nbsp;<a href="CQNParser.html" title="class in network.rhizome.cqengine.query.parser.cqn">CQNParser</a>&lt;O&gt;&nbsp;forPojoWithAttributes&#8203;(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;O&gt;&nbsp;pojoClass,
+                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;? extends <a href="../../../attribute/Attribute.html" title="interface in network.rhizome.cqengine.attribute">Attribute</a>&lt;O,&#8203;?&gt;&gt;&nbsp;attributes)</pre>
 <div class="block">Creates a new CQNParser for the given POJO class, and registers the given attributes with it.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

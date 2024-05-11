@@ -117,7 +117,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!-- ======== START OF CLASS DATA ======== -->
 <main role="main">
 <div class="header">
-<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">com.googlecode.cqengine.index.sqlite</a></div>
+<div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">network.rhizome.cqengine.index.sqlite</a></div>
 <h2 title="Interface SQLitePersistence" class="title">Interface SQLitePersistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</h2>
 </div>
 <div class="contentContainer">
@@ -126,16 +126,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><code><a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</code></dd>
+<dd><code><a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</code></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../../persistence/disk/DiskPersistence.html" title="class in com.googlecode.cqengine.persistence.disk">DiskPersistence</a></code>, <code><a href="../../persistence/offheap/OffHeapPersistence.html" title="class in com.googlecode.cqengine.persistence.offheap">OffHeapPersistence</a></code></dd>
+<dd><code><a href="../../persistence/disk/DiskPersistence.html" title="class in network.rhizome.cqengine.persistence.disk">DiskPersistence</a></code>, <code><a href="../../persistence/offheap/OffHeapPersistence.html" title="class in network.rhizome.cqengine.persistence.offheap">OffHeapPersistence</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">SQLitePersistence&lt;O,&#8203;A extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;A&gt;&gt;</span>
-extends <a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</pre>
-<div class="block">An <a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence"><code>Persistence</code></a> which persists to a SQLite database.</div>
+extends <a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a>&lt;O,&#8203;A&gt;</pre>
+<div class="block">An <a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence"><code>Persistence</code></a> which persists to a SQLite database.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Silvano Riz</dd>
@@ -168,10 +168,10 @@ extends <a href="../../persistence/Persistence.html" title="interface in com.goo
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite">SQLiteIdentityIndex</a>&lt;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">A</a>,&#8203;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">O</a>&gt;</code></td>
+<td class="colFirst"><code><a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite">SQLiteIdentityIndex</a>&lt;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">A</a>,&#8203;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">O</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createIdentityIndex()">createIdentityIndex</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Creates a <a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
+<div class="block">Creates a <a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -188,19 +188,19 @@ extends <a href="../../persistence/Persistence.html" title="interface in com.goo
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-             <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">getConnection</a></span>&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+             <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</code></th>
 <td class="colLast">
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a> to the SQLite database used for persistence.</div>
 </td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.com.googlecode.cqengine.persistence.Persistence">
+<li class="blockList"><a id="methods.inherited.from.class.network.rhizome.cqengine.persistence.Persistence">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;com.googlecode.cqengine.persistence.<a href="../../persistence/Persistence.html" title="interface in com.googlecode.cqengine.persistence">Persistence</a></h3>
-<code><a href="../../persistence/Persistence.html#closeRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a>, <a href="../../persistence/Persistence.html#createObjectStore()">createObjectStore</a>, <a href="../../persistence/Persistence.html#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a>, <a href="../../persistence/Persistence.html#openRequestScopeResources(com.googlecode.cqengine.query.option.QueryOptions)">openRequestScopeResources</a>, <a href="../../persistence/Persistence.html#supportsIndex(com.googlecode.cqengine.index.Index)">supportsIndex</a></code></li>
+<h3>Methods inherited from interface&nbsp;network.rhizome.cqengine.persistence.<a href="../../persistence/Persistence.html" title="interface in network.rhizome.cqengine.persistence">Persistence</a></h3>
+<code><a href="../../persistence/Persistence.html#closeRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">closeRequestScopeResources</a>, <a href="../../persistence/Persistence.html#createObjectStore()">createObjectStore</a>, <a href="../../persistence/Persistence.html#getPrimaryKeyAttribute()">getPrimaryKeyAttribute</a>, <a href="../../persistence/Persistence.html#openRequestScopeResources(network.rhizome.cqengine.query.option.QueryOptions)">openRequestScopeResources</a>, <a href="../../persistence/Persistence.html#supportsIndex(network.rhizome.cqengine.index.Index)">supportsIndex</a></code></li>
 </ul>
 </li>
 </ul>
@@ -218,18 +218,18 @@ extends <a href="../../persistence/Persistence.html" title="interface in com.goo
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getConnection(com.googlecode.cqengine.index.Index,com.googlecode.cqengine.query.option.QueryOptions)">
+<a id="getConnection(network.rhizome.cqengine.index.Index,network.rhizome.cqengine.query.option.QueryOptions)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getConnection</h4>
-<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../Index.html" title="interface in com.googlecode.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
-                         <a href="../../query/option/QueryOptions.html" title="class in com.googlecode.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
+<pre class="methodSignature"><a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink">Connection</a>&nbsp;getConnection&#8203;(<a href="../Index.html" title="interface in network.rhizome.cqengine.index">Index</a>&lt;?&gt;&nbsp;index,
+                         <a href="../../query/option/QueryOptions.html" title="class in network.rhizome.cqengine.query.option">QueryOptions</a>&nbsp;queryOptions)</pre>
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a> to the SQLite database used for persistence.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>index</code> - The <a href="../Index.html" title="interface in com.googlecode.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
+<dd><code>index</code> - The <a href="../Index.html" title="interface in network.rhizome.cqengine.index"><code>Index</code></a> requesting the connection.</dd>
 <dd><code>queryOptions</code> - The query options for the request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The <a href="http://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html?is-external=true" title="class or interface in java.sql" class="externalLink"><code>Connection</code></a></dd>
@@ -284,11 +284,11 @@ extends <a href="../../persistence/Persistence.html" title="interface in com.goo
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createIdentityIndex</h4>
-<pre class="methodSignature"><a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite">SQLiteIdentityIndex</a>&lt;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">A</a>,&#8203;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">O</a>&gt;&nbsp;createIdentityIndex()</pre>
-<div class="block">Creates a <a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
+<pre class="methodSignature"><a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite">SQLiteIdentityIndex</a>&lt;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">A</a>,&#8203;<a href="SQLitePersistence.html" title="type parameter in SQLitePersistence">O</a>&gt;&nbsp;createIdentityIndex()</pre>
+<div class="block">Creates a <a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="SQLiteIdentityIndex.html" title="class in com.googlecode.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</dd>
+<dd>a <a href="SQLiteIdentityIndex.html" title="class in network.rhizome.cqengine.index.sqlite"><code>SQLiteIdentityIndex</code></a> which persists objects in this persistence.</dd>
 </dl>
 </li>
 </ul>
